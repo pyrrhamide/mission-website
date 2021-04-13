@@ -1,5 +1,5 @@
 ---
-bio: My research interests include diplomatic representation of island nations and Get-Out-The-Vote campaigns, especially when geared towards young adults.
+bio: My research interests include diplomatic representation of island nations, Get-Out-The-Vote campaigns geared towards young adults, and R.
 education:
   courses:
   - course: Master Quantifier en Sciences Sociales
