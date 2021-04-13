@@ -5,8 +5,8 @@ theme: "starter-academic"
 # This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
 
 title: toucan # Website name
-baseurl: '' # Website URL
-copyright: '© {year} KF' # Footer text, e.g. '© {year} Me'
+baseurl: 'kanto-does-things.netlify.app' # Website URL
+copyright: '© {year} Kanto Fiaferana' # Footer text, e.g. '© {year} Me'
 
 ############################
 ## LANGUAGE
@@ -31,22 +31,27 @@ module:
 ############################
 
 enableGitInfo: false
-summaryLength: 30
-paginate: 10
+
+summaryLength: 30 # listing summary length in words
+paginate: 10 # number of items per page in paginated lists
 enableEmoji: true
 enableRobotsTXT: true
 footnotereturnlinkcontents: <sup>^</sup>
-ignoreFiles: [\.ipynb$, .ipynb_checkpoints$, \.Rmd$, \.Rmarkdown$, _cache$]
+ignoreFiles: [\.ipynb$, .ipynb_checkpoints$, \.Rmd$, \.Rmarkdown$, _cache$, \.knit\.md$, \.utf8\.md$]
+
 permalinks:
   event: '/talk/:slug/'
   authors: '/author/:slug/'
   tags: '/tag/:slug/'
   categories: '/category/:slug/'
   publication_types: '/publication-type/:slug/'
+  
 disableAliases: true
+
 outputs:
   home: [HTML, RSS, JSON, WebAppManifest, headers, redirects]
   section: [HTML, RSS]
+  
 markup:
   defaultMarkdownHandler: goldmark
   goldmark:
@@ -57,16 +62,20 @@ markup:
   tableOfContents:
     startLevel: 2
     endLevel: 3
+
 imaging:
   resampleFilter: lanczos
   quality: 75
   anchor: smart
+
 timeout: 600000
+
 taxonomies:
   tag: tags
   category: categories
   publication_type: publication_types
   author: authors
+
 related:
   threshold: 80
   includeNewer: true
