@@ -10,4 +10,4 @@ share: false
 title: Terms
 ---
 
-...
+Wash your hands, wear a mask, limit large crowds.

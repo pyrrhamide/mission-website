@@ -26,14 +26,14 @@ experience:
     company: Coram Family and Childcare
     company_url: ''
     location: 'London, UK'
-    date_start: '2017-06-01'
-    date_end: '2017-07-18'
+    date_start: '2018-06-01'
+    date_end: '2018-07-18'
     description: |2-
         Responsibilities include:
         
         * Analysing
         * Modelling
-        * Deploying
+        * Co-authored the Holiday Childcare Survey 2018
         
   - title: something
     company: someplace
