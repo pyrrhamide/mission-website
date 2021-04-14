@@ -11,7 +11,7 @@ subtitle: ''
 
 content:
   # Page type to display. E.g. project.
-  page_type: "project"
+  page_type: "projects"
 
 
 design:
