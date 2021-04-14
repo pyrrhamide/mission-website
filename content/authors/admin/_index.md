@@ -42,4 +42,4 @@ I am an overly curious postgraduate student in Quantified Social Sciences. I enj
 
 I love experimenting with R and RMarkdown, I cannot stop browsing GitHub, discovering new packages, hence I cannot stop building new projects, the latest one being this lovely website (it is still a work in progress, bear with me!). I would very much like to regularly post content on here, right after I get the hang of Hugo and blogdown!
 
-{{< icon name="download" pack="fas" >}} Download my {{< staticref "media/demo_resume.pdf" "newtab" >}}resumé{{< /staticref >}}.
+# {{< icon name="download" pack="fas" >}} Download my {{< staticref "media/demo_resume.pdf" "newtab" >}}resumé{{< /staticref >}}.
