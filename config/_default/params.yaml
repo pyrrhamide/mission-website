@@ -5,9 +5,9 @@
 
 # Appearance
 
-theme: rose
+theme: kanto
 day_night: true
-font: ''
+font: 'alison'
 font_size: L
 
 # SEO

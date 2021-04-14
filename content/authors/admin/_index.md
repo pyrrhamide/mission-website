@@ -28,7 +28,9 @@ social:
   icon_pack: fab
   label: Follow me on Twitter
   link: https://twitter.com/aindinoise
-- icon: github
+- display:
+    header: true
+  icon: github
   icon_pack: fab
   link: https://github.com/pyrrhamide
 - icon: linkedin
