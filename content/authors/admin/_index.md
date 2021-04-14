@@ -40,8 +40,8 @@ superuser: true
 title: KF
 ---
 
-I am an overly curious postgraduate student in Quantified Social Sciences. I enjoy learning new tools and ways of sharing beautiful content, to help myself and others better understand things. I built a [website](https://pyrrhamide.github.io/regressions) with bookdown, reporting all the different data analysis methods I learned during my postgraduate degree, for my and my classmates' personal use.
+I am an overly curious postgraduate student in Quantified Social Sciences. I enjoy learning new tools and ways of sharing beautiful content, to help myself and others better understand things. I built a [website](https://pyrrhamide.github.io/regressions) with bookdown, reporting all the different data analysis methods I learned during my postgraduate degree, for my classmates' and my personal use.
 
-I love experimenting with R and RMarkdown, I cannot stop browsing GitHub, discovering new packages, hence I cannot stop building new projects, the latest one being this lovely website (it is still a work in progress, bear with me!). I would very much like to regularly post content on here, right after I get the hang of Hugo and blogdown!
+I love experimenting with R and RMarkdown, I cannot stop browsing GitHub, discovering new packages, hence I cannot stop building new projects, the latest one being this lovely website (it is still a work in progress, bear with me!). I would very much like to regularly post content on here, right after I get the hang of it!
 
 <!--- {{< icon name="download" pack="fas" >}} Download my {{< staticref "media/demo_resume.pdf" "newtab" >}}resumé{{< /staticref >}}. --->
