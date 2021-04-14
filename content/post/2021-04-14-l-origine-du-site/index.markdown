@@ -2,6 +2,7 @@
 title: l'origine du site
 author: KF
 date: '2021-04-14'
+weight: 2
 slug: l-origine-du-site
 categories: [R, tutorials]
 tags: [R, blogdown, very informal]

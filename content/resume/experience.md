@@ -25,7 +25,7 @@ date_format: Jan 2006
 experience:
   - title: Data analyst intern
     company: Coram Family and Childcare
-    company_url: ''
+    company_url: 'https://www.familyandchildcaretrust.org/'
     location: 'London, UK'
     date_start: '2018-06-01'
     date_end: '2018-07-18'
@@ -34,13 +34,18 @@ experience:
         
         * Analysing
         * Modelling
-        * Co-authored the Holiday Childcare Survey 2018
+        * Co-authoring the Holiday Childcare Survey 2018
         
-  - title: something
-    company: someplace
-    company_url: ''
-    location: somewhere
+  - title: Politics department embassador
+    company: University of Warwick
+    company_url: 'https://warwick.ac.uk/'
+    location: 'Coventry, UK'
     date_start: '2016-01-01'
     date_end: '2016-12-31'
-    description: did stuff.
+    description: |2-
+        Responsibilities include:
+        
+        * Open days stuff
+        * Promotional stuff
+        * thingy 3
 ---
