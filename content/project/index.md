@@ -1,5 +1,5 @@
 ---
 summary: Projects
-title: "Projects"
+title: "My projects"
 type: widget_page
 ---

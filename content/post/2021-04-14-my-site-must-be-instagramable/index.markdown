@@ -7,11 +7,11 @@ slug: my-site-must-be-instagramable
 draft: true
 categories: [R, tutorials]
 tags: [R, blogdown, very informal]
-summary: 'How to make your new website more to your test, a crash course'
+summary: 'How to make your new website more to your taste, a crash course.'
 lastmod: '2021-04-14T20:15:17+02:00'
 featured: no
 image:
-  caption: ''
+  caption: '[Photo by Joanna Kosinka on Unsplash](https://unsplash.com/photos/1_CMoFsPfso)'
   focal_point: ''
   preview_only: no
 ---
