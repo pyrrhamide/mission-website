@@ -1,5 +1,6 @@
 ---
 date: "2021-04-14"
+#external_link: "" # leads to other page when clicked on
 image:
   caption: "[Photo by Ilya Pavlov on Unsplash](https://unsplash.com/photos/OqtafYT5kTw)"
   focal_point: Smart
