@@ -12,7 +12,7 @@ links:
 - icon: door-open
   icon_pack: fas
   name: website
-  url: https://github.com/pyrrhamide
+  url: https://pyrrhamide.github.io
 - icon: github
   icon_pack: fab
   name: regressions
