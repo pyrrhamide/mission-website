@@ -60,6 +60,8 @@ blogdown::new_post(title = "Hi Hugo",
 
 After this command, I changed the default author (`blogdown.author`), default file extension type (`blogdown.ext`) and default new file subdirectory (`blogdown.subdir`) in the `.Rprofile`. Whenever you change your .Rprofile, do not forget to save then `Ctrl+Shift+F10` restart the session!!
 
+Have a look at `config.yaml` and `config/_default/params.yaml` for further identification changes purposes, such as the title or the theme of your website.
+
 Write your post and `Ctrl+Shift+K` knit the Rmarkdown to get the Markdown file[^3]. This is the type of file Hugo (or Netlify, I'm not sure) uses to build your content. Once you are happy with your changes, check the following stuff up[^4].
 
 ```{r eval=FALSE}
