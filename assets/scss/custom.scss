@@ -211,15 +211,7 @@ div.alert.alert-todo {
   font-family: Crete Round;
   text-transform: lowercase;
   /*font-style: bold;*/
-  border-radius: 0px;
-}
-
-.btn-toolbar .btn:first-child {
-  border-radius: 0px;
-}
-
-.btn-toolbar .btn:last-child {
-  border-radius: 0px;
+  /*border-radius: 0px;*/
 }
 
 .btn-toolbar {
@@ -325,7 +317,7 @@ html, body {
 .article-style h1:not(:first-child),
 .article-style h2:not(:first-child),
 .article-style h3:not(:first-child) {
-  padding-top: 0em;
+  padding-top: 1em;
   padding-bottom: 0em;
 }
 
