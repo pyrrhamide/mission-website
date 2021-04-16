@@ -4,10 +4,10 @@
 name = "kanto"
 
 # Optional Google font URL
-google_fonts = "Lora:400,400i|Karla:400,400i,700,700i|DM+Mono"
+google_fonts = "Montserrat:wght@300|Zilla+Slab|Crete+Round"
 
 # Font families
-heading_font = "Lora"
-body_font = "Karla"
-nav_font = "Karla"
-mono_font = "DM Mono"
+heading_font = "Zilla Slab"
+body_font = "Montserrat"
+nav_font = "Montserrat"
+mono_font = "Crete Round"
