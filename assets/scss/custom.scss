@@ -1,13 +1,16 @@
 /* Whole document: */
 
+/* marge entre nav bar et texte */
 body {
-  margin-top: 100px !important;
+  margin-top: 70px !important;
   color: #172A3A;
 }
 
+/*
 .navbar {
   min-height: 100px !important;
 }
+*/
 
 h1, h2, h3, h4, h5, h6 {
 	font-weight: 400;
@@ -17,33 +20,34 @@ h1, h2, h3, h4, h5, h6 {
 
 /* links */
 
-a:active, 
-a:focus, 
+a:active,
+a:focus,
 a:hover {
-  color: #004346;
+  color: #461c00;
 }
 
 /* nav */
 
 .navbar .navbar-nav .nav-link:hover,
 .navbar .navbar-nav .nav-link:focus {
-	color: #06805E;
+	color: #461c00;
 }
 
 .navbar {
-  box-shadow: none;
-  text-transform: uppercase;
+  /*box-shadow: none;*/
+  text-transform: lowercase;
 	letter-spacing: .1em;
-	font-size: .9em;
+	font-size: .8em;
 }
 
 .navbar-brand {
-  text-transform: uppercase;
-  font-weight: 700;
-	letter-spacing: .1em;
+  text-transform: lowercase;
+	letter-spacing: .0em;
 }
 
 /*----NAV LINK HOVER ANIMATION -----*/
+/* petite barre qui apparait quand on survole nav bar */
+
 /* from Desiree: https://github.com/dcossyleon/blogdown_desiree/blob/master/assets/scss/custom.scss */
 
 /* stroke */
@@ -67,7 +71,7 @@ a:hover {
   width: 0%;
   content: '.'; /* make invisible, dot beneath links */
   color: transparent;
-  background: #06805E;
+  background: #eb8444;
   height: 2px;
 }
 
@@ -81,20 +85,23 @@ a:hover {
   color: #333;
 }
 
+/* a quel point paragraphe "about me" descend */
 #about .col-12.col-lg-8 {
-  padding-top: 30px !important;
+  padding-top: 0px !important;
 }
 
 .network-icon li:hover {
   transform: scale(1.05);
 }
 
+/* ecart entre premier widget homepage et suivants */
 .home-section:first-of-type {
   padding: 50px 0 50px 0;
 }
 
+/* ecart entre widgets qui ne sont pas le premier */
 .home-section:not(:first-of-type) {
-  padding: 25px 0 50px 0; 
+  padding: 25px 0 50px 0;
 }
 
 /* this erases the margin-bottom for h1 */
@@ -129,11 +136,11 @@ pre {
   padding: 0.25em;
   background: #fff;
   overflow-x: auto;
-  border-radius: 0px; /*undo rounded corners*/
+  border-radius: 05px; /*undo rounded corners*/
 }
 
-pre code { 
-  background: none; 
+pre code {
+  background: none;
   font-size: 0.8rem;
 }
 
@@ -200,20 +207,10 @@ div.alert.alert-todo {
 
 /* buttons */
 
-.btn.btn-sm, .btn-group-sm > .btn {
-  border-radius: 0rem; /*undo rounded corners*/
-  font-size: 0.8rem;
-}
-
-.btn.btn-outline-primary.my-1.mr-1 {
-  border-radius: 0px; /*undo rounded corners*/
-  font-size: 0.8rem;
-}
-
 .btn {
-  font-family: Lora;
+  font-family: Crete Round;
   text-transform: lowercase;
-  font-style: italic;
+  /*font-style: bold;*/
   border-radius: 0px;
 }
 
@@ -251,11 +248,11 @@ hr {
     margin-left: auto;
     margin-right: auto;
  }
- 
+
 .home-section.wg-experience .card-body {
-	padding: .5rem;
+	padding: .9rem;
 }
- 
+
 .home-section.wg-experience .card .card-text{
   padding: 0;
 }
@@ -312,31 +309,6 @@ iframe {
 	color: #004346;
 }
 
-/* For 2-column article layout with TOC on right */
-.article-container {
-	max-width: 1000px;
-}
-
-.col-lg-2ish {
-  flex:0 0 20%;
-  max-width:20%;
-  padding-right: 0px !important;
- }
- 
-.col-lg-10ish {
-  flex:0 0 80%;
-  max-width:80%;
- }
- 
-#TableOfContents li a, .toc-top li a {
-	padding: .125rem .5rem;
-	font-size: .8rem;
-	color: #1a162d99;
-}
-
-#TableOfContents {
-	border-left: 1px solid #09bc8a3d;
-}
 
 html {
 	scroll-behavior: smooth;
@@ -353,8 +325,8 @@ html, body {
 .article-style h1:not(:first-child),
 .article-style h2:not(:first-child),
 .article-style h3:not(:first-child) {
-  padding-top: 2em;
-  padding-bottom: 1em;
+  padding-top: 0em;
+  padding-bottom: 0em;
 }
 
 /*---fix code scrolling-- */
