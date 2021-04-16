@@ -4,10 +4,10 @@
 name = "kanto"
 
 # Optional Google font URL
-google_fonts = "Playfair+Display:ital@0;1|Work+Sans:ital,wght@0,400;0,600;1,400;1,600|Roboto+Mono|Crete+Round"
+google_fonts = "Merriweather:ital,wght@0,300;1,300|Work+Sans:ital,wght@0,400;0,600;1,400;1,600|Roboto+Mono|Crete+Round"
 
 # Font families
-heading_font = "Playfair Display"
+heading_font = "Merriweather"
 body_font = "Work Sans"
 nav_font = "Work Sans"
 mono_font = "Roboto Mono"
