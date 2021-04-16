@@ -71,6 +71,7 @@ On écrit tranquillement un article dans un fichier Rmarkdown si on veut inclure
 Une fois satisfaite avec mes modifications, j'ai effectué de dernières vérifications avec les commandes suivantes[^4].
 
 ```{r eval=FALSE}
+blogdown::check_config()
 blogdown::check_gitignore()
 blogdown::check_content()
 blogdown::check_netlify()

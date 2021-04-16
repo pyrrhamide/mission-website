@@ -1,6 +1,6 @@
 ---
 title: l'origine du site
-author: KF
+author: [admin]
 date: '2021-04-14'
 weight: 2
 slug: l-origine-du-site
@@ -67,6 +67,7 @@ Write your post and `Ctrl+Shift+K` knit the Rmarkdown to get the Markdown file[^
 
 
 ```r
+blogdown::check_config()
 blogdown::check_gitignore()
 blogdown::check_content()
 blogdown::check_netlify()

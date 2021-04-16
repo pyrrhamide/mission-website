@@ -73,6 +73,7 @@ Une fois satisfaite avec mes modifications, j'ai effectué de dernières vérifi
 
 
 ```r
+blogdown::check_config()
 blogdown::check_gitignore()
 blogdown::check_content()
 blogdown::check_netlify()
