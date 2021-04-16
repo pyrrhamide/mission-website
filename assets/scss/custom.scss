@@ -36,13 +36,14 @@ a:hover {
 .navbar {
   /*box-shadow: none;*/
   text-transform: lowercase;
-	letter-spacing: .1em;
-	font-size: .8em;
+	letter-spacing: .05em;
+	font-size: .9em;
 }
 
 .navbar-brand {
   text-transform: lowercase;
 	letter-spacing: .0em;
+  font-size: 1.5em
 }
 
 /*----NAV LINK HOVER ANIMATION -----*/
@@ -208,7 +209,7 @@ div.alert.alert-todo {
 /* buttons */
 
 .btn {
-  font-family: Crete Round;
+  font-family: Karla;
   text-transform: lowercase;
   /*font-style: bold;*/
   /*border-radius: 0px;*/
