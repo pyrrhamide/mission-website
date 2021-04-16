@@ -61,7 +61,7 @@ markup:
     codeFences: false
   tableOfContents:
     startLevel: 2
-    endLevel: 3
+    endLevel: 2
 
 imaging:
   resampleFilter: lanczos

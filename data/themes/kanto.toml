@@ -5,12 +5,12 @@ name = "kanto"
 light = true
 
 # Primary
-primary = "#eda1a1"
+primary = "#eb8444"
 
 # Menu
 menu_primary = "#F0F7FA"
 menu_text = "#172A3A"
-menu_text_active = "#e06060"
+menu_text_active = "#ed8026"
 menu_title = "#172A3A"
 
 # Backgrounds
