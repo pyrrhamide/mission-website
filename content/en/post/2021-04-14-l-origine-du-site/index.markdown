@@ -13,6 +13,11 @@ image:
   caption: '[Photo by Danielle MacInnes on Unsplash](https://unsplash.com/photos/IuLgi9PWETU)'
   focal_point: ''
   preview_only: no
+output:
+  blogdown::html_page:
+    toc: true
+    number_sections: true
+    toc_depth: 1
 ---
 
 Howdy y'all!
