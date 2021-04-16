@@ -6,7 +6,7 @@ weight: 2
 slug: l-origine-du-site
 categories: [R, tutoriel]
 tags: [R, blogdown]
-summary: 'Comment construire un site avec bookdown, un cours accéléré.'
+summary: 'Comment construire un site avec blogdown, un cours accéléré.'
 lastmod: '2021-04-14T17:55:32+02:00'
 featured: no
 image:
