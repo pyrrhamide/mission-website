@@ -28,7 +28,7 @@ Alison Hill's blogpost ["Up & running with blogdown in 2021"](https://alison.rbi
 ## What you need
 
 * R and RStudio,
-* the `blogdown` package,
+* The `blogdown` package,
 * GitHub,
 * Netlify.
 
@@ -76,17 +76,17 @@ You can also use the all-in-one command, `blogdown::check_site()`. Once everythi
 
 ## Publishing the site
 
-* Netlify;
-* Sign in with GitHub;
-* Choose the repo you want to deploy;
-* Change the subdomain name.
+1. Netlify;
+2. Sign in with GitHub;
+3. Choose the repo you want to deploy;
+4. Change the subdomain name.
 
 <!--- I'd really like to make an alert note out of this sentence. TO LOOK UP --->
 Everytime you change the domain name on Netlify, you **must** change the baseurl in the `config.yaml` file.
 
 You are all set! All in all, I believe it took me 3 hours to get the site ready. Netlify will take care of building and deploying all the changes pushed on GitHub. But surely, you do not want to keep the cluttered template and you want to customise it a bit? (me: yeah!) Well, I will cover this topic in another post. Watch this space!
 
-## BONUS: new commands and keyboard shortchuts I learned
+## BONUS: new commands and keyboard shortcuts I learned
 
 * `file.create()` to create a file in the current working directory. If I want to create a file in a subfolder, I specify the path, until the name of the new file and its extension. The folders must already exist! If they don't:
 * `dir.create()` to create a folder. If I specify the path, I can create a new folder within another folder. It's like Inception!

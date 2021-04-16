@@ -32,16 +32,16 @@ contact_links:
 
 main_menu:
   enable: true
-  align: r
+  align: c
   show_logo: true
-  show_language: false
+  show_language: true
   show_day_night: true
-  show_search: true
+  show_search: false
   highlight_active_link: true
 
 # Localization
 
-date_format: '02 Jan 2006'
+date_format: '02 January 2006'
 time_format: '15:04'
 address_format: en-us
 
