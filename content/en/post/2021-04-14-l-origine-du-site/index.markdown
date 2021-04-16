@@ -1,7 +1,7 @@
 ---
 title: l'origine du site
 author: [admin]
-#authors: # if I want to add author under title
+#authors: # if I want to add author under title. might want to change to Kanto Fiaferana tho
 #  - admin 
 date: '2021-04-14'
 weight: 2
@@ -19,7 +19,7 @@ image:
 
 Howdy y'all!
 
-Today (14th of April 2021), as my first official post, I will talk about how I built this website. If I ever feel like going through another round of `blogdown` insanity, I will have this post to help me be efficient quickly, and also to compare if I find better ways to go about things !
+Today, as my first official post, I will talk about how I built this website. If I ever feel like going through another round of `blogdown` insanity, I will have this post to help me be efficient quickly, and also to compare if I find better ways to go about things !
 
 I will focus first on getting the site up and running. I will talk about customisation and all that jazz another time.
 

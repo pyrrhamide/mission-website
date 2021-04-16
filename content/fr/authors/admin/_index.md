@@ -1,5 +1,5 @@
 ---
-bio: Mes intérêts de recherche incluent la représentation diplomatique des îles, les incitations au vote destinées jeunes adultes, et R.
+bio: Mes intérêts de recherche incluent la représentation diplomatique des îles, les incitations au vote destinées vers les jeunes adultes, et R.
 education:
   courses:
   - course: Master Quantifier en Sciences Sociales

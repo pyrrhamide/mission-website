@@ -17,7 +17,7 @@ image:
 
 Bonjour!
 
-Aujourd'hui (14 Avril 2021), pour mon premier article, je vais parler du processus de construction de mon site. Si jamais je décide d'en faire un autre un jour, et donc de lutter avec `blogdown`, j'aurai cet article ici au chaud, pour avoir un site opérationnel en moins de 15 minutes. Ou bien ce sera un moment de gêne où je me demanderai "mais pourquoi j'ai fait ça comme ça ? Ohlala la bourde...".
+Aujourd'hui, pour mon premier article, je vais parler du processus de construction de mon site. Si jamais je décide d'en faire un autre un jour, et donc de lutter avec `blogdown`, j'aurai cet article ici au chaud, pour avoir un site opérationnel en moins de 15 minutes. Ou bien ce sera un moment de gêne où je me demanderai "mais pourquoi j'ai fait ça comme ça ? Ohlala la bourde...".
 
 Je parle ici de la mise en marche du site. Je me concentrerai sur la mise en forme dans le prochain article.
 

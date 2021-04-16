@@ -12,15 +12,15 @@ title: la boîte noire
 links:
 - icon: door-open
   icon_pack: fas
-  name: website
+  name: site web
   url: https://pyrrhamide.github.io
 - icon: github
   icon_pack: fab
-  name: regressions
+  name: régressions
   url: https://github.com/pyrrhamide/regressions
 - icon: github
   icon_pack: fab
-  name: panel data
+  name: analyses longitudinales
   url: https://github.com/pyrrhamide/analyses-longitudinales 
 ---
 
