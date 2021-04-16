@@ -39,8 +39,8 @@ superuser: true
 title: KF
 ---
 
-Je suis une étudiante en M2 de Sciences Sociales. J'aime apprendre à manipuler de nouveaux outils et à partager du contenu simple et agréable au plan esthétique, pour aider moi-même et les autres à mieux comprendre. J'ai publié un autre [site](https://pyrrhamide.github.io/regressions) avec bookdown, recensant toutes les méthodes d'analyses de données que j'ai apprises pendant mon master.
+Je suis une étudiante en M2 de Sciences Sociales. J'aime apprendre à manipuler de nouveaux outils et à partager du contenu simple et agréable au plan esthétique, pour aider moi-même et les autres à mieux comprendre. J'ai publié un autre [site](https://pyrrhamide.github.io/regressions), recensant toutes les méthodes d'analyses de données que j'ai apprises pendant mon master.
 
-J'adore expérimenter avec R et RMarkdown, je passe beaucoup de temps sur Github à découvrir de nouveaux packages, par conséquent je construis constamment de nouveaux projets (ou en planifie!). Ce site est le nouveau-né (il est toujours en cours de construction): j'espère publier du contenu régulièrement!
+J'expérimente beaucoup avec R et RMarkdown, je passe beaucoup de temps sur Github à découvrir de nouveaux packages, par conséquent je construis constamment de nouveaux projets (ou en planifie). Ce site est le nouveau-né (il est toujours en cours de construction), et j'espère publier du contenu régulièrement!
 
 <!--- {{< icon name="download" pack="fas" >}} Download my {{< staticref "media/demo_resume.pdf" "newtab" >}}resumé{{< /staticref >}}. --->

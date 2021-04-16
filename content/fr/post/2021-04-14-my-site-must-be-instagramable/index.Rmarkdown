@@ -3,7 +3,6 @@ title: décorer le site
 author: KF
 date: '2021-04-14'
 weight: 1
-draft: true
 slug: decorer-le-site
 categories: [R, tutoriel]
 tags: [R, blogdown]

@@ -4,7 +4,7 @@ date: "2021-04-14"
 image:
   caption: "[Photo by Ilya Pavlov on Unsplash](https://unsplash.com/photos/OqtafYT5kTw)"
   focal_point: Smart
-summary: Livres sur diverses méthodes d'analyses de données, construites avec bookdown.
+summary: Livres sur diverses méthodes d'analyses de données, construits avec bookdown.
 tags:
 - R
 - bookdown
