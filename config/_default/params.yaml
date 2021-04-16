@@ -77,7 +77,7 @@ reading_time: true
 section_pager: false
 docs_section_pager: true
 
-sharing: false
+sharing: true
 
 copyright_license:
   enable: false
