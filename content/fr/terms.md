@@ -10,4 +10,4 @@ share: false
 title: Conditions générales
 ---
 
-Lavez vos mains, portez un masque, évitez la foule
+Lavez vos mains, portez un masque, évitez la foule.
