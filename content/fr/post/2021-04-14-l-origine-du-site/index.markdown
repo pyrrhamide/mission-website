@@ -10,6 +10,10 @@ links:
   icon_pack: fas
   name: projet
   url: fr/my-projects/creating-beautiful-content/
+- icon: link
+  icon_pack: fas
+  name: english
+  url: post/l-origine-du-site/
 summary: 'Comment construire un site avec blogdown, un cours accéléré.'
 featured: no
 image:

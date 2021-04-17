@@ -29,7 +29,7 @@ social:
   label: Follow me on Twitter
   link: https://twitter.com/aindinoise
 - display:
-    header: true
+    header: false
   icon: github
   icon_pack: fab
   link: https://github.com/pyrrhamide

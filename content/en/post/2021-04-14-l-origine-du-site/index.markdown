@@ -12,6 +12,10 @@ links:
   icon_pack: fas
   name: project
   url: my-projects/creating-beautiful-content/
+- icon: link
+  icon_pack: fas
+  name: français
+  url: fr/post/l-origine-du-site/
 summary: 'How to build a website with blogdown, a crash course.'
 featured: no
 image:

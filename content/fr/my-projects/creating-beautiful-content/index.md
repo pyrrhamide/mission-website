@@ -13,4 +13,4 @@ title: créer du contenu avec R
 ## 'J'ai créé un blog!'
 
 1. [Créer un site avec `blogdown`](/fr/post/l-origine-du-site/)
-2. [Personnaliser son site](/fr/post/an-instagramable-site/)
+2. [Personnaliser son site](/fr/post/decorer-le-site/)

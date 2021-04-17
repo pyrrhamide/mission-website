@@ -10,6 +10,10 @@ links:
   icon_pack: fas
   name: project
   url: my-projects/creating-beautiful-content/
+- icon: link
+  icon_pack: fas
+  name: français
+  url: fr/post/decorer-le-site/
 summary: 'How to make your new website more to your taste, a crash course.'
 featured: no
 image:
@@ -20,7 +24,7 @@ image:
 
 {{< table_of_contents >}}
 
-[Last time](/post/l-origine-du-site/), I explained how to quicly set up a new website with `blogdown`. Now, I will talk about what **I** did in terms of customisation. Once again, I heavily relied on Alison Hill's [blogpost](https://alison.rbind.io/post/new-year-new-blogdown/) and [repo](https://github.com/rbind/apreshill), as well as Wowchemy's [documentation](https://wowchemy.com/docs/).
+[Last time](/post/l-origine-du-site/), I explained how to quickly set up a new website with `blogdown`. Now, I will talk about what **I** did in terms of customisation. Once again, I heavily relied on Alison Hill's [blogpost](https://alison.rbind.io/post/new-year-new-blogdown/) and [repo](https://github.com/rbind/apreshill), as well as Wowchemy's [documentation](https://wowchemy.com/docs/).
 
 Wowchemy's Academic template comes with a lot of example content to get inspired from. However, you might want to make it more personalised and streamlined. I know I did! I went ahead and tried to make it "my own", although I practically copied Alison's theme and fonts (they're so nice, I really like them).
 
@@ -43,7 +47,7 @@ Now we'll change the widgets' contents. In `content/home/`, edit `skills.md`.
 
 This leaves us (or me really) with `experience`, `posts` and `projects`. You can modify them now if you wish (which, to be fair, is what I did), especially if you are okay with keeping them on your homepage. I was not, and this is where landing pages come in.
 
-## Create landing pages
+## Landing pages
 
 This is where my narration gets personal because I'm not sure it was the right way to do it, hence I don't feel like bossing you around.
 
