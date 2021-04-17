@@ -5,7 +5,6 @@ date: '2021-04-15'
 slug: an-instagramable-site
 categories: [R, tutorials]
 tags: [R, blogdown, very informal]
-projects: [creating-beautiful-content]
 links:
 - icon: door-open
   icon_pack: fas

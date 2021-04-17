@@ -5,12 +5,11 @@ date: '2021-04-15'
 slug: decorer-le-site
 categories: [R, tutoriel]
 tags: [R, blogdown]
-projects: [creer-avec-R]
 links:
 - icon: door-open
   icon_pack: fas
   name: projet
-  url: fr/my-projects/creer-avec-R/
+  url: fr/my-projects/creating-beautiful-content/
 summary: 'Comment rendre le site joli, un cours accéléré.'
 featured: no
 image:
@@ -106,3 +105,5 @@ http://kanto.rbind.io/*    https://kanto.rbind.io/:splat  301!
 ```
 
 C'est ce que j'ai fait, mais il arrive souvent que mon site soit inaccessible en raison d'un certificat SSL invalide. Ca m'irrite beaucoup, au point où je considère rester en HTTP, ce qui n'est pas un défaut en soi.
+
+[màj: je l'ai supprimé]

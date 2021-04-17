@@ -2,12 +2,11 @@
 title: l'origine du site
 author: [admin]
 #authors: # if I want to add author under title. might want to change to Kanto Fiaferana tho
-#  - admin 
+#  - admin
 date: '2021-04-14'
 slug: l-origine-du-site
 categories: [R, tutorials]
 tags: [R, blogdown, very informal]
-projects: [creating-beautiful-content]
 links:
 - icon: door-open
   icon_pack: fas
@@ -57,13 +56,13 @@ I chose the [Academic](https://academic-demo.netlify.app/) theme as my framework
 ```r
 install.packages("blogdown")
 blogdown::new_site(theme = "wowchemy/starter-academic")
-blogdown::serve_site() 
-blogdown::new_post(title = "Hi Hugo", 
-                     ext = '.Rmarkdown', 
+blogdown::serve_site()
+blogdown::new_post(title = "Hi Hugo",
+                     ext = '.Rmarkdown',
                      subdir = "post")
 ```
 
-`blogdown::serve_site()` launches a live preview of the site in the Viewer pane[^2]. No need to hit refresh, it does it on its own when you save and/or knit. `blogdown::new_post` creates...a new post. 
+`blogdown::serve_site()` launches a live preview of the site in the Viewer pane[^2]. No need to hit refresh, it does it on its own when you save and/or knit. `blogdown::new_post` creates...a new post.
 
 After this command, I changed the default author (`blogdown.author`), default file extension type (`blogdown.ext`) and default new file subdirectory (`blogdown.subdir`) in the `.Rprofile`. Whenever you change your .Rprofile, do not forget to save then `Ctrl+Shift+F10` restart the session!!
 
@@ -81,7 +80,7 @@ blogdown::check_hugo()
 # You get some [TODO] items. Do them.
 ```
 
-You can also use the all-in-one command, `blogdown::check_site()`. Once everything is clear, you can go on with publication! 
+You can also use the all-in-one command, `blogdown::check_site()`. Once everything is clear, you can go on with publication!
 
 ## Publishing the site
 

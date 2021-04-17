@@ -5,12 +5,11 @@ date: '2021-04-14'
 slug: l-origine-du-site
 categories: [R, tutoriel]
 tags: [R, blogdown]
-projects: [creer-avec-R]
 links:
 - icon: door-open
   icon_pack: fas
   name: projet
-  url: fr/my-projects/creer-avec-R/
+  url: fr/my-projects/creating-beautiful-content/
 summary: 'Comment construire un site avec blogdown, un cours accéléré.'
 featured: no
 image:
@@ -25,7 +24,7 @@ Aujourd'hui, pour mon premier article, je vais parler du processus de constructi
 
 Je parle ici de la mise en marche du site. Je me concentrerai sur la mise en forme dans le prochain article.
 
-Mes sources principales (pour la construction et personnalisation) sont l'article d'Alison Hill ["Up & running with blogdown in 2021"](https://alison.rbind.io/post/new-year-new-blogdown/), ainsi que le [répertoire](https://github.com/rbind/apreshill) de son site. Les mots ci-dessous sont presque entièrement les siens, la différence majeure est qu'ils sont en français ! 
+Mes sources principales (pour la construction et personnalisation) sont l'article d'Alison Hill ["Up & running with blogdown in 2021"](https://alison.rbind.io/post/new-year-new-blogdown/), ainsi que le [répertoire](https://github.com/rbind/apreshill) de son site. Les mots ci-dessous sont presque entièrement les siens, la différence majeure est qu'ils sont en français !
 
 J'ai également consulté [*blogdown: Creating Websites with R Markdown*](https://bookdown.org/yihui/blogdown/) de Yihui Xie, Amber Thomas et Alison Hill, pour d'autres petits détails.
 
@@ -51,7 +50,7 @@ Facile, n'est-ce pas? Allons-y. Mettons nos mains dans le cambouis.
 
 ## `blogdown`
 
-J'ai choisi le modèle [Academic](https://academic-demo.netlify.app/) comme armature de mon site. Academic est relativement simple à manier et sympa à personnaliser. D'autres thèmes de base sont disponibles sur [Wowchemy](https://wowchemy.com/) et également sur [Hugo](https://gohugo.io/). 
+J'ai choisi le modèle [Academic](https://academic-demo.netlify.app/) comme armature de mon site. Academic est relativement simple à manier et sympa à personnaliser. D'autres thèmes de base sont disponibles sur [Wowchemy](https://wowchemy.com/) et également sur [Hugo](https://gohugo.io/).
 
 Une fois mon projet R prêt, j'ai suivi le tutoriel d'Alison scrupuleusement. Ci-dessous, les lignes de code essentielles pour construire le site de base:
 
@@ -59,13 +58,13 @@ Une fois mon projet R prêt, j'ai suivi le tutoriel d'Alison scrupuleusement. Ci
 ```r
 install.packages("blogdown")
 blogdown::new_site(theme = "wowchemy/starter-academic")
-blogdown::serve_site() 
-blogdown::new_post(title = "Hi Hugo", 
-                     ext = '.Rmarkdown', 
+blogdown::serve_site()
+blogdown::new_post(title = "Hi Hugo",
+                     ext = '.Rmarkdown',
                      subdir = "post")
 ```
 
-`blogdown::serve_site()` lance un aperçu simultané du site dans le volet Viewer[^2]. Il n'y a pas besoin de rafraîchir la page à chaque changement, `blogdown` s'en charge quand on sauvegarde et/ou qu'on "tricote" nos documents. `blogdown::new_post` crée un nouvel article. 
+`blogdown::serve_site()` lance un aperçu simultané du site dans le volet Viewer[^2]. Il n'y a pas besoin de rafraîchir la page à chaque changement, `blogdown` s'en charge quand on sauvegarde et/ou qu'on "tricote" nos documents. `blogdown::new_post` crée un nouvel article.
 
 Après cette commande, j'ai changé plusieurs paramètres par défaut dans le fichier `.Rprofile`: l'auteure (`blogdown.author`), l'extension de fichier (`blogdown.ext`) et le sous-répertoire de base pour les nouveaux articles (`blogdown.subdir`). Après chaque modification de .Rprofile, il ne faut pas oublier de sauvegarder puis de `Ctrl+Shift+F10` redémarrer R!
 
@@ -85,7 +84,7 @@ blogdown::check_hugo()
 # Il peut y avoir des tâches [TODO]
 ```
 
-On peut également utiliser la commande tout-en-1 `blogdown::check_site()`. S'il n'y a plus de tâches à faire, on peut enfin publier le site! 
+On peut également utiliser la commande tout-en-1 `blogdown::check_site()`. S'il n'y a plus de tâches à faire, on peut enfin publier le site!
 
 ## La publication
 
@@ -97,7 +96,7 @@ On peut également utiliser la commande tout-en-1 `blogdown::check_site()`. S'il
 <!--- I'd really like to make an alert note out of this sentence. TO LOOK UP --->
 À chaque fois qu'on change le nom de domaine sur Netlify, **il faut changer le baseurl** dans le fichier `config.yaml`.
 
-Et hop! Mon site est en ligne! Je pense avoir pris 2 ou 3 heures pour en arriver là. Netlify prend soin de la construction et du déploiement à chaque modification qu'on pousse sur GitHub. Attention à bien tricoter les fichiers `.RMarkdown`! 
+Et hop! Mon site est en ligne! Je pense avoir pris 2 ou 3 heures pour en arriver là. Netlify prend soin de la construction et du déploiement à chaque modification qu'on pousse sur GitHub. Attention à bien tricoter les fichiers `.RMarkdown`!
 
 Bon, cool, on a un site, mais il est un petit peu encombré. Et si on le personnalisait? Rendez-vous dans mon prochain article pour répondre à cette question!
 
