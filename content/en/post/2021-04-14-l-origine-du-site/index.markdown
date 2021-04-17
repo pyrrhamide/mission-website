@@ -4,12 +4,16 @@ author: [admin]
 #authors: # if I want to add author under title. might want to change to Kanto Fiaferana tho
 #  - admin 
 date: '2021-04-14'
-weight: 2
 slug: l-origine-du-site
 categories: [R, tutorials]
 tags: [R, blogdown, very informal]
+projects: [creating-beautiful-content]
+links:
+- icon: door-open
+  icon_pack: fas
+  name: project
+  url: my-projects/creating-beautiful-content/
 summary: 'How to build a website with blogdown, a crash course.'
-lastmod: '2021-04-14T17:55:32+02:00'
 featured: no
 image:
   caption: '[Photo by Danielle MacInnes on Unsplash](https://unsplash.com/photos/IuLgi9PWETU)'

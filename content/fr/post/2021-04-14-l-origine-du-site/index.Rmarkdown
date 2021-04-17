@@ -2,12 +2,16 @@
 title: l'origine du site
 author: KF
 date: '2021-04-14'
-weight: 2
 slug: l-origine-du-site
 categories: [R, tutoriel]
 tags: [R, blogdown]
+projects: [creer-avec-R]
+links:
+- icon: door-open
+  icon_pack: fas
+  name: projet
+  url: fr/my-projects/creer-avec-R/
 summary: 'Comment construire un site avec blogdown, un cours accéléré.'
-lastmod: '2021-04-14T17:55:32+02:00'
 featured: no
 image:
   caption: '[Photo by Danielle MacInnes on Unsplash](https://unsplash.com/photos/IuLgi9PWETU)'

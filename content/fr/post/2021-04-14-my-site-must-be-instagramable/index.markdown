@@ -1,13 +1,17 @@
 ---
 title: décorer le site
 author: KF
-date: '2021-04-14'
-weight: 1
+date: '2021-04-15'
 slug: decorer-le-site
 categories: [R, tutoriel]
 tags: [R, blogdown]
+projects: [creer-avec-R]
+links:
+- icon: door-open
+  icon_pack: fas
+  name: projet
+  url: fr/my-projects/creer-avec-R/
 summary: 'Comment rendre le site joli, un cours accéléré.'
-lastmod: '2021-04-14T20:15:17+02:00'
 featured: no
 image:
   caption: '[Photo by Joanna Kosinka on Unsplash](https://unsplash.com/photos/1_CMoFsPfso)'
