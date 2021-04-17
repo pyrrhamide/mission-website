@@ -6,7 +6,7 @@ theme: "starter-academic"
 
 title: a talking toucan # Website name
 baseurl: 'http://kanto.rbind.io/' # Website URL
-copyright: '© {year} Kanto Fiaferana' # Footer text, e.g. '© {year} Me'
+copyright: '&copy; {year} Kanto Fiaferana' # Footer text, e.g. '© {year} Me'
 
 ############################
 ## LANGUAGE
@@ -45,13 +45,13 @@ permalinks:
   tags: '/tag/:slug/'
   categories: '/category/:slug/'
   publication_types: '/publication-type/:slug/'
-  
+
 disableAliases: true
 
 outputs:
   home: [HTML, RSS, JSON, WebAppManifest, headers, redirects]
   section: [HTML, RSS]
-  
+
 markup:
   defaultMarkdownHandler: goldmark
   goldmark:
