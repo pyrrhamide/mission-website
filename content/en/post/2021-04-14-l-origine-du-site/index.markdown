@@ -20,6 +20,8 @@ image:
   preview_only: no
 ---
 
+{{< table_of_contents >}}
+
 Howdy y'all!
 
 Today, as my first official post, I will talk about how I built this website. If I ever feel like going through another round of `blogdown` insanity, I will have this post to help me be efficient quickly, and also to compare if I find better ways to go about things !

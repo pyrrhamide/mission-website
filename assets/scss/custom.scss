@@ -340,3 +340,20 @@ a > svg.anchor-symbol:hover {
   fill: #06805E;
   transition: fill 0.6s ease;
 }
+
+/*--- TOC ---*/
+#TableOfContents li a, .toc-top li a {
+	padding: .125rem 1.5rem;
+	font-size: .9rem;
+  text-transform: inherit;
+  text-align: left;
+	color: #1a162d99;
+}
+
+#TableOfContents {
+  border-left: 1px solid #eb8444;
+  padding-top: 0rem;
+  padding-bottom: 0rem;
+  margin-top: 0rem; /* ecart image featured TOC */
+  margin-bottom: 2rem; /* ecart TOC premier para */
+}
