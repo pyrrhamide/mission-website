@@ -15,39 +15,39 @@ image:
   preview_only: no
 ---
 
-_en cours de traduction_
+[La dernière fois](/fr/post/l-origine-du-site/), j'ai rapidement expliqué comment mettre un nouveau site en ligne à l'aide du package R `blogdown`. Cette fois-ci, je vais parler de mes modifications esthétiques personnelles. Je me suis de nouveau fortement inspirée de l'[article](https://alison.rbind.io/post/new-year-new-blogdown/) d'Alison Hill, ainsi que le [repo](https://github.com/rbind/apreshill) de son site. Je décerne également une mention honorable à la [documentation](https://wowchemy.com/docs/) de Wowchemy.
 
-[Last time](/fr/post/l-origine-du-site/), I explained how to quicly set up a new website with `blogdown`. Now, I will talk about what **I** did in terms of customisation. Once again, I heavily relied on Alison Hill's [blogpost](https://alison.rbind.io/post/new-year-new-blogdown/) and [repo](https://github.com/rbind/apreshill), as well as Wowchemy's [documentation](https://wowchemy.com/docs/).
+Le modèle Academic vient avec beaucoup d'exemples pour aider à se lancer dans la construction de son site. Toutefois, on peut avoir envie d'alléger le site et de le faire sur mesure. Dans mon cas, j'ai répondu à l'affirmative et suis partie dans une croisade tortueuse pour qu'Academic soit à mon goût. Après, je ne connais pas grand chose en HTML/CSS et je ne suis pas très créative, par conséquent je me suis _beaucoup_[^1] inspirée de l'esthétique (et donc du code) du site d'Alison. [Jetez y un coup d'oeil](https://alison.rbind.io), il est très joli.
 
-Wowchemy's Academic template comes with a lot of example content to get inspired from. However, you might want to make it more personalised and streamlined. I know I did! I went ahead and tried to make it "my own", although I practically copied Alison's theme and fonts (they're so nice, I really like them).
+[^1]:Grosse emphase sur "beaucoup".
 
-I did not follow the next steps linearly, but I wish I did. I will definitely do so next time. Without further ado, let me take you through a sculpting journey...
+Je n'ai pas suivi les prochaines étapes dans le même ordre de rédaction. Un coup j'ai changé la police, puis j'ai crée une nouvelle page, puis j'ai re-changé la police...bref. C'est important d'être organisée. Ceci est mon petit guide pour la prochaine fois! Avant de se jeter dans le bain, je souhaite prévenir du fait que c'est un récit condensé de tout ce que j'ai fait, il existe d'autres petites améliorations que je laisse l'audience découvrir d'elle-même.
 
-## Widget - activate: false
+Sans plus tarder, parlons de _widgets_...
 
-The homepage is made up of widgets, from a presentation widget to a word cloud one. I personally found the Academic homepage horrendous: it was quite overwhelming and there were a few widgets that I did not need. 
+## Widget - `activate: false`
 
-Determine the ones you do not want. Once you are sure, go to the `content/home/` folder, click on each undesired `.md` files and write down `activate: false` in the metadata[^1]. This is the first step towards clearing things up![^2]
+La page d'accueil est remplie de _widgets_, qui s'occupe de la présentation personnelle à la présentation d'un nuage de mot. Je trouvais cette page hideuse et très encombrée de _widgets_ dont je n'avais pas besoin.
 
-[^1]: I went a bit faster there and initially deleted the widgets I wanted gone. If I ever need them back, I can find them in the `themes/starter-academic/` folder.
-[^2]:I kept the following widgets active: `about`, `experience`, `index`, `posts`, `projects` and `skills`. To this day, I have not published anything and have no achievement I would like to boast about, therefore I deactivated everything else!
+On détermine donc d'abord ceux qu'on ne veut pas garder. Une fois que notre choix est certain, on navigue vers le dossier `content/home/`, on ouvre les fichiers `.md` des widgets qu'on veut faire disparaître et on ajoute la ligne `activate: false` dans les metadata[^2]. Ca devrait bien épurer la page[^3].
 
-## Your info
+[^2]:Je suis allée trop vite au début et ai supprimé les _widgets_ indésirables. Si jamais je veux les réintégrer, je peux les retrouver dans le dossier du modèle Academic `themes/starter-academic/`. **Attention à ne rien modifier dans ce fichier**.
+[^3]:J'ai gardé les _widgets_ suivants: `about`, `experience`, `index`, `posts`, `projects` et `skills`.
 
-Up next, you want to customise everything by adding your own information details. First, let's modify the default author. Open the file `content/authors/admin/_index.md`, and edit the metadata. Under the YAML, you can write a snippet of your bio. You can also change the icon by uploading an image named `avatar.png` or `.jpg`.
+## Mes informations personnelles
 
-Now we'll change the widgets' contents. In `content/home/`, edit `skills.md`.
+La deuxième étape était d'ajouter mes propres informations, et de dire au revoir à Nelson Bighetti. Tout d'abord, on modifie l'auteur.e par défaut, dans le fichier `content/authors/admin/_index.md`. Après l'en-tête YAML, on peut écrire un petit paragraphe biographique. Dans ce même dossier `admin`, on peut changer son avatar en chargeant une image intitulée `avatar.png` (ou `.jpg`, peu importe).
 
-This leaves us (or me really) with `experience`, `posts` and `projects`. You can modify them now if you wish (which, to be fair, is what I did), especially if you are okay with keeping them on your homepage. I was not, and this is where landing pages come in.
+J'ai également changé le contenu de quelques _widgets_, notamment `skills.md`.
 
-## Create landing pages
+Il me restait `experience`, `posts` et `projects`. On peut les modifier tout de suite (c'est ce que j'ai fait), surtout si on compte les garder sur la page d'accueil. Je voulais en faire des pages à part, ce qui m'a mené aux _landing pages_ (ou page de renvoi).
 
-This is where my narration gets personal because I'm not sure it was the right way to do it, hence I don't feel like bossing you around. 
+## Créer des landing pages
 
-I wanted those widgets to have their own pages that I could access by clicking on the top bar. I take the `projects` example as a reference here, since it was the weirdest one to set up.
+Je voulais que ces _widgets_ aient leur propre page auxquelles je pouvais accéder à partir de la barre de navigation. Ici je vais raconter l'histoire de ma page "Projets" parce que c'était la plus alambiquée à construire.
 
-1. First, I created a subfolder in `content/home/` that I named `my-projects/`. This would be the landing page. In it, I created `_index.md`, copied the metadata from another `content/folder/_index.md` (the underscore is important here), and changed the title to "My projects".
-2. I then went back to `content/project/`, added a `index.md` file and wrote this in it:
+1. J'ai créé un dossier dans `content/` que j'ai nommé `my-projects/`. C'est le dossier de la landing page. Dedans, j'ai créé `_index.md`, ai copié les metadata d'un autre fichier de ce type `content/folder/_index.md` (le tiret bas est important ici) puis, toujours dans `_index.md`, j'ai changé le titre à "Mes projects".
+2. Ensuite, j'ai ouvert le fichier `content/project/`, ai ajouté un `index.md` et ai écrit ceci:
 
 
 ```r
@@ -58,35 +58,47 @@ type: widget_page # important!!!
 ---
 ```
 
-3. In the same folder, I copied the `content/home/projects.md` widget file.
-4. There were two subfolders `external-project` and `internal-project` left, I moved them to the landing page folder `my-projects`.
-5. Almost done. I had to redirect the top bar to the landing page folder, rather than to the homepage widget (before I forget, now may be the time to deactivate the widget in `content/home/`). I went to `config/_default/menus.yaml` and changed the url to `'my-projects/'`. And then I was done!
+3. Toujours dans `project/`, j'ai copié le fichier _widget_ de `content/home/projects.md`.
+4. Il restait deux sous-dossiers `external-project` et `internal-project`, je les ai déplacés dans le dossier `my-projects` de la landing page.
+5. Il ne manquait plus qu'à rediriger le bouton "Projets" de la barre de navigation vers le dossier `my-projects`, au lieu de vers le widget de la page principale (avant que j'oublie d'en parler, on peut maintenant désactiver le widget `content/home/projects.md`). J'ai ouvert `config/_default/menus.yaml` et j'ai changé l'url en `'my-projects/'`. On a créé une nouvelle landing page!
 
-You can change the setup of your widget page by editing the `content/home/projects.md` widget file.
+On peut changer la mise en page de la widget page en modifiant `content/home/projects.md`.
 
-It was easier for `posts.md` and `experience.md`. I only needed to create a new subfolder for `experience`, copy the widget there, write an `index.md` (or `_index.md` for my posts), redirect the top bar, and that was it. I don't know what is special about the project page.
+Changer `posts.md` et `experience.md` était beaucoup plus simple. Il suffisait de créer un nouveau dossier pour `experience`, y copier le widget, ajouter un `index.md` (ou `_index.md` pour mes articles) et rediriger la barre de navigation. Je n'ai aucune idée de ce qui rend la page projet aussi spéciale.
 
-Anywho! I was done with the layout of my site[^3], and I jumped happily into my next mission: making things pretty.
+Bref! J'avais enfin la structure de base de mon site[^4], il fut donc temps d'accepter ma prochaine mission: rendre le site joli.
 
-[^3]:LIES! I still changed stuff up, especially the widgets layouts. However I don't think I could explain what I did in great detail. 
+[^4]:J'aurais aimé annoncer que c'était la structure finale, _que nenni_. J'ai modifié la présentation des widgets par exemple. Toutefois, je ne pense pas pouvoir correctement expliquer ce que j'ai fait.
 
-## 'I made it nice!'
+## Nouveau look pour une nouvelle vie
 
-Again, YMMV. I won't go into too much detail because this section involves some CSS stuff that I don't master at all.
+Je suis légèrement gênée d'avouer que je ne sais pas exactement de quoi je parle ici, puisque cette section demande des connaissances en HTML/CSS/SCSS que je ne possède pas. J'essaie d'y remédier! Sinon j'ai copié les fichiers d'Alison Hill, les ai lus et relus attentivement, ai modifié des petits détails à gauche à droite pour comprendre à quoi l'item x se rapportait...et vous pouvez voir le résultat :relaxed:
 
-1. I changed the little icon that appears in the browser tab: `assets/media/icon.png`.
-2. I "created" a custom theme...scratch that. I copied Alison's theme and changed the primary and active colours to shades of pink, in order to match my avatar: `data/themes/custom_theme.toml`.
-3. Ditto, but for fonts: `data/fonts/custom_fonts.toml`.
-4. For Hugo to apply this custom theme, I modified the `theme` and `font` items in `config/_default/params.yaml`. You can also use Academic's pre-set themes.
+Voici quelques pistes de personnalisation:
 
-Commit yo changes, push yo changes, let Netlify build and deploy, and voilà! 
+1. J'ai changé l'image qui apparaît dans l'onglet du navigateur: `assets/media/icon.png`.
+2. J'ai créé mon thème à partir de celui d'Alison. La différence la plus visible est l'utilisation du orange au lieu du vert: `data/themes/custom_theme.toml`.
+3. Idem, mais pour les polices: `data/fonts/custom_fonts.toml`.
+4. Pour que ces deux points soient pris en compte dans la construction du site, j'ai modifié les éléments `theme` et `font` dans `config/_default/params.yaml`. On peut également utiliser les thèmes qui accompagnent le modèle Academic (voir la documentation de Wowchemy).
+5. J'ai modifié le pied de page `layouts/partials/site_footer.html` et le comportement général du site `assets/scss/custom.scss`. Je vous laisse regarder mon code, si jamais vous êtes curieux.se.
 
-My website was finally aesthetically pleasing! I can't wait to shake everything up in a month :smile:.
+On _commit_ les modifications, on _push_ les modifications, on laisse Netlify construire et déployer, et voilà!
 
-If you made it this far in the post, thank you very much. I hope it can inspire you and help you build your own website. It's been fun to get this website on its legs, I can't wait to make it further my own!  
+Mon site est en ligne, structuré et agréable à regarder. J'ai hâte de faire une refonte complète le mois prochain :sparkles:
 
-## BONUS: `*.rbind.io` subdomain name
+Nous sommes arrivés au bout. Merci beaucoup d'avoir lu tout ça. J'espère vous avoir inspiré, et peut-être vous avoir aidé à créer un site web à votre image. Pour moi, ce fut trois jours frustrants comme récréatifs et je suis très fière de ce que j'ai construit jusqu'ici. Je suis impatiente à l'idée de contribuer davantage à ce site!
 
-My OG Netlify URL is [kanto-does-things.netlify.app](https://kanto-does-things.netlify.app). I quite like it, but with a name as unique as mine, I loved the idea of having a custom subdomain with only my name.
+## BONUS: le sous-domaine `*.rbind.io`
 
-RStudio offers a free subdomain `*.rbind.io`: I took advantage of this. I [requested](https://alison.rbind.io/post/2017-06-12-up-and-running-with-blogdown/#rbindio-domain-names) one, I followed their instructions, and I can now redirect you to the one and only [kanto.rbind.io](http://kanto.rbind.io)! 
+Mon adresse URL Netlify est [kanto-does-things.netlify.app](https://kanto-does-things.netlify.app). Je l'aime beaucoup, mais avec un prénom aussi unique que le mien, j'aurais adoré avoir un sous-domaine personnalisé avec seulement mon prénom.
+
+Grâce à RStudio, mon rêve est devenu réalité. RStudio offre un sous-domaine gratuitement, `*.rbind.io`: j'ai saisi cette opportunité. J'ai [fait la demande](https://alison.rbind.io/post/2017-06-12-up-and-running-with-blogdown/#rbindio-domain-names) sur le _repo_ `rbind/support`, j'ai suivi leurs instructions, et je peux maintenant vous rediriger vers l'unique [kanto.rbind.io](http://kanto.rbind.io)!
+
+Toutefois, il y a quelques problèmes au niveau du protocole HTTPS. Quand on ajoute un sous-domaine personnalisé sur Netlify (**et donc qu'on change le baseurl de `config.yaml`!**), le site utilise HTTP au lieu de HTTPS. On peut forcer la redirection vers HTTPS avec un fichier `static/_redirects`:
+
+
+```r
+http://kanto.rbind.io/*    https://kanto.rbind.io/:splat  301!
+```
+
+C'est ce que j'ai fait, mais il arrive souvent que mon site soit inaccessible en raison d'un certificat SSL invalide. Ca m'irrite beaucoup, au point où je considère rester en HTTP, ce qui n'est pas un défaut en soi.
