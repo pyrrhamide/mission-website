@@ -18,6 +18,8 @@ image:
   preview_only: no
 ---
 
+{{< table_of_contents >}}
+
 [Last time](/post/l-origine-du-site/), I explained how to quicly set up a new website with `blogdown`. Now, I will talk about what **I** did in terms of customisation. Once again, I heavily relied on Alison Hill's [blogpost](https://alison.rbind.io/post/new-year-new-blogdown/) and [repo](https://github.com/rbind/apreshill), as well as Wowchemy's [documentation](https://wowchemy.com/docs/).
 
 Wowchemy's Academic template comes with a lot of example content to get inspired from. However, you might want to make it more personalised and streamlined. I know I did! I went ahead and tried to make it "my own", although I practically copied Alison's theme and fonts (they're so nice, I really like them).

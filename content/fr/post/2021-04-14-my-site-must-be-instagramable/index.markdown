@@ -18,6 +18,8 @@ image:
   preview_only: no
 ---
 
+{{< table_of_contents >}}
+
 [La dernière fois](/fr/post/l-origine-du-site/), j'ai rapidement expliqué comment mettre un nouveau site en ligne à l'aide du package R `blogdown`. Cette fois-ci, je vais parler de mes modifications esthétiques personnelles. Je me suis de nouveau fortement inspirée de l'[article](https://alison.rbind.io/post/new-year-new-blogdown/) d'Alison Hill, ainsi que le [repo](https://github.com/rbind/apreshill) de son site. Je décerne également une mention honorable à la [documentation](https://wowchemy.com/docs/) de Wowchemy.
 
 Le modèle Academic vient avec beaucoup d'exemples pour aider à se lancer dans la construction de son site. Toutefois, on peut avoir envie d'alléger le site et de le faire sur mesure. Dans mon cas, j'ai répondu à l'affirmative et suis partie dans une croisade tortueuse pour qu'Academic soit à mon goût. Après, je ne connais pas grand chose en HTML/CSS et je ne suis pas très créative, par conséquent je me suis _beaucoup_[^1] inspirée de l'esthétique (et donc du code) du site d'Alison. [Jetez y un coup d'oeil](https://alison.rbind.io), il est très joli.
