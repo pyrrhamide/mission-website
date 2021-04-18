@@ -102,7 +102,7 @@ On peut également utiliser la commande tout-en-1 `blogdown::check_site()`. S'il
 <!--- I'd really like to make an alert note out of this sentence. TO LOOK UP --->
 À chaque fois qu'on change le nom de domaine sur Netlify, **il faut changer le baseurl** dans le fichier `config.yaml`.
 
-Et hop! Mon site est en ligne! Je pense avoir pris 2 ou 3 heures pour en arriver là. Netlify prend soin de la construction et du déploiement à chaque modification qu'on pousse sur GitHub. Attention à bien tricoter les fichiers `.RMarkdown`!
+Et hop! Mon site est en ligne! Je pense avoir pris une heure pour en arriver là. Netlify prend soin de la construction et du déploiement à chaque modification qu'on pousse sur GitHub. Attention à bien tricoter les fichiers `.RMarkdown`!
 
 Bon, cool, on a un site, mais il est un petit peu encombré. Et si on le personnalisait? Rendez-vous dans mon prochain article pour répondre à cette question!
 
