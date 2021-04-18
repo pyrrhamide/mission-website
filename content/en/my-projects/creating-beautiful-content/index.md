@@ -10,6 +10,8 @@ tags:
 title: creating beautiful content with R
 ---
 
+{{% toc %}}
+
 ## 'I created a blog!'
 
 1. [Building your site with `blogdown`](/post/l-origine-du-site/)

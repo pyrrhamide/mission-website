@@ -96,7 +96,9 @@ You can also use the all-in-one command, `blogdown::check_site()`. Once everythi
 4. Change the subdomain name.
 
 <!--- I'd really like to make an alert note out of this sentence. TO LOOK UP --->
+{{% callout warning %}}
 Everytime you change the domain name on Netlify, you **must** change the baseurl in the `config.yaml` file.
+{{% /callout %}}
 
 You are all set! All in all, I believe it took me a good hour to get the site ready. Netlify will take care of building and deploying all the changes pushed on GitHub. But surely, you do not want to keep the cluttered template and you want to customise it a bit? (me: yeah!) Well, I will cover this topic in another post. Watch this space!
 

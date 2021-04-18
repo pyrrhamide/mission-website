@@ -24,6 +24,8 @@ image:
 
 {{< table_of_contents >}}
 
+{{% toc %}}
+
 Bonjour!
 
 Aujourd'hui, pour mon premier article, je vais parler du processus de construction de mon site. Si jamais je décide d'en faire un autre un jour, et donc de lutter avec `blogdown`, j'aurai cet article ici au chaud, pour avoir un site opérationnel en moins de 15 minutes. Ou bien ce sera un moment de gêne où je me demanderai "mais pourquoi j'ai fait ça comme ça ? Ohlala la bourde...".
