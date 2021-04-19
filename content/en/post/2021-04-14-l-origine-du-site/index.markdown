@@ -28,8 +28,9 @@ image:
 {{< table_of_contents >}}
 -->
 
-<!-- new and improved way -->
+<!-- new and improved way
 {{% toc %}}
+-->
 
 Howdy y'all!
 

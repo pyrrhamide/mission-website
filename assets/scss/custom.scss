@@ -244,14 +244,6 @@ iframe {
 }
 
 
-html {
-	scroll-behavior: smooth;
-}
-
-html, body {
-  scroll-padding-top: 100px;
-}
-
 
 /* --------Blog posts--------- */
 /* Headers within blogs */
@@ -282,14 +274,27 @@ a > svg.anchor-symbol:hover {
   transition: fill 0.6s ease;
 }
 
-/*--- TOC - initial convoluted way ---*/
+/*--- TOC - initial convoluted way + new ones ---*/
+.container-fluid {
+	max-width: 1000px;
+}
+
+.col-xl-3 {
+  flex:0 0 30%;
+  max-width:30%;
+  padding-right: 0px !important;
+ }
+
+
+
 #TableOfContents li a, .toc-top li a {
 	padding: .125rem 1.5rem;
-	font-size: .9rem;
+	font-size: .75rem;
   text-transform: inherit;
   text-align: left;
 	color: #1a162d99;
 }
+
 
 #TableOfContents {
   border-left: 1px solid #eb8444;
@@ -299,7 +304,21 @@ a > svg.anchor-symbol:hover {
   margin-bottom: 2rem; /* ecart TOC premier para */
 }
 
-/*-- TOC - new, improved, easy, should've read the doc way ---*/
+
+html {
+	scroll-behavior: smooth;
+}
+
+html, body {
+  scroll-padding-top: 100px;
+}
+
+/*-- TOC - {{%toc%}} new, improved, easy, should've read the doc, way
+details.toc-inpage {
+  padding-bottom: 0rem;
+  padding-top: 0rem;
+}
+--*/
 
 /*--- Custom div tips ---*/
 
