@@ -22,9 +22,10 @@ image:
   preview_only: no
 ---
 
+<!--
 {{< table_of_contents >}}
-
-{{% toc %}}
+-->
+{{%toc%}}
 
 Bonjour!
 
@@ -102,7 +103,9 @@ On peut également utiliser la commande tout-en-1 `blogdown::check_site()`. S'il
 4. Changer le nom de domaine.
 
 <!--- I'd really like to make an alert note out of this sentence. TO LOOK UP --->
+{{% callout warning %}}
 À chaque fois qu'on change le nom de domaine sur Netlify, **il faut changer le baseurl** dans le fichier `config.yaml`.
+{{% /callout %}}
 
 Et hop! Mon site est en ligne! Je pense avoir pris une heure pour en arriver là. Netlify prend soin de la construction et du déploiement à chaque modification qu'on pousse sur GitHub. Attention à bien tricoter les fichiers `.RMarkdown`!
 

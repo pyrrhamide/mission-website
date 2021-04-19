@@ -24,7 +24,12 @@ image:
   preview_only: no
 ---
 
+<!-- old way for TOC
 {{< table_of_contents >}}
+-->
+
+<!-- new and improved way -->
+{{% toc %}}
 
 Howdy y'all!
 

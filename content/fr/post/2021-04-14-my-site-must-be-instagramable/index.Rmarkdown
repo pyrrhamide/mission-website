@@ -22,7 +22,11 @@ image:
   preview_only: no
 ---
 
+<!--
 {{< table_of_contents >}}
+-->
+
+{{%toc%}}
 
 [La dernière fois](/fr/post/l-origine-du-site/), j'ai expliqué comment rapidement mettre un nouveau site en ligne à l'aide du package R `blogdown`. Cette fois-ci, je vais parler de mes modifications esthétiques personnelles. Je me suis de nouveau fortement inspirée de l'[article](https://alison.rbind.io/post/new-year-new-blogdown/) d'Alison Hill, ainsi que le [repo](https://github.com/rbind/apreshill) de son site. Je décerne également une mention honorable à la [documentation](https://wowchemy.com/docs/) de Wowchemy.
 
@@ -109,7 +113,3 @@ http://kanto.rbind.io/*    https://kanto.rbind.io/:splat  301!
 ```
 
 C'est ce que j'ai fait, mais il arrive souvent que mon site soit inaccessible en raison d'un certificat SSL invalide. Ca m'irrite beaucoup, au point où je considère rester en HTTP, ce qui n'est pas un défaut en soi.
-
-{{% callout note %}}
-[_màj_: je l'ai supprimé.]
-{{% /callout %}}

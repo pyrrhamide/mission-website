@@ -22,7 +22,9 @@ image:
   preview_only: no
 ---
 
+<!--
 {{< table_of_contents >}}
+-->
 
 {{% toc %}}
 
@@ -51,7 +53,9 @@ This leaves us (or me really) with `experience`, `posts` and `projects`. You can
 
 ## Landing pages
 
+{{% callout note %}}
 This is where my narration gets personal because I'm not sure it was the right way to do it, hence I don't feel like bossing you around.
+{{% /callout %}}
 
 I wanted those widgets to have their own pages that I could access by clicking on the top bar. I take the `projects` example as a reference here, since it was the weirdest one to set up.
 

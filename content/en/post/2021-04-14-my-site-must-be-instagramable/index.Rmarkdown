@@ -22,7 +22,11 @@ image:
   preview_only: no
 ---
 
+<!--
 {{< table_of_contents >}}
+-->
+
+{{% toc %}}
 
 [Last time](/post/l-origine-du-site/), I explained how to quickly set up a new website with `blogdown`. Now, I will talk about what **I** did in terms of customisation. Once again, I heavily relied on Alison Hill's [blogpost](https://alison.rbind.io/post/new-year-new-blogdown/) and [repo](https://github.com/rbind/apreshill), as well as Wowchemy's [documentation](https://wowchemy.com/docs/).
 
@@ -49,7 +53,9 @@ This leaves us (or me really) with `experience`, `posts` and `projects`. You can
 
 ## Landing pages
 
+{{% callout note %}}
 This is where my narration gets personal because I'm not sure it was the right way to do it, hence I don't feel like bossing you around.
+{{% /callout %}}
 
 I wanted those widgets to have their own pages that I could access by clicking on the top bar. I take the `projects` example as a reference here, since it was the weirdest one to set up.
 
