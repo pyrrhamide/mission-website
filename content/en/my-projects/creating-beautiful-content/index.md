@@ -14,3 +14,4 @@ title: creating beautiful content with R
 
 1. [Building your site with `blogdown`](/post/l-origine-du-site/)
 2. [Customising your site](/post/an-instagramable-site/)
+3. [Customising your site, vol.2](/post/further-modifications/)
