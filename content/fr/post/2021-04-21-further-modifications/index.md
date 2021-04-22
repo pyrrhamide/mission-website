@@ -24,7 +24,7 @@ image:
 
 {{% toc %}}
 
-J'ai construit le site et j'ai fait des petites modifications esthétiques de base. J'ai parlé superficiellement de ma nouvelle Sainte Trinité, `blogdown`, Hugo et Netlify. Entre temps, _un toucan qui parle_ a subit de multiples transformations que j'oublie petit à petit. J'en arrive au point où mon historique GitHub ne m'aide plus à me remémorer ma démarche, puisqu'il devient de moins en moins lisible. Il est donc temps que je couche sur le papier virtuel ce que j'ai fait, pour garder une trace de ma manière de procéder ~ à l'époque ~.
+J'ai construit le site et j'ai fait des petites modifications esthétiques de base. J'ai parlé superficiellement de ma nouvelle Sainte Trinité, `blogdown`, Hugo et Netlify. Entre temps, _un toucan qui parle_ a subi de multiples transformations que j'oublie petit à petit. J'en arrive au point où mon historique GitHub ne m'aide plus à me remémorer ma démarche, puisqu'il devient de moins en moins lisible. Il est donc temps que je couche sur le papier virtuel ce que j'ai fait, pour garder une trace de ma manière de procéder ~ à l'époque ~.
 
 ## Site bilingue
 
@@ -53,7 +53,7 @@ Un dernier point: l'anglais étant la langue par défaut, le chemin pour mention
 
 ## Chirurgie esthétique avec `custom.scss`
 
-C'est un fichier important pour les sections suivantes. Sass est l'acronyme pour stands for _Syntactically awesome style sheets_, c'est le langage de script. Scss, pour _Sassy CSS_, est la syntaxe plus récente dérivée de Sass. J'utilise Scss pour modifier le visuel du site, comme l'épaisseur de la barre de navigation, l'espace entre les lettres, la mise en forme du code...
+C'est un fichier important pour les sections suivantes. Sass est l'acronyme pour _Syntactically awesome style sheets_, c'est le langage de script. Scss, pour _Sassy CSS_, est la syntaxe plus récente dérivée de Sass. J'utilise Scss pour modifier le visuel du site, comme l'épaisseur de la barre de navigation, l'espace entre les lettres, la mise en forme du code...
 
 Je ne connais toujours pas grand chose sur CSS et HTML (cqfd: je ne me vois pas mettre que j'ai des notions dans mon CV), donc j'ai copié le fichier d'Alison Hill, je l'ai lu minutieusement et j'ai changé des morceaux petit à petit en visualisant les modifications en direct avec `blogdown::serve_site()`. Si j'étais bloquée ou si je voulais comprendre au lieu de simplement reproduire, j'utilisais Google.[^4] C'est en googlant et en parcourant GitHub que ma liste d'idées pour le site s'élargit. La curiosité n'est pas un vilain défaut ici.
 
@@ -94,7 +94,7 @@ J'ai modifié la "profondeur" des tdm dans `config.yaml`: elles ne montrent pas 
 
 **Réferences**
 
-* [Markdown Elements for Hugo/Wowchemy](https://iphysresearch.github.io/blog/post/writting-markdown/).
+* [Markdown Elements for Hugo/Wowchemy](https://iphysresearch.github.io/blog/post/writting-markdown/#table-of-contents).
 
 ## Blocs spéciaux et _anchor links_
 
@@ -126,7 +126,7 @@ J'ai créé `render-heading.html` dans `layouts/_default/_markup/` pour introdui
 
 **Réferences**
 
-* [Markdown Elements for Hugo/Wowchemy](https://iphysresearch.github.io/blog/post/writting-markdown/).
+* [Markdown Elements for Hugo/Wowchemy](https://iphysresearch.github.io/blog/post/writting-markdown/#callouts).
 * [📸 Page Elements: Writing content with Markdown, LaTeX, and Shortcodes](https://wowchemy.com/docs/content/writing-markdown-latex/).
 * pour les _anchor links_...Alison Hill!
 

@@ -96,7 +96,7 @@ I changed the depth of my TOCs in `config.yaml`: they are set to not show anythi
 
 **References**
 
-* [Markdown Elements for Hugo/Wowchemy](https://iphysresearch.github.io/blog/post/writting-markdown/).
+* [Markdown Elements for Hugo/Wowchemy](https://iphysresearch.github.io/blog/post/writting-markdown/#table-of-contents).
 
 ## Div tips and anchor links
 
@@ -130,7 +130,7 @@ Create `render-heading.html` under `layouts/_default/_markup/` to introduce anch
 
 **References**
 
-* [Markdown Elements for Hugo/Wowchemy](https://iphysresearch.github.io/blog/post/writting-markdown/).
+* [Markdown Elements for Hugo/Wowchemy](https://iphysresearch.github.io/blog/post/writting-markdown/#callouts).
 * [📸 Page Elements: Writing content with Markdown, LaTeX, and Shortcodes](https://wowchemy.com/docs/content/writing-markdown-latex/).
 * as for the anchor links...Alison Hill!
 
