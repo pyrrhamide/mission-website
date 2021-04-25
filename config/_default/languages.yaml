@@ -18,7 +18,7 @@ fr:
   menu:
     main:
       - name: À propos
-        url: '#about'
+        url: 'about/'
         weight: 1
       - name: Blog
         url: 'post/'

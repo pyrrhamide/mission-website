@@ -38,6 +38,7 @@ a:hover {
   text-transform: lowercase;
 	letter-spacing: .05em;
 	font-size: .9em;
+  height: 70px;
 }
 
 .navbar-brand {
@@ -81,6 +82,19 @@ a:hover {
 }
 
 /* home page */
+#about_custom {
+  @keyframes yourfirstanimation {
+    0% {
+      opacity: 0;
+      color: red;
+    }
+    100% {
+      opacity: 1;
+      color: black;
+    }
+  }
+  animation: yourfirstanimation 3s forwards;
+}
 
 .portrait-title h2 {
   color: #333;
@@ -102,7 +116,7 @@ a:hover {
 
 /* ecart entre widgets qui ne sont pas le premier */
 .home-section:not(:first-of-type) {
-  padding: 25px 0 50px 0;
+  padding: 50px 0 50px 0;
 }
 
 /* this erases the margin-bottom for h1 */

@@ -2,14 +2,14 @@
 # An instance of the Featurette widget.
 # Documentation: https://wowchemy.com/docs/page-builder/
 widget: featurette
-active: false
+
 # This file represents a page section.
 headless: true
 
 # Order that this section appears on the page.
 weight: 30
 
-title: Compétences
+title: Skills
 subtitle:
 
 # Showcase personal skills or business features.
@@ -23,11 +23,11 @@ feature:
 - description: 70%
   icon: chart-line
   icon_pack: fas
-  name: Analyse de données
+  name: Statistics
 - description: 100%
   icon: compass
   icon_pack: fas
-  name: Sens de l'orientation
+  name: Sense of direction
 
 # Uncomment to use emoji icons.
 #- icon = ":smile:"
