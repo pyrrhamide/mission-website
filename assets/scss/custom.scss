@@ -83,17 +83,31 @@ a:hover {
 
 /* home page */
 #about_custom {
-  @keyframes yourfirstanimation {
+  @keyframes fade-in {
     0% {
       opacity: 0;
-      color: red;
     }
+
     100% {
       opacity: 1;
-      color: black;
     }
   }
-  animation: yourfirstanimation 3s forwards;
+
+  .avatar {
+    animation: fade-in 3s forwards;
+  }
+
+  .portrait-title {
+    opacity: 0;
+    animation: fade-in 3s forwards;
+    animation-delay: 0.8s;
+  }
+
+  .network-icon {
+    opacity: 0;
+    animation: fade-in 3s forwards;
+    animation-delay: 1.3s;
+  }
 }
 
 .portrait-title h2 {
