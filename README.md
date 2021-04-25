@@ -7,7 +7,7 @@ What do I have planned ?
 
 - [x] changing the favicon.
 - [ ] updating my experience.
-- [ ] cleaning out the rest of the templates.
+- [x] cleaning out the rest of the templates.
 - [x] doing my own CSS theme! (kiiiinda did it)
 - [x] creating landing pages to alleviate my homepage of widgets.
 - [ ] writing stuff 😬
