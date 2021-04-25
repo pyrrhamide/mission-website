@@ -23,6 +23,18 @@ date_format: Jan 2006
 #   Leave `date_end` empty if it's your current employer.
 #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
 experience:
+  - title: Intern
+    company: Institut national d'études démographiques
+    company_url: 'https://www.ined.fr/'
+    location: 'Paris, France'
+    date_start: '2019-10-01'
+    date_end: '2019-10-01'
+    description: |2-
+        Responsibilities include:
+
+        * passation questionnaire enquête ENVIE
+        * amélioration questionnaire
+
   - title: Data analyst intern
     company: Coram Family and Childcare
     company_url: 'https://www.familyandchildcaretrust.org/'
@@ -31,21 +43,20 @@ experience:
     date_end: '2018-07-18'
     description: |2-
         Responsibilities include:
-        
+
+        * Co-authoring the [Holiday Childcare Survey 2018](https://www.familyandchildcaretrust.org/sites/default/files/Holiday%20Childcare%20Survey%202018_Family%20and%20Childcare%20Trust.pdf)
         * Analysing
         * Modelling
-        * Co-authoring the Holiday Childcare Survey 2018
-        
+
   - title: Politics department embassador
     company: University of Warwick
     company_url: 'https://warwick.ac.uk/'
     location: 'Coventry, UK'
-    date_start: '2016-01-01'
-    date_end: '2016-12-31'
+    date_start: '2019-01-01'
+    date_end: '2019-06-01'
     description: |2-
         Responsibilities include:
-        
+
         * Open days stuff
         * Promotional stuff
-        * thingy 3
 ---
