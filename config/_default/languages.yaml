@@ -18,14 +18,14 @@ fr:
   menu:
     main:
       - name: À propos
-        url: 'about/'
+        url: 'a-propos/'
         weight: 1
       - name: Blog
         url: 'post/'
         weight: 20
       - name: Projets
-        url: 'projects/'
+        url: 'projets/'
         weight: 30
       - name: CV
-        url: 'resume/'
+        url: 'cv/'
         weight: 40
