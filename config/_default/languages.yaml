@@ -24,7 +24,7 @@ fr:
         url: 'post/'
         weight: 20
       - name: Projets
-        url: 'my-projects/'
+        url: 'projects/'
         weight: 30
       - name: CV
         url: 'resume/'
