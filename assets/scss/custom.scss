@@ -342,3 +342,98 @@ footer p {
 footer .powered-by {
   font-size: 0.75rem;
 }
+
+/* --- Callouts --- */
+
+/* Style asides as Bootstrap alerts. */
+.article-style aside {
+  @extend .alert;
+}
+
+/* Asides use <p> block element whereas alerts use <div>. */
+.article-style aside p,
+div.alert > div {
+  position: relative;
+  display: block;
+  font-family: 'Karla';
+  font-size: 0.9rem;
+  margin-left: 1.7rem;
+  margin-right: 1.7rem;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+div.alert div > * {
+  margin-bottom: .5rem;  /* Use smaller paragraph spacing than usual. */
+}
+
+div.alert div > :last-child {
+  margin-bottom: 0;
+}
+
+.article-style aside p::before,
+div.alert > div:first-child::before {
+  position: absolute;
+  top: -0.3rem;
+  left: -2rem;
+  font-size: 1.4rem;
+  color: #0EAD69;
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  content: '\f05a';
+  width: 1rem;
+  text-align: left;
+}
+
+div.alert-look > div:first-child::before {
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  color: #0EAD69;
+  content: '\f0a4';
+}
+
+div.alert-warning > div:first-child::before {
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  color: #ff3860;
+  content: '\f071';
+}
+
+div.alert-note > div:first-child::before {
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  color: #098bba;
+  content: "\f05a";
+}
+
+.article-style aside a,
+div.alert a {
+  color: currentColor;
+  text-decoration: none;
+  border-bottom: solid 1px currentColor;
+}
+
+
+.alert-look {
+  color: #0d8552;
+  background-color: #f2fff9;
+  border-color: #0EAD69;
+/*  border-style: dashed; */
+  /*box-shadow: 5px 5px 0 0 #0EAD69;*/
+}
+
+.alert-warning {
+  color: #cd0930;
+  background-color: #fff5f7;
+  border-color: #ff3860;
+  /*border-style: dotted;*/
+  /*box-shadow: 6px 6px 0 0 #ff3860;*/
+}
+
+.alert-note {
+  color: #098bba;
+  background-color: #edf8fc;
+  border-color: #098bba;
+  /*border-style: dotted;*/
+  /*box-shadow: 6px 6px 0 0 #098bba;*/
+}

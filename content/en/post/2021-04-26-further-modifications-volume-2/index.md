@@ -18,6 +18,10 @@ image:
 projects: []
 ---
 
+{{% callout look %}}
+blip bloop
+{{% /callout %}}
+
 ## Homepage
 
 ### Structure
