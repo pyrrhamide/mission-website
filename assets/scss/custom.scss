@@ -38,6 +38,7 @@ a:hover {
   text-transform: lowercase;
 	letter-spacing: .05em;
 	font-size: .9em;
+  height: 70px;
 }
 
 .navbar-brand {
@@ -81,6 +82,33 @@ a:hover {
 }
 
 /* home page */
+#about_custom {
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+
+  .avatar {
+    animation: fade-in 3s forwards;
+  }
+
+  .portrait-title {
+    opacity: 0;
+    animation: fade-in 3s forwards;
+    animation-delay: 0.8s;
+  }
+
+  .network-icon {
+    opacity: 0;
+    animation: fade-in 3s forwards;
+    animation-delay: 1.3s;
+  }
+}
 
 .portrait-title h2 {
   color: #333;
@@ -97,12 +125,12 @@ a:hover {
 
 /* ecart entre premier widget homepage et suivants */
 .home-section:first-of-type {
-  padding: 50px 0 50px 0;
+  padding: 50px 0 100px 0;
 }
 
 /* ecart entre widgets qui ne sont pas le premier */
 .home-section:not(:first-of-type) {
-  padding: 25px 0 50px 0;
+  padding: 50px 0 50px 0;
 }
 
 /* this erases the margin-bottom for h1 */
