@@ -34,6 +34,10 @@
 }
 
 /* a quel point paragraphe "about me" descend */
+#about {
+  animation: fade-in 1s forwards;
+}
+
 #about .col-12.col-lg-8 {
   padding-top: 0px !important;
 }
