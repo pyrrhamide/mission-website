@@ -4,7 +4,7 @@ author: KF
 date: '2021-04-15'
 slug: decorer-le-site
 categories: [R, tutoriel]
-tags: [R, blogdown]
+tags: [blogdown, créer le site]
 links:
 - icon: door-open
   icon_pack: fas
@@ -115,4 +115,3 @@ http://kanto.rbind.io/*    https://kanto.rbind.io/:splat  301!
 ```
 
 C'est ce que j'ai fait, mais il arrive souvent que mon site soit inaccessible en raison d'un certificat SSL invalide. Ca m'irrite beaucoup, au point où je considère rester en HTTP, ce qui n'est pas un défaut en soi.
-

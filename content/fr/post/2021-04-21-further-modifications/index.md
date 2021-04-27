@@ -4,7 +4,7 @@ author: [admin]
 date: '2021-04-21'
 slug: autres-modifications
 categories: [R, tutoriel]
-tags: [R, blogdown]
+tags: [blogdown, créer le site]
 links:
 - icon: door-open
   icon_pack: fas

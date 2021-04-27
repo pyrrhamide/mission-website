@@ -4,7 +4,7 @@ author: KF
 date: '2021-04-15'
 slug: an-instagramable-site
 categories: [R, tutorials]
-tags: [R, blogdown, very informal]
+tags: [blogdown, story time]
 links:
 - icon: door-open
   icon_pack: fas
@@ -80,7 +80,7 @@ You can change the setup of your widget page by editing the `content/home/projec
 It was easier for `posts.md` and `experience.md`. I only needed to create a new subfolder for `experience`, copy the widget there, write an `index.md` (or `_index.md` for my posts), redirect the top bar, and that was it. I don't know what is special about the project page.
 
 {{% callout look %}}
-**Update**: as it turns out, there is a global issue with Hugo concerning the projects landing page. Hugo does not recognise a widget page in a `project` folder, but it does recognise it in `projects`. I honestly thought something was wrong with my website, because my project page looked...basic. However, once I renamed `project` to `projects`, the widget design worked. 
+**Update**: as it turns out, there is a global issue with Hugo concerning the projects landing page. Hugo does not recognise a widget page in a `project` folder, but it does recognise it in `projects`. I honestly thought something was wrong with my website, because my project page looked...basic. However, once I renamed `project` to `projects`, the widget design worked.
 {{% /callout %}}
 
 Anywho! I was done with the layout of my site[^3], and I jumped happily into my next mission: making things pretty.

@@ -4,7 +4,7 @@ author: [admin]
 date: '2021-04-21'
 slug: further-modifications
 categories: [R, tutorials]
-tags: [R, blogdown, very informal]
+tags: [blogdown, story time]
 links:
 - icon: door-open
   icon_pack: fas

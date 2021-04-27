@@ -4,7 +4,7 @@ author: KF
 date: '2021-04-14'
 slug: l-origine-du-site
 categories: [R, tutoriel]
-tags: [R, blogdown]
+tags: [blogdown, créer le site]
 links:
 - icon: door-open
   icon_pack: fas

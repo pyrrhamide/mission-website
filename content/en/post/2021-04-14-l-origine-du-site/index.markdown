@@ -6,7 +6,7 @@ author: [admin]
 date: '2021-04-14'
 slug: l-origine-du-site
 categories: [R, tutorials]
-tags: [R, blogdown, very informal]
+tags: [blogdown, story time]
 links:
 - icon: door-open
   icon_pack: fas
