@@ -33,11 +33,11 @@
   color: #333;
 }
 
-/* a quel point paragraphe "about me" descend */
 #about {
-  animation: fade-in 1s forwards;
+  animation: fade-in .5s forwards;
 }
 
+/* a quel point paragraphe "about me" descend */
 #about .col-12.col-lg-8 {
   padding-top: 0px !important;
 }
