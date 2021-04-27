@@ -1,0 +1,25 @@
+/* --- CODE --- */
+/* https://github.com/rstudio/blogdown/blob/master/docs/02-hugo.Rmd */
+
+/* code dans le corps de texte */
+pre, code {
+	color: #4A7E86;
+	background-color: #fff;
+	padding-left: .5em;
+	padding-right: .5em;
+}
+
+/* blocs de code */
+pre {
+  border: 1px solid #fff;
+  box-shadow: 5px 5px 5px #eee;
+  padding: 0.25em;
+  background: #fff;
+  overflow-x: auto;
+  border-radius: 05px; /*undo rounded corners*/
+}
+
+pre code {
+  background: none;
+  font-size: 0.8rem;
+}
