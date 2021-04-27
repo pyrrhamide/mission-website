@@ -4,6 +4,7 @@ header:
   caption: ""
   image: ""
 title: Blog
-subtitle: 
+subtitle:
 view: 2
+aliases: [/blog/]
 ---
