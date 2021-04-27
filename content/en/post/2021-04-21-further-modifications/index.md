@@ -102,7 +102,7 @@ I changed the depth of my TOCs in `config.yaml`: they are set to not show anythi
 
 Div tips are special blocs of content that pop out and get your attention. They are useful when emphasising something important. Wowchemy comes with two types of callouts, note and warning. To include them in your writing, use the following code:
 
-```
+```html
 {{%/* callout note */%}}
 This is a callout note.
 {{%/* /callout */%}}
@@ -111,7 +111,7 @@ This is a callout note.
 This is a callout note.
 {{% /callout %}}
 
-```
+```html
 {{%/* callout warning */%}}
 This is a callout warning.
 {{%/* /callout */%}}

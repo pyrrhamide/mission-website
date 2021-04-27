@@ -15,3 +15,4 @@ title: creating beautiful content with R
 1. [Building your site with `blogdown`](/blog/l-origine-du-site/)
 2. [Customising your site](/blog/an-instagramable-site/)
 3. [Customising your site, vol.2](/blog/further-modifications/)
+4. [Customising your site, GIFs Awaken](/blog/further-modifications-2/)

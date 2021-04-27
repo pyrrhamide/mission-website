@@ -100,7 +100,7 @@ J'ai modifié la "profondeur" des tdm dans `config.yaml`: elles ne montrent pas 
 
 Les blocs spéciaux (ou _div tips_ dans la documentation anglaise) sont des blocs de texte qui détonnent par rapport au texte normal et attirent l'oeil vers du contenu important. Deux types de blocs viennent avec Wowchemy: un de note, et un d'avertissement. Pour les utiliser dans un texte, on écrit ce qui suit:
 
-```
+```html
 {{%/* callout note */%}}
 Ceci est une note générale.
 {{%/* /callout */%}}
@@ -109,7 +109,7 @@ Ceci est une note générale.
 Ceci est une note générale.
 {{% /callout %}}
 
-```
+```html
 {{%/* callout warning */%}}
 Ceci est un avertissement.
 {{%/* /callout */%}}
