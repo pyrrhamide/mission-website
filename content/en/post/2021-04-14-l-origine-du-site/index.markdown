@@ -15,7 +15,7 @@ links:
 - icon: link
   icon_pack: fas
   name: français
-  url: fr/post/l-origine-du-site/
+  url: fr/blog/l-origine-du-site/
 summary: 'How to build a website with blogdown, a crash course.'
 featured: no
 image:

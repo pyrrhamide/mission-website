@@ -13,7 +13,7 @@ links:
 - icon: link
   icon_pack: fas
   name: français
-  url: fr/post/decorer-le-site/
+  url: fr/blog/decorer-le-site/
 summary: 'How to make your new website more to your taste, a crash course.'
 featured: no
 image:

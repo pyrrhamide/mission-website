@@ -13,7 +13,7 @@ links:
 - icon: link
   icon_pack: fas
   name: english
-  url: post/an-instagramable-site/
+  url: blog/an-instagramable-site/
 summary: 'Comment rendre le site joli, un cours accéléré.'
 featured: no
 image:

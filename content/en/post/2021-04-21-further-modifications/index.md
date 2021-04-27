@@ -13,7 +13,7 @@ links:
 - icon: link
   icon_pack: fas
   name: français
-  url: fr/post/autres-modifications/
+  url: fr/blog/autres-modifications/
 summary: 'Additional tweaks for when you cannot stop googling and dreaming of what your website could be.'
 featured: no
 image:

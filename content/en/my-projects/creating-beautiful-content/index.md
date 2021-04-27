@@ -12,6 +12,6 @@ title: creating beautiful content with R
 
 ## 'I created a blog!'
 
-1. [Building your site with `blogdown`](/post/l-origine-du-site/)
-2. [Customising your site](/post/an-instagramable-site/)
-3. [Customising your site, vol.2](/post/further-modifications/)
+1. [Building your site with `blogdown`](/blog/l-origine-du-site/)
+2. [Customising your site](/blog/an-instagramable-site/)
+3. [Customising your site, vol.2](/blog/further-modifications/)

@@ -13,7 +13,7 @@ links:
 - icon: link
   icon_pack: fas
   name: english
-  url: post/further-modifications/
+  url: blog/further-modifications/
 summary: 'Des modifications supplémentaires, causées par un googlage incessant et par une vision idéale du site.'
 featured: no
 image:
