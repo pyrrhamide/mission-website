@@ -21,7 +21,7 @@ projects: []
 
 {{% toc %}}
 
-Well folks, it seems I cannot stay away from `blogdown` for long. New ideas keep coming to me at the most unfortunate moments, I find elements from other blogs that I'd like to emulate...it's a never-ending responsibility!
+Well folks, it seems I cannot stay away from `blogdown` for long. New ideas keep coming to me at the most unfortunate moments, I find elements from other blogs that I'd like to emulate here...it's a never-ending responsibility!
 
 This website changes every day, I feel compelled to write everything down because I don't want to forget! I get prouder and prouder of every edit I make, I want to remember how I got here.
 
@@ -37,13 +37,13 @@ The `about.md`, `skills.md` and `posts.md` widgets constituted my former homepag
 
 * I moved `about.md` and `skills.md` to an **about** widget page.
 * The `content/home/` folder builds the homepage. I kept `posts.md` and changed its design to a list. Then, I snooped in `themes/.../layouts/partials/widgets/` to copy `about.html` into the root project file, under the same path as template. So `layouts/partials/widgets/about.html`.
-* I deleted everything past the network icons, **renamed the file to `about_custom.html`** since I still wanted to use the original widget on the new widget page, and I created a new `about_custom.md` file in `content/home` based on the existing widget.
+* I deleted everything past the network icons, **renamed the file to `about_custom.html`** since I still wanted to use the original widget on the new widget page, and I created `about_custom.md` in `content/home` based on the existing widget.
 
 {{% callout note %}}
 I did this before I found Isabella Benabaye's awesome blogpost, [7 Ways You Can Further Customize the Hugo Academic Theme](https://isabella-b.com/blog/hugo-academic-customization/#about-widget-without-a-summary). She also opted for an about widget without a summary, she detailed it very thoroughly and then some. It's a great post, I would have loved to have seen it when I first started moving things around on my website!
 {{% /callout %}}
 
-This is the YAML metadata for the standard `about.md` widget:
+This is snippet of the YAML metadata for the standard `about.md` widget:
 ```yaml
 widget: about
 ```
@@ -56,11 +56,13 @@ widget: about_custom
 It was very straightforward. But the more I explored other blogs, the less satisfied I was with the fixed nature of my site's elements. Enter animations...
 
 ## Animations
-You dip your toe into the animation pool once, you jump head first into it the afterwards.
+You dip your toe into the animation pool once, you jump head first into it afterwards.
 
-To be honest, I mucked up the timeline a bit. I did find the homepage too busy before I changed it, but I only changed it _after_ I read this great blog post by Connor Rothschild, [Animating Your Hugo Academic Site](https://www.connorrothschild.com/post/animate-hugo-academic). I read it and I went "yeah, I want to try that, that looks neat". I will not go into the details of what kind of animations you can build, Connor's article does it way better than I would.
+To be honest, I mucked up the timeline a bit, for the sake of story-telling. I did find the homepage too busy before I changed it, but I only changed it _after_ I read this great blog post by Connor Rothschild, [Animating Your Hugo Academic Site](https://www.connorrothschild.com/post/animate-hugo-academic). I read it and I went "yeah, I want to try that, that looks neat". I will not go into the details of what kind of animations you can build, Connor's article explains it way better than I would.
 
-Nonetheless, I cannot stress enough how important it is to look up the default templates of the Academic theme, and any other theme. It directs you towards the specific bits you may wish to edit. In the case of `about_custom`, reading its html file lead me to the classes I wanted to animate. I chose a staggered fade-in, with the avatar appearing first, the title position second and the network icons last. This is what I did in `custom.scss`:
+Nonetheless, I cannot stress enough the importance of looking up the default templates of the Academic theme, and any other themes that you may use. It directs you towards the specific bits you may wish to edit. In the case of `about_custom`, reading its html file lead me to the classes I wanted to animate. I chose a staggered fade-in, with the avatar appearing first, the title position second and the network icons last. 
+
+This is what I did in `custom.scss` (later `_homepage-custom.scss`):
 ```css
 #about_custom {
   @keyframes fade-in {
@@ -105,12 +107,12 @@ Because I don't know when to stop, I figured I'd apply this animation to every w
 }
 ```
 
-Woohoo! Now, navigating from pages to pages feels less abrupt. The animation is not applicable to my blogposts and my projects, but I'm sure I'll figure it out :wink:
+Woohoo! Navigating from pages to pages feels less abrupt now. The animation is not applicable to my blogposts and my projects, but I'm sure I'll figure it out :wink:
 
 [^1]: I am convinced there is a faster way to apply the animation thingy for whenever you change the page, instead of listing all the different elements. I just haven't found this method yet.
 
 ## Making `custom.scss` more readable
-All those different changes made the `custom.scss` file quite long, which in turn made it harder for me to find whatever item I felt like changing on the day. At first, I believed it was the only way the file could present itself, until I poured myself into the template `assets/scss` folder: all the different elements' style file are clearly separated there under the name `_item.scss` in several subfolders. The `@import` function pushes them up to one `_all.scss` file per folder, that are then pushed to `wowchemy.scss`, leading to a final push to a `main.scss` file containing this magical bit:
+All those personal changes made the `custom.scss` file quite long, which in turn made it tedious for me to find whatever item I felt like changing on the day. At first, I believed it was the only way the file could present itself, until I seriously focused on the template `assets/scss` folder: all the different elements' style file are clearly separated there under the name `_itemname.scss` in several subfolders. The `@import` function pushes them up to one `_all.scss` file per folder, that are then pushed to `wowchemy.scss`, leading to a final push to a `main.scss` file containing this magical bit:
 ```css
 @import "bootstrap_variables";
 @import "_vendor/bootstrap/bootstrap";
@@ -119,7 +121,7 @@ All those different changes made the `custom.scss` file quite long, which in tur
 @import "custom";
 ```
 
-This is when I figured I could split my `custom.scss` file into several element-specific files, then import them into `custom.scss`! Goodbye long, unreadable file, hello clearly-named ones!
+This is when a light bulb went off: I could split my `custom.scss` file into several element-specific files, then import them into `custom.scss`! Goodbye long, unreadable file, hello clearly-named ones!
 
 I went from:
 ```
@@ -153,13 +155,13 @@ This is what you can now find at the top of `custom.scss`:
 
 ![](https://media.giphy.com/media/4Tkagznwgrv6A4asQb/giphy.gif)
 
-I believe the next step is to put all `_item-custom.scss` in a distinct folder, import them in `_all.scss` then import this in `custom`. That will be another task for another time.
+I believe the next step is to put all `_itemname-custom.scss` in a distinct folder, import them in `_all.scss` then import this in `custom`. That will be another task for another time.
 
 ## Other small edits
 
-* [I changed the `post` slug to `blog`](https://wowchemy.com/docs/guide/extending-wowchemy/#permalinks) for the heck of it, although it did not apply to the "blog menu";
+* [I changed the `post` slug to `blog`](https://wowchemy.com/docs/guide/extending-wowchemy/#permalinks) for the heck of it, although it did not apply to the blog "menu";
 * Based on Isabella's post, I changed the displayed post date from 'last modification' to the date of publication/creation;
-* I finally managed to create a pretty project widget page, by changing the folder name from `project` to `projects`. The design now works. Yay!
+* I finally managed to create a pretty project widget-page, by changing the folder name from `project` to `projects`. The design now works. Yay!
 
 ![Former project page](project-former.png "What my project page used to look like")
 
@@ -170,13 +172,13 @@ I believe the next step is to put all `_item-custom.scss` in a distinct folder, 
 <center><i>What my project page looks like now</i></center>
 
 ### New callout bloc
-There is one final change, that deserves its own section.
+There is one final change that deserves its own section.
 
-I caved in, I created my own callout note and changed the default ones a little bit. Me from a week ago has just rolled her eyes.
+I caved in, I created my own callout note and changed the default ones a little bit. Me from a week ago is rolling her eyes.
 
 ![](https://media.giphy.com/media/l0HlUNj5BRuYDLxFm/giphy.gif)
 
-I would not know how to explain my process, I'm not a great teacher. What I can say is that I cross-examined [Alison Hill's](https://github.com/pyrrhamide/apreshill/blob/784d739f78c785417268c8351333ed131fe75677/assets/scss/custom.scss#L140) and [Isabella Benabaye's](https://github.com/isabellabenabaye/isabella-b.com/blob/e576b13bf25d5ddee711edc4adca9c353f0734d0/assets/scss/custom.scss#L487) `custom.scss` files with the callout template, and I ended up with my simple and green callout that you can find in `_callouts-custom.scss` rather than `custom.scss`!
+I would not know how to explain my process. What I can say is that I cross-examined [Alison Hill's](https://github.com/pyrrhamide/apreshill/blob/784d739f78c785417268c8351333ed131fe75677/assets/scss/custom.scss#L140) and [Isabella Benabaye's](https://github.com/isabellabenabaye/isabella-b.com/blob/e576b13bf25d5ddee711edc4adca9c353f0734d0/assets/scss/custom.scss#L487) `custom.scss` files with the callout template, and I ended up with my simple and green callout that you can find in `_callouts-custom.scss` rather than `custom.scss`!
 
 Here is the final result:
 ```html
@@ -198,19 +200,19 @@ I requested a free `*.rbind.io` subdomain from RStudio, got it, [redirected HTTP
 
 Alright, that's fine, the subdomain is new, I'll give it some time to do its thing and reach the entire World Wide Web! Well, it got worse: it became a daily occurrence and got to the point where I could not browse any other `*.rbind.io` subdomains.
 
-I'm based in Paris, the website depends on the Cloudfare Frankfurt server, so I figured I'd whip out my trusty VPN and try other European locations. No luck. What about the United States of America? Yes luck. Urgh.
+I'm based in Paris, the website depends on the Cloudfare Frankfurt server, so I thought I'd whip out my trusty VPN and try other European locations. No luck. The United States of America? Yes luck. Urgh.
 
-So the issue appears to be European-centric. I sent a [report](https://github.com/rbind/support/issues/789#issuecomment-827488131) to let the kind people of RStudio know what's up, I'll see how it goes from here!
+The issue appears to be European-centric. I sent a [report](https://github.com/rbind/support/issues/789#issuecomment-827488131) to let the kind people of RStudio know what's up, I'll see how it goes from here!
 
 ## BONUS: Today I Learned
 
-* The difference between CSS IDs (`#ID`) and classes (`.class`). I know this is _la base de la base_. Rome wasn't built in a day.
+* The difference between CSS IDs (`#ID`) and classes (`.class`). I know this is _la base de la base_, yeah, but Rome wasn't built in a day.
 ```html
 <div id="whole">
   <div class="smol">
   </div>
 </div>
 ```
-* That you can link a line from a GitHub file by clicking on the line number. Those are really the simplest things, but now I know them!
+* That you can link a line from a GitHub file by clicking on the line number. Those are really the simplest, yet the most useful things.
 * That you can (and should) write the language used right after the first three apostrophes signalling a chunk of code, so that colours don't turn dodgy.
 * Of GitHub gists' existence: great to share version-controlled snippets of code. Technology rules.
