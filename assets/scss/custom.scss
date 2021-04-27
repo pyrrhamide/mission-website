@@ -1,4 +1,4 @@
-/* Whole document: */
+/* --- WHOLE DOCUMENT ---: */
 
 /* marge entre nav bar et texte */
 body {
@@ -81,7 +81,9 @@ a:hover {
   width: 80%;
 }
 
-/* home page */
+/* --- HOME PAGE --- */
+
+/* animation widget about_custom */
 #about_custom {
   @keyframes fade-in {
     0% {
@@ -119,6 +121,7 @@ a:hover {
   padding-top: 0px !important;
 }
 
+/* grossissement logos en survolant */
 .network-icon li:hover {
   transform: scale(1.05);
 }
@@ -149,9 +152,10 @@ a:hover {
 }
 
 
-/* code */
+/* --- CODE --- */
 /* https://github.com/rstudio/blogdown/blob/master/docs/02-hugo.Rmd */
 
+/* code dans le corps de texte */
 pre, code {
 	color: #4A7E86;
 	background-color: #fff;
@@ -159,6 +163,7 @@ pre, code {
 	padding-right: .5em;
 }
 
+/* blocs de code */
 pre {
   border: 1px solid #fff;
   box-shadow: 5px 5px 5px #eee;
@@ -173,8 +178,7 @@ pre code {
   font-size: 0.8rem;
 }
 
-/* buttons */
-
+/* --- BOUTONS --- */
 .btn {
   font-family: Karla;
   text-transform: lowercase;
@@ -186,7 +190,7 @@ pre code {
   justify-content: center;
 }
 
-/* section headers */
+/* --- SECTION HEADERS --- */
 
 div.universal-wrapper.pt-3 h1 {
   text-align: center;
@@ -261,10 +265,6 @@ iframe {
   max-width: 1000px;
 }
 
-.carousel-indicators li {
-	background-color: #06805E80;
-}
-
 .section-heading p {
 	color: #004346;
 }
@@ -279,7 +279,7 @@ html, body {
 }
 
 
-/* --------Blog posts--------- */
+/* -------- BLOG POSTS --------- */
 /* Headers within blogs */
 
 .article-style h1:not(:first-child),
@@ -294,7 +294,7 @@ pre {
   white-space: pre-wrap;
 }
 
-/*---anchor headings-- */
+/*---ANCHOR HEADINGS-- */
 
 a > svg.anchor-symbol {
   color: transparent;
@@ -325,8 +325,7 @@ a > svg.anchor-symbol:hover {
   margin-bottom: 2rem; /* ecart TOC premier para */
 }
 
-/*--- Footer ---*/
-// Footer styles
+/*--- FOOTER ---*/
 
 footer {
   margin: 4rem 0 0;
@@ -343,7 +342,7 @@ footer .powered-by {
   font-size: 0.75rem;
 }
 
-/* --- Callouts --- */
+/* --- CALLOUTS --- */
 
 /* Style asides as Bootstrap alerts. */
 .article-style aside {
@@ -351,6 +350,7 @@ footer .powered-by {
 }
 
 /* Asides use <p> block element whereas alerts use <div>. */
+// style général des blocs
 .article-style aside p,
 div.alert > div {
   position: relative;
@@ -372,7 +372,7 @@ div.alert div > :last-child {
 }
 
 .article-style aside p::before,
-div.alert > div:first-child::before {
+div.alert > div:first-child::before { 
   position: absolute;
   top: -0.3rem;
   left: -2rem;
