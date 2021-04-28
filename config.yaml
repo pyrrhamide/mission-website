@@ -5,7 +5,7 @@ theme: "starter-academic"
 # This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
 
 title: a talking toucan # Website name
-baseurl: 'http://kanto.rbind.io/' # Website URL
+baseurl: 'https://kanto-does-things.netlify.app/' # Website URL
 copyright: '&copy; {year} Kanto Fiaferana' # Footer text, e.g. '© {year} Me'
 
 ############################
