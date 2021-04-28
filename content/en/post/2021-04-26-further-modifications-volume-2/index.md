@@ -60,7 +60,7 @@ You dip your toe into the animation pool once, you jump head first into it after
 
 To be honest, I mucked up the timeline a bit, for the sake of story-telling. I did find the homepage too busy before I changed it, but I only changed it _after_ I read this great blog post by Connor Rothschild, [Animating Your Hugo Academic Site](https://www.connorrothschild.com/post/animate-hugo-academic). I read it and I went "yeah, I want to try that, that looks neat". I will not go into the details of what kind of animations you can build, Connor's article explains it way better than I would.
 
-Nonetheless, I cannot stress enough the importance of looking up the default templates of the Academic theme, and any other themes that you may use. It directs you towards the specific bits you may wish to edit. In the case of `about_custom`, reading its html file lead me to the classes I wanted to animate. I chose a staggered fade-in, with the avatar appearing first, the title position second and the network icons last. 
+Nonetheless, I cannot stress enough the importance of looking up the default templates of the Academic theme, and any other themes that you may use. It directs you towards the specific bits you may wish to edit. In the case of `about_custom`, reading its html file lead me to the classes I wanted to animate. I chose a staggered fade-in, with the avatar appearing first, the title position second and the network icons last.
 
 This is what I did in `custom.scss` (later `_homepage-custom.scss`):
 ```css
@@ -203,6 +203,10 @@ Alright, that's fine, the subdomain is new, I'll give it some time to do its thi
 I'm based in Paris, the website depends on the Cloudfare Frankfurt server, so I thought I'd whip out my trusty VPN and try other European locations. No luck. The United States of America? Yes luck. Urgh.
 
 The issue appears to be European-centric. I sent a [report](https://github.com/rbind/support/issues/789#issuecomment-827488131) to let the kind people of RStudio know what's up, I'll see how it goes from here!
+
+{{% callout note %}}
+For the time-being, I am redirecting everything towards my netlify URL.
+{{% /callout %}}
 
 ## BONUS: Today I Learned
 
