@@ -17,7 +17,6 @@ links:
   name: français
   url: fr/blog/l-origine-du-site/
 summary: 'How to build a website with blogdown, a crash course.'
-featured: no
 image:
   caption: '[Photo by Danielle MacInnes on Unsplash](https://unsplash.com/photos/IuLgi9PWETU)'
   focal_point: ''
