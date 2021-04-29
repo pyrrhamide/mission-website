@@ -59,7 +59,11 @@ This is an important file for the following sections. SCSS stands for _Syntactic
 
 I still don't know much about CSS and HTML (WIP!), so I copied Alison Hill's file, read it carefully and changed things slowly while `blogdown` was serving the site. If I was stuck on something or if I really wanted to understand what I was doing, I googled.[^4] It's actually by googling and browsing GitHub that I keep getting new ideas for this site. I cannot recommend this type of curiosity enough.
 
-Create your `custom.scss` file under the following folders: `assets/scss/`.
+Create your `custom.scss` file under the following folders: `assets/scss/`, and write down your aesthetic changes.
+
+{{% callout look %}}
+**Update**: or create `custom.scss`, write down all your general changes applicable to the whole website, then create individual `_itemname-custom.scss` files for specific elements, files that you then `@import` to `custom.scss`. See [here](/blog/further-modifications-2/#making-customscss-more-readable) for more details.
+{{% /callout %}}
 
 **References**
 

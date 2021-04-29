@@ -28,7 +28,7 @@ image:
 
 {{% toc %}}
 
-[Last time](/post/l-origine-du-site/), I explained how to quickly set up a new website with `blogdown`. Now, I will talk about what **I** did in terms of customisation. Once again, I heavily relied on Alison Hill's [blogpost](https://alison.rbind.io/post/new-year-new-blogdown/) and [repo](https://github.com/rbind/apreshill), as well as Wowchemy's [documentation](https://wowchemy.com/docs/).
+[Last time](/blog/l-origine-du-site/), I explained how to quickly set up a new website with `blogdown`. Now, I will talk about what **I** did in terms of customisation. Once again, I heavily relied on Alison Hill's [blogpost](https://alison.rbind.io/post/new-year-new-blogdown/) and [repo](https://github.com/rbind/apreshill), as well as Wowchemy's [documentation](https://wowchemy.com/docs/).
 
 Wowchemy's Academic template comes with a lot of example content to get inspired from. However, you might want to make it more personalised and streamlined. I know I did! I went ahead and tried to make it "my own", although I practically copied Alison's theme and fonts (they're so nice, I really like them).
 
@@ -47,14 +47,14 @@ Determine the ones you do not want. Once you are sure, go to the `content/home/`
 
 Up next, you want to customise everything by adding your own information details. First, let's modify the default author. Open the file `content/authors/admin/_index.md`, and edit the metadata. Under the YAML, you can write a snippet of your bio. You can also change the icon by uploading an image named `avatar.png` or `.jpg`.
 
-Now we'll change the widgets' contents. In `content/home/`, edit `skills.md`.
+Now let's change the widgets' contents. In `content/home/`, edit `skills.md`.
 
-This leaves us (or me really) with `experience`, `posts` and `projects`. You can modify them now if you wish (which, to be fair, is what I did), especially if you are okay with keeping them on your homepage. I was not, and this is where landing pages come in.
+This leaves us with `experience`, `posts` and `projects`. You can modify them now if you wish (which, to be fair, is what I did), especially if you are okay with keeping them on your homepage. I was not, and this is where landing pages come in.
 
 ## Landing pages
 
 {{% callout note %}}
-This is where my narration gets personal because I'm not sure it was the right way to do it, hence I don't feel like bossing you around.
+My narration gets quite personal here.
 {{% /callout %}}
 
 I wanted those widgets to have their own pages that I could access by clicking on the top bar. I take the `projects` example as a reference here, since it was the weirdest one to set up.
@@ -73,7 +73,7 @@ type: widget_page # important!!!
 
 3. In the same folder, I copied the `content/home/projects.md` widget file.
 4. There were two subfolders `external-project` and `internal-project` left, I moved them to the landing page folder `my-projects`.
-5. Almost done. I had to redirect the top bar to the landing page folder, rather than to the homepage widget (before I forget, now may be the time to deactivate the widget in `content/home/`). I went to `config/_default/menus.yaml` and changed the url to `'my-projects/'`. And then tada!
+5. Almost done. I had to redirect the top bar to the landing page folder, rather than to the homepage widget (before I forget, now may be the time to deactivate the widget in `content/home/`). I went to `config/_default/menus.yaml` and changed the url to `'my-projects/'`.
 
 You can change the setup of your widget page by editing the `content/home/projects.md` widget file.
 
@@ -81,6 +81,8 @@ It was easier for `posts.md` and `experience.md`. I only needed to create a new 
 
 {{% callout look %}}
 **Update**: as it turns out, there is a global issue with Hugo concerning the projects landing page. Hugo does not recognise a widget page in a `project` folder, but it does recognise it in `projects`. I honestly thought something was wrong with my website, because my project page looked...basic. However, once I renamed `project` to `projects`, the widget design worked.
+
+`_index.md` in `my-projects` is no longer necessary.
 {{% /callout %}}
 
 Anywho! I was done with the layout of my site[^3], and I jumped happily into my next mission: making things pretty.

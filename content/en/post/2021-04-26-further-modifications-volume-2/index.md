@@ -36,14 +36,14 @@ In this article, I go over:
 The `about.md`, `skills.md` and `posts.md` widgets constituted my former homepage that was accessible via the logo and via the **about** menu on the navigation bar. The more I looked at it, the more I found it too heavy for an introductory page. I wanted something lighter that would still quickly present me, with the summary/bio/personal details available on another page.
 
 * I moved `about.md` and `skills.md` to an **about** widget page.
-* The `content/home/` folder builds the homepage. I kept `posts.md` and changed its design to a list. Then, I snooped in `themes/.../layouts/partials/widgets/` to copy `about.html` into the root project file, under the same path as template. So `layouts/partials/widgets/about.html`.
+* The `content/home/` folder builds the homepage. I kept `posts.md` active and changed its design to a list. Then, I snooped in `themes/.../layouts/partials/widgets/` to copy `about.html` into the root project file, under the same path as the template. So `layouts/partials/widgets/about.html`.
 * I deleted everything past the network icons, **renamed the file to `about_custom.html`** since I still wanted to use the original widget on the new widget page, and I created `about_custom.md` in `content/home` based on the existing widget.
 
 {{% callout note %}}
 I did this before I found Isabella Benabaye's awesome blogpost, [7 Ways You Can Further Customize the Hugo Academic Theme](https://isabella-b.com/blog/hugo-academic-customization/#about-widget-without-a-summary). She also opted for an about widget without a summary, she detailed it very thoroughly and then some. It's a great post, I would have loved to have seen it when I first started moving things around on my website!
 {{% /callout %}}
 
-This is snippet of the YAML metadata for the standard `about.md` widget:
+This is a snippet of the YAML metadata for the standard `about.md` widget:
 ```yaml
 widget: about
 ```
@@ -53,14 +53,14 @@ This is the one for my `about_custom.md` widget:
 widget: about_custom
 ```
 
-It was very straightforward. But the more I explored other blogs, the less satisfied I was with the fixed nature of my site's elements. Enter animations...
+It was very straightforward and it still was not enough, because I kept exploring other blogs and I became less satisfied with the fixed nature of my site's elements. Enter animations...
 
 ## Animations
 You dip your toe into the animation pool once, you jump head first into it afterwards.
 
 To be honest, I mucked up the timeline a bit, for the sake of story-telling. I did find the homepage too busy before I changed it, but I only changed it _after_ I read this great blog post by Connor Rothschild, [Animating Your Hugo Academic Site](https://www.connorrothschild.com/post/animate-hugo-academic). I read it and I went "yeah, I want to try that, that looks neat". I will not go into the details of what kind of animations you can build, Connor's article explains it way better than I would.
 
-Nonetheless, I cannot stress enough the importance of looking up the default templates of the Academic theme, and any other themes that you may use. It directs you towards the specific bits you may wish to edit. In the case of `about_custom`, reading its html file lead me to the classes I wanted to animate. I chose a staggered fade-in, with the avatar appearing first, the title position second and the network icons last.
+I cannot stress enough the importance of looking up the default templates of the Academic theme, and any other themes that you may use. It directs you towards the specific bits you may wish to edit. In the case of `about_custom`, reading its html file lead me to the classes I wanted to animate. I chose a staggered fade-in, with the avatar appearing first, the title position second and the network icons last.
 
 This is what I did in `custom.scss` (later `_homepage-custom.scss`):
 ```css
@@ -93,7 +93,7 @@ This is what I did in `custom.scss` (later `_homepage-custom.scss`):
 }
 ```
 
-Because I don't know when to stop, I figured I'd apply this animation to every widget/landing pages. And so I went ahead[^1].
+Because I don't know when to stop, I applied the fade-in animation to every widget/landing pages[^1].
 ```css
 .universal-wrapper{
   animation: fade-in .5s forwards;
@@ -107,7 +107,7 @@ Because I don't know when to stop, I figured I'd apply this animation to every w
 }
 ```
 
-Woohoo! Navigating from pages to pages feels less abrupt now. The animation is not applicable to my blogposts and my projects, but I'm sure I'll figure it out :wink:
+Woohoo! Navigating from pages to pages feels less abrupt now. The animation is not applicable to my blogposts and my projects yet, I'm sure I'll figure it out :wink:
 
 [^1]: I am convinced there is a faster way to apply the animation thingy for whenever you change the page, instead of listing all the different elements. I just haven't found this method yet.
 
@@ -159,9 +159,9 @@ I believe the next step is to put all `_itemname-custom.scss` in a distinct fold
 
 ## Other small edits
 
-* [I changed the `post` slug to `blog`](https://wowchemy.com/docs/guide/extending-wowchemy/#permalinks) for the heck of it, although it did not apply to the blog "menu";
-* Based on Isabella's post, I changed the displayed post date from 'last modification' to the date of publication/creation;
-* I finally managed to create a pretty project widget-page, by changing the folder name from `project` to `projects`. The design now works. Yay!
+* [I changed the `post` slug to `blog`](https://wowchemy.com/docs/guide/extending-wowchemy/#permalinks) for the heck of it, although it did not apply to the blog "menu". There is one caveat: I had to modify one-by-one every links that contained `post`[^2];
+* I changed the displayed post date from 'last modification' to the date of publication/creation, after reading Isabella's post;
+* I finally created a pretty project widget-page, by changing the folder name from `project` to `projects`. The design now works. Yay!
 
 ![Former project page](project-former.png "What my project page used to look like")
 
@@ -171,14 +171,16 @@ I believe the next step is to put all `_itemname-custom.scss` in a distinct fold
 
 <center><i>What my project page looks like now</i></center>
 
-### New callout bloc
+[^2]: I have a feeling that a `_redirects` file would have spared me from this ordeal.
+
+### New callout block
 There is one final change that deserves its own section.
 
-I caved in, I created my own callout note and changed the default ones a little bit. Me from a week ago is rolling her eyes.
+I caved in, I created a callout note and changed the default ones a little bit. Me from a week ago is rolling her eyes.
 
 ![](https://media.giphy.com/media/l0HlUNj5BRuYDLxFm/giphy.gif)
 
-I would not know how to explain my process. What I can say is that I cross-examined [Alison Hill's](https://github.com/pyrrhamide/apreshill/blob/784d739f78c785417268c8351333ed131fe75677/assets/scss/custom.scss#L140) and [Isabella Benabaye's](https://github.com/isabellabenabaye/isabella-b.com/blob/e576b13bf25d5ddee711edc4adca9c353f0734d0/assets/scss/custom.scss#L487) `custom.scss` files with the callout template, and I ended up with my simple and green callout that you can find in `_callouts-custom.scss` rather than `custom.scss`!
+I would not know how to explain my process. What I can say is that I cross-examined [Alison Hill's](https://github.com/pyrrhamide/apreshill/blob/784d739f78c785417268c8351333ed131fe75677/assets/scss/custom.scss#L140) and [Isabella Benabaye's](https://github.com/isabellabenabaye/isabella-b.com/blob/e576b13bf25d5ddee711edc4adca9c353f0734d0/assets/scss/custom.scss#L487) `custom.scss` files with the [callout template](https://github.com/pyrrhamide/mission-website/blob/eafdeadc9d05e4bb1b9a0faa4771fef248dda47d/themes/github.com/wowchemy/wowchemy-hugo-modules/wowchemy/assets/scss/wowchemy/elements/_callout.scss), and I ended up with my simple and green callout that you can find in `_callouts-custom.scss` rather than `custom.scss`!
 
 Here is the final result:
 ```html
