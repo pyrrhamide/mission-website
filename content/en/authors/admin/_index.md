@@ -22,12 +22,12 @@ interests:
 #  url: https://www.stanford.edu/
 role: Postgraduate student
 social:
-- display:
-    header: false
-  icon: twitter
-  icon_pack: fab
-  label: Follow me on Twitter
-  link: https://twitter.com/aindinoise
+#- display:
+#    header: false
+#  icon: twitter
+#  icon_pack: fab
+#  label: Follow me on Twitter
+#  link: https://twitter.com/aindinoise
 - display:
     header: false
   icon: github
