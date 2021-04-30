@@ -8,9 +8,9 @@ active: true
 headless: true
 
 # Order that this section appears on the page.
-weight: 15
+weight: 20
 
-title: CV
+title: Experience professionnelle
 subtitle:
 
 # Date format for experience
@@ -23,29 +23,31 @@ date_format: Jan 2006
 #   Leave `date_end` empty if it's your current employer.
 #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
 experience:
-  - title: Data analyst intern
+  - title: Stagiaire en analyse de données
     company: Coram Family and Childcare
     company_url: 'https://www.familyandchildcaretrust.org/'
-    location: 'London, UK'
+    location: 'Londres, Royaume-Uni'
     date_start: '2018-06-01'
     date_end: '2018-07-18'
     description: |2-
-        Responsibilities include:
-        
-        * Analysing
-        * Modelling
-        * Co-authoring the Holiday Childcare Survey 2018
-        
+        * Co-auteure du rapport [Holiday Childcare Survey 2018](https://www.familyandchildcaretrust.org/sites/default/files/Holiday%20Childcare%20Survey%202018_Family%20and%20Childcare%20Trust.pdf).
+        * Etude statistique de données transversales sur l'accès et le prix des garderies en Grande-Bretagne.
+
   - title: Politics department embassador
     company: University of Warwick
     company_url: 'https://warwick.ac.uk/'
-    location: 'Coventry, UK'
-    date_start: '2016-01-01'
-    date_end: '2016-12-31'
+    location: 'Coventry, Royaume-Uni'
+    date_start: '2019-01-01'
+    date_end: '2019-06-01'
+    description: Représentation du département de _Politics and International Studies_ lors des journées portes ouvertes.
+
+  - title: Stagiaire en recherche en sciences sociales
+    company: Institut national d'études démographiques
+    company_url: 'https://www.ined.fr/'
+    location: 'Paris, France'
+    date_start: '2019-10-01'
+    date_end: '2019-10-01'
     description: |2-
-        Responsibilities include:
-        
-        * Open days stuff
-        * Promotional stuff
-        * thingy 3
+        * Passation du questionnaire de l'enquête ENVIE.
+        * Amélioration du questionnaire.
 ---

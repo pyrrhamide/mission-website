@@ -8,7 +8,7 @@ active: true
 headless: true
 
 # Order that this section appears on the page.
-weight: 15
+weight: 20
 
 title: Experience
 subtitle:
@@ -32,8 +32,8 @@ experience:
     description: |2-
         Responsibilities include:
 
-        * passation questionnaire enquête ENVIE
-        * amélioration questionnaire
+        * Administering the ENVIE survey.
+        * Improving the survey upon feedback.
 
   - title: Data analyst intern
     company: Coram Family and Childcare
@@ -44,19 +44,14 @@ experience:
     description: |2-
         Responsibilities include:
 
-        * Co-authoring the [Holiday Childcare Survey 2018](https://www.familyandchildcaretrust.org/sites/default/files/Holiday%20Childcare%20Survey%202018_Family%20and%20Childcare%20Trust.pdf)
-        * Analysing
-        * Modelling
+        * Co-authoring the [Holiday Childcare Survey 2018](https://www.familyandchildcaretrust.org/sites/default/files/Holiday%20Childcare%20Survey%202018_Family%20and%20Childcare%20Trust.pdf).
+        * Analysing cross-sectional data on availability and cost of holiday childcare.
 
-  - title: Politics department embassador
+  - title: Politics department ambassador
     company: University of Warwick
     company_url: 'https://warwick.ac.uk/'
     location: 'Coventry, UK'
     date_start: '2019-01-01'
     date_end: '2019-06-01'
-    description: |2-
-        Responsibilities include:
-
-        * Open days stuff
-        * Promotional stuff
+    description: Representing the department of Politics and International Studies during Open Days, by giving campus tours and presentations to prospective students.
 ---
