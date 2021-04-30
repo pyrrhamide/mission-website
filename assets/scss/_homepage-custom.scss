@@ -68,3 +68,14 @@
   text-transform: uppercase;
   letter-spacing: .08em;
 }
+
+
+/* réduire taille recent posts */
+#posts {
+  padding-top: 30px;
+  padding-bottom: 10px;
+
+  .col-12 {
+    font-size: .8rem;
+  }
+}
