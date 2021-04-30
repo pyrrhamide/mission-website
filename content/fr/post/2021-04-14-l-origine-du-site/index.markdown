@@ -9,7 +9,7 @@ links:
 - icon: door-open
   icon_pack: fas
   name: projet
-  url: fr/my-projects/creating-beautiful-content/
+  url: fr/my-projects/creer-contenu-r/
 - icon: link
   icon_pack: fas
   name: english

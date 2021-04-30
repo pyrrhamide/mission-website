@@ -24,7 +24,7 @@ image:
 
 {{% toc %}}
 
-I talked about how to build a basic website and about what standard customisations one could do. I scratched the surface of everything one can do with `blogdown`, Hugo and Netlify, my current Holy Trinity. However, with the way _a talking toucan_ looks like now, I felt I needed to properly write down all the other little things I did. I can only go so far back in my commit history, before thinking "eff it, I don't remember how I did this, whatever".
+I talked about how to build a basic website and about what standard customisations one could do. I scratched the surface of everything one can do with `blogdown`, Hugo and Netlify, my current Holy Trinity. However, with the way _**a talking toucan**_ looks like now, I felt I needed to properly write down all the other little things I did. I can only go so far back in my commit history, before thinking "eff it, I don't remember how I did this, whatever".
 
 I'll make this my motto from now on: Your Mileage May Vary. This post is mainly for me, so that I can remember how I proceeded or so that I can cringe at the naïveté of it all! It's my public diary if you will :)
 

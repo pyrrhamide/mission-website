@@ -9,7 +9,7 @@ links:
 - icon: door-open
   icon_pack: fas
   name: projet
-  url: fr/my-projects/creating-beautiful-content/
+  url: fr/my-projects/creer-contenu-r/
 - icon: link
   icon_pack: fas
   name: english
@@ -24,7 +24,7 @@ image:
 
 {{% toc %}}
 
-J'ai construit le site et j'ai fait des petites modifications esthétiques de base. J'ai parlé superficiellement de ma nouvelle Sainte Trinité, `blogdown`, Hugo et Netlify. Entre temps, _un toucan qui parle_ a subi de multiples transformations que j'oublie petit à petit. J'en arrive au point où mon historique GitHub ne m'aide plus à me remémorer ma démarche, puisqu'il devient de moins en moins lisible. Il est donc temps que je couche sur le papier virtuel ce que j'ai fait, pour garder une trace de ma manière de procéder ~ à l'époque ~.
+J'ai construit le site et j'ai fait des petites modifications esthétiques de base. J'ai parlé superficiellement de ma nouvelle Sainte Trinité, `blogdown`, Hugo et Netlify. Entre temps, _**un toucan qui parle**_ a subi de multiples transformations que j'oublie petit à petit. J'en arrive au point où mon historique GitHub ne m'aide plus à me remémorer ma démarche, puisqu'il devient de moins en moins lisible. Il est donc temps que je couche sur le papier virtuel ce que j'ai fait, pour garder une trace de ma manière de procéder ~ à l'époque ~.
 
 ## Site bilingue
 

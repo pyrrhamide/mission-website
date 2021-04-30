@@ -8,6 +8,7 @@ tags:
 - R
 - blogdown
 title: créer du contenu avec R
+slug: creer-contenu-r
 ---
 
 ## 'J'ai créé un blog!'
