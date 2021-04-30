@@ -13,18 +13,18 @@
   }
 
   .avatar {
-    animation: fade-in 3s forwards;
+    animation: fade-in 2.5s forwards;
   }
 
   .portrait-title {
     opacity: 0;
-    animation: fade-in 3s forwards;
+    animation: fade-in 2.5s forwards;
     animation-delay: 0.8s;
   }
 
   .network-icon {
     opacity: 0;
-    animation: fade-in 3s forwards;
+    animation: fade-in 2.5s forwards;
     animation-delay: 1.3s;
   }
 }

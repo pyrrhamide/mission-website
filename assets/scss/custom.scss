@@ -136,6 +136,10 @@ iframe {
   max-width: 80%;
 }
 
+.article {
+  animation: fade-in .5s forwards;
+}
+
 .section-heading p {
 	color: #004346;
 }

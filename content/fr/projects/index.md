@@ -1,6 +1,6 @@
 ---
 summary: Projects
-title: "My projects"
+title: "Mes projets"
 slug: projets
 type: widget_page
 ---

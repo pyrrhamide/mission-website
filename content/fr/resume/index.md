@@ -1,6 +1,6 @@
 ---
 summary: More about my work experience
-title: "Resume"
+title: "CV"
 slug: cv
 type: widget_page
 ---
