@@ -43,7 +43,4 @@ feature:
 #  name = "Surfing"
 #  description = "90%"
 
-design:
-  background:
-    color: '#ebf4fa'
 ---
