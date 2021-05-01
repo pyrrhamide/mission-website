@@ -206,8 +206,8 @@ I'm based in Paris, the website depends on the Cloudfare Frankfurt server, so I 
 
 The issue appears to be European-centric. I sent a [report](https://github.com/rbind/support/issues/789#issuecomment-827488131) to let the kind people of RStudio know what's up, I'll see how it goes from here!
 
-{{% callout note %}}
-For the time-being, I am redirecting everything towards my netlify URL.
+{{% callout look %}}
+**Update**: it's fixed!
 {{% /callout %}}
 
 ## BONUS: Today I Learned
