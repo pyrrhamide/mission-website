@@ -72,10 +72,14 @@
 
 /* réduire taille recent posts */
 #posts {
-  padding-top: 30px;
-  padding-bottom: 10px;
-
-  .col-12 {
+  line-height: normal;
+  padding-top: 20px;
+  padding-bottom: 20px;
+/*  .col-12 {
     font-size: .8rem;
-  }
+  }*/
+}
+
+#posts .btn {
+  display: none;
 }

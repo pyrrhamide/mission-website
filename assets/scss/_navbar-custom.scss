@@ -13,6 +13,10 @@
   height: 70px;
 }
 
+.dark .navbar {
+	box-shadow: none;
+}
+
 .navbar-brand {
   text-transform: lowercase;
 	letter-spacing: .0em;
