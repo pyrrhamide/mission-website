@@ -45,9 +45,15 @@ h1, h2, h3, h4, h5, h6 {
 a:active,
 a:focus,
 a:hover {
-  color: #461c00;
+  color: #cd5c16;
+  text-decoration: none; /*remove underline when hover*/
 }
 
+/* post summary links to article. redundant with title on top. fixing that!*/
+a.summary-link {
+  pointer-events: none;
+  cursor: default;
+}
 
 /* --- BOUTONS --- */
 .btn {
@@ -176,6 +182,13 @@ a > svg.anchor-symbol {
   margin-bottom: .5rem;
   margin-left: .5rem;
   fill: #1a162d99;
+}
+
+.dark a > svg.anchor-symbol {
+  color: transparent;
+  margin-bottom: .5rem;
+  margin-left: .5rem;
+  fill: #c0c0c0;
 }
 
 a > svg.anchor-symbol:hover {
