@@ -10,7 +10,7 @@ headless: true
 # Order that this section appears on the page.
 weight: 20
 
-title: Experience professionnelle
+title: Expérience professionnelle
 subtitle:
 
 # Date format for experience
@@ -31,7 +31,7 @@ experience:
     date_end: '2018-07-18'
     description: |2-
         * Co-auteure du rapport [Holiday Childcare Survey 2018](https://www.familyandchildcaretrust.org/sites/default/files/Holiday%20Childcare%20Survey%202018_Family%20and%20Childcare%20Trust.pdf).
-        * Etude statistique de données transversales sur l'accès et le prix des garderies en Grande-Bretagne.
+        * Étude statistique de données transversales sur l'accès et le prix des garderies en Grande-Bretagne.
 
   - title: Ambassadrice du département de sciences politiques
     company: University of Warwick

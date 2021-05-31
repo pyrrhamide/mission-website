@@ -37,7 +37,7 @@ social:
   icon_pack: fab
   link: https://linkedin.com/in/kanto-fiaferana
 superuser: true
-title: KF
+title: Kanto Fiaferana
 ---
 
 I am an overly curious postgraduate student in Quantified Social Sciences. I enjoy learning new tools and ways of sharing beautiful content, to help myself and others better understand things. With these traits in mind, I built a [website](https://pyrrhamide.github.io/regressions) with `bookdown`, reporting all the different data analysis methods I learned during my postgraduate degree.

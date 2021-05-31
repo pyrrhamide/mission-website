@@ -37,7 +37,7 @@ social:
   icon_pack: fab
   link: https://linkedin.com/in/kanto-fiaferana
 superuser: true
-title: KF
+title: Kanto Fiaferana
 ---
 
 Je suis étudiante en M2 de Sciences Sociales. J'aime apprendre à manipuler de nouveaux outils et à partager du contenu simple et agréable au plan esthétique, pour aider moi-même et les autres à mieux comprendre. Ces intérêts personnels m'ont motivé à publier un autre [site](https://pyrrhamide.github.io/regressions), recensant toutes les méthodes d'analyses de données que j'ai apprises pendant mon master.

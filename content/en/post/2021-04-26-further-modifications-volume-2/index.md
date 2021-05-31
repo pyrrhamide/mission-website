@@ -10,6 +10,10 @@ links:
   icon_pack: fas
   name: project
   url: my-projects/creating-beautiful-content/
+- icon: link
+  icon_pack: fas
+  name: français
+  url: fr/blog/autres-modifications-2/
 summary: 'Going deeper and deeper into the CSS Enterprise.'
 featured: no
 image:
@@ -202,7 +206,7 @@ I requested a free `*.rbind.io` subdomain from RStudio, got it, [redirected HTTP
 
 Alright, that's fine, the subdomain is new, I'll give it some time to do its thing and reach the entire World Wide Web! Well, it got worse: it became a daily occurrence and got to the point where I could not browse any other `*.rbind.io` subdomains.
 
-I'm based in Paris, the website depends on the Cloudfare Frankfurt server, so I thought I'd whip out my trusty VPN and try other European locations. No luck. The United States of America? Yes luck. Urgh.
+I'm based in Paris, the website depends on the Cloudflare Frankfurt server, so I thought I'd whip out my trusty VPN and try other European locations. No luck. The United States of America? Yes luck. Urgh.
 
 The issue appears to be European-centric. I sent a [report](https://github.com/rbind/support/issues/789#issuecomment-827488131) to let the kind people of RStudio know what's up, I'll see how it goes from here!
 

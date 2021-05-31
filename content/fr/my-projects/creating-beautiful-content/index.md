@@ -16,3 +16,4 @@ slug: creer-contenu-r
 1. [Créer un site avec `blogdown`](/fr/blog/l-origine-du-site/)
 2. [Personnaliser son site](/fr/blog/decorer-le-site/)
 3. [Personnaliser son site, deuxième tome](/fr/blog/autres-modifications/)
+4. [Personnaliser son site, troisième tome](/fr/blog/autres-modifications-2/)
