@@ -80,4 +80,5 @@ Voici comment R me dit bonjour:
 
 ## AJA
 
-* Pas d'apostrophe dans les en-têtes YAML, okay?
+* Pas d'apostrophe toute seule dans les en-têtes YAML, okay?
+* Faut la doubler pour que ça boude pas, dak?

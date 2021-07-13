@@ -80,4 +80,5 @@ Here is how R greets me nowadays:
 
 ## TIL
 
-* No apostrophe in YAML. No likey.
+* No single apostrophe in YAML. No likey.
+* But rather, double apostrophe. Works.
