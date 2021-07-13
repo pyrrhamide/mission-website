@@ -48,6 +48,7 @@ address_format: en-us
 # Site features
 
 highlight: true
+highlight_style: "tomorrow" #arduino-light
 highlight_languages:
   - r
   - python
