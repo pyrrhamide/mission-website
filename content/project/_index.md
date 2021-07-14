@@ -1,7 +1,7 @@
 ---
-title: A Project Portfolio To Grow
-description: "Give your projects a place to live online."
-author: "The R Markdown Team @RStudio"
+title: My projects portfolio
+description: "Where my ambitions go out of this earth."
+author: "Kanto Fiaferana"
 show_post_thumbnail: true
 show_author_byline: true
 show_post_date: false
