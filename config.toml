@@ -137,6 +137,11 @@ enableEmoji = true
     title = "Resume"
     url = "/resume/"
     weight = 4
+  [[menu.header]]
+    name = "French"
+    title = "Le French"
+    url = "/fr/"
+    weight = 5
   # [[menu.header]]
   #   name = "A collection"
   #   title = "A collection"
