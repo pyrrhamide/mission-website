@@ -1,6 +1,6 @@
 ---
 title: l'origine du site
-author: [admin]
+author: Kanto Fiaferana
 #authors: # if I want to add author under title. might want to change to Kanto Fiaferana tho
 #  - admin
 date: '2021-04-14'
@@ -28,7 +28,7 @@ image:
 -->
 
 <!-- new way (but not newest) -->
-{{% toc %}}
+<!-- {{% toc %}} -->
 
 
 Howdy y'all!

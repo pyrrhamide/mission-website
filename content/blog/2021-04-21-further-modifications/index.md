@@ -1,6 +1,6 @@
 ---
 title: further modifications
-author: [admin]
+author: Kanto Fiaferana
 date: '2021-04-21'
 slug: further-modifications
 categories: [R, tutorials]
@@ -22,8 +22,6 @@ image:
   preview_only: no
 layout: single-sidebar
 ---
-
-{{% toc %}}
 
 I talked about how to build a basic website and about what standard customisations one could do. I scratched the surface of everything one can do with `blogdown`, Hugo and Netlify, my current Holy Trinity. However, with the way _**a talking toucan**_ looks like now, I felt I needed to properly write down all the other little things I did. I can only go so far back in my commit history, before thinking "eff it, I don't remember how I did this, whatever".
 

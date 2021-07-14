@@ -1,6 +1,6 @@
 ---
 title: further modifications, volume 2
-author: KF
+author: Kanto Fiaferana
 date: '2021-04-26'
 slug: further-modifications-2
 categories: [R, tutorials]
@@ -15,15 +15,13 @@ links:
   name: français
   url: fr/blog/autres-modifications-2/
 summary: 'Going deeper and deeper into the CSS Enterprise.'
-featured: no
-image:
-  caption: '[Photo by Greg Rakozy on Unsplash](https://unsplash.com/photos/vw3Ahg4x1tY)'
-  focal_point: ''
-  preview_only: no
+# featured: no
+# image:
+#   caption: '[Photo by Greg Rakozy on Unsplash](https://unsplash.com/photos/vw3Ahg4x1tY)'
+#   focal_point: ''
+#   preview_only: no
 layout: single-sidebar
 ---
-
-{{% toc %}}
 
 Well folks, it seems I cannot stay away from `blogdown` for long. New ideas keep coming to me at the most unfortunate moments, I find elements from other blogs that I'd like to emulate here...it's a never-ending responsibility!
 
@@ -40,8 +38,10 @@ In this article, I go over:
 The `about.md`, `skills.md` and `posts.md` widgets constituted my former homepage that was accessible via the logo and via the **about** menu on the navigation bar. The more I looked at it, the more I found it too heavy for an introductory page. I wanted something lighter that would still quickly present me, with the summary/bio/personal details available on another page.
 
 * I moved `about.md` and `skills.md` to an **about** widget page.
+  
 * The `content/home/` folder builds the homepage. I kept `posts.md` active and changed its design to a list. Then, I snooped in `themes/.../layouts/partials/widgets/` to copy `about.html` into the root project file, under the same path as the template. So `layouts/partials/widgets/about.html`.
-* I deleted everything past the network icons, **renamed the file to `about_custom.html`** since I still wanted to use the original widget on the new widget page, and I created `about_custom.md` in `content/home` based on the existing widget.
+  
+* I deleted everything past the network icons, **renamed the file to** `about_custom.html` since I still wanted to use the original widget on the new widget page, and I created `about_custom.md` in `content/home` based on the existing widget.
 
 {{% callout note %}}
 I did this before I found Isabella Benabaye's awesome blogpost, [7 Ways You Can Further Customize the Hugo Academic Theme](https://isabella-b.com/blog/hugo-academic-customization/#about-widget-without-a-summary). She also opted for an about widget without a summary, she detailed it very thoroughly and then some. It's a great post, I would have loved to have seen it when I first started moving things around on my website!
@@ -115,7 +115,7 @@ Woohoo! Navigating from pages to pages feels less abrupt now. The animation is n
 
 [^1]: I am convinced there is a faster way to apply the animation thingy for whenever you change the page, instead of listing all the different elements. I just haven't found this method yet.
 
-## Making `custom.scss` more readable
+## Making custom.scss more readable
 All those personal changes made the `custom.scss` file quite long, which in turn made it tedious for me to find whatever item I felt like changing on the day. At first, I believed it was the only way the file could present itself, until I seriously focused on the template `assets/scss` folder: all the different elements' style file are clearly separated there under the name `_itemname.scss` in several subfolders. The `@import` function pushes them up to one `_all.scss` file per folder, that are then pushed to `wowchemy.scss`, leading to a final push to a `main.scss` file containing this magical bit:
 ```css
 @import "bootstrap_variables";
@@ -167,13 +167,24 @@ I believe the next step is to put all `_itemname-custom.scss` in a distinct fold
 * I changed the displayed post date from 'last modification' to the date of publication/creation, after reading Isabella's post;
 * I finally created a pretty project widget-page, by changing the folder name from `project` to `projects`. The design now works. Yay!
 
-![Former project page](project-former.png "What my project page used to look like")
 
-<center><i>What my project page used to look like</i></center>
 
-![New project page](project-current.png "What my project page looks like now")
 
-<center><i>What my project page looks like now</i></center>
+
+{{< panelset class="greetings" >}}
+{{< panel name="Before :cloud:" >}}
+  ![Former project page](project-former.png "What my project page used to look like")
+
+  <center><i>What my project page used to look like</i></center>
+
+{{< /panel >}}
+{{< panel name="After :sunny:" >}}
+  ![New project page](project-current.png "What my project page looks like now")
+
+  <center><i>What my project page looks like now</i></center>
+
+{{< /panel >}}
+{{< /panelset >}}
 
 [^2]: I have a feeling that a `_redirects` file would have spared me from this ordeal.
 
