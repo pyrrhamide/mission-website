@@ -9,12 +9,19 @@ headline: |
 <!-- this is a subheadline -->
 Thanks for stopping by!
 
-I'm a postdoctoral research scientist in the [Department of Biostatistics, Epidemiology, and Informatics](https://www.dbei.med.upenn.edu/) at the University of Pennsylvania Perelman School of Medicine. My research interests include applications of biomedical informatics in the public and population health fields. I work in the [Boland Lab](https://www.med.upenn.edu/bolandlab/) on projects that develop novel data mining methods to extract pregnancy-related information from Electronic Health Records (EHR) and study the relationship between environment and disease. Learn more about my research interests in [publications](/publication).
+I am an overly curious postgraduate student in Quantified Social Sciences. I enjoy learning new tools and ways of sharing beautiful content, to help myself and others better understand things. With these traits in mind, I built a [website](https://pyrrhamide.github.io/regressions) with `bookdown`, reporting all the different data analysis methods I learned during my postgraduate degree.
 
-<i class="fas fa-certificate pr2"></i>[Certificate in Biomedical Informatics](https://www.med.upenn.edu/mbmi/certificate.html)  &#8729;  University of Pennsylvania  &#8729;  2019
+I love experimenting with R and RMarkdown, I am always on the lookout for new packages to play with, hence I cannot stop building new projects. This website is my latest creation, and with it, I aim to:
 
-<i class="fas fa-graduation-cap pr2"></i>Ph.D. in Biomedical Engineering  &#8729;
- Purdue University  &#8729;  2018
+* Regularly post content about data analysis and about content creation with R -- with the exceptional personal article -- in English as well as in [French](/fr/#about),
+* Learn HTML and CSS in the process of further customising _**a talking toucan**_!
 
-<i class="fas fa-graduation-cap pr2"></i>B.S. in Biomedical Engineering  &#8729;
-    University of Minnesota  &#8729;  2012
+I hope you enjoy this as much as I do!
+
+
+
+<i class="fas fa-graduation-cap pr2"></i>Master Quantifier en Sciences Sociales  &#8729;
+ Université PSL (ENS-PSL & EHESS)  &#8729;  2019-2021
+
+<i class="fas fa-graduation-cap pr2"></i>B.A. Politics, International Studies and Quantitative Methods  &#8729;
+    University of Warwick  &#8729;  2016-2019

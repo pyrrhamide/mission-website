@@ -25,7 +25,7 @@ enableEmoji = true
     ordered = false
   [markup.highlight]
     # one of: https://xyproto.github.io/splash/docs/ 
-    style = "github"
+    style = "rainbow_dash"
     
 [params]
   orgName = ""
@@ -48,7 +48,7 @@ enableEmoji = true
   # use a built-in color theme
   # one of: forest / grayscale / peach / plum /
   #         poppy / sky / violet / water 
-  theme = "water"
+  theme = "poppy"
   
   # or, leave theme empty & make your own palette
   # see docs at https://hugo-apero.netlify.app/blog/color-themes/
@@ -81,14 +81,14 @@ enableEmoji = true
   # Icon pack "fab" includes brand icons, see: https://fontawesome.com/icons?d=gallery&s=brands&m=free
   # Icon pack "fas" includes solid icons, see: https://fontawesome.com/icons?d=gallery&s=solid&m=free
   # Icon pack "far" includes regular icons, see: https://fontawesome.com/icons?d=gallery&s=regular&m=free
-  # [[params.social]]
-  #     icon      = "github" # icon name without the 'fa-'
-  #     icon_pack = "fab"
-  #     url       = "https://github.com/apreshill/apero"
-  # [[params.social]]
-  #     icon      = "facebook-square" # icon name without the 'fa-'
-  #     icon_pack = "fab"
-  #     url       = "https://www.facebook.com/hashtag/ap%C3%A9ro"
+   [[params.social]]
+       icon      = "github" # icon name without the 'fa-'
+       icon_pack = "fab"
+       url       = "https://github.com/pyrrhamide"
+   [[params.social]]
+       icon      = "linkedin" # icon name without the 'fa-'
+       icon_pack = "fab"
+       url       = "https://linkedin.com/kanto-fiaferana"
   # [[params.social]]
   #     icon      = "instagram" # icon name without the 'fa-'
   #     icon_pack = "fab"
@@ -154,11 +154,11 @@ enableEmoji = true
     title = "License"
     url = "/license/"
     weight = 1
-  [[menu.footer]]
-    name = "Contact"
-    title = "Contact form"
-    url = "/contact/"
-    weight = 2
+  # [[menu.footer]]
+  #   name = "Contact"
+  #   title = "Contact form"
+  #   url = "/contact/"
+  #   weight = 2
   [[menu.footer]]
     name = "Contributors"
     title = "Contributors"

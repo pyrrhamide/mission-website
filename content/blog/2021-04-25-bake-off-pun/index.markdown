@@ -11,7 +11,7 @@ image:
   caption: '[Photo by Tina Guina on Unsplash](https://unsplash.com/photos/s8_7AqkzCWY)'
   focal_point: ''
   preview_only: no
-projects: []
+layout: single-sidebar
 ---
 
 One of my favourite [reality TV show competition] is _The Great-British Bake-Off_. Wholesome, fun, relaxing, appetising. As a former student from a UK university, I have been immersed into this cultural phenomenon, and I became hooked. I most definitely watch over my oven like a hawk when I bake. 

@@ -20,7 +20,7 @@ image:
   caption: '[Photo by Greg Rakozy on Unsplash](https://unsplash.com/photos/vw3Ahg4x1tY)'
   focal_point: ''
   preview_only: no
-projects: []
+layout: single-sidebar
 ---
 
 {{% toc %}}

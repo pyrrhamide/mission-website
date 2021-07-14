@@ -20,6 +20,7 @@ image:
   caption: '[Photo by Sigmund on Unsplash](https://unsplash.com/photos/4BSULrfDc7w)'
   focal_point: ''
   preview_only: no
+layout: single-sidebar
 ---
 
 {{% toc %}}
