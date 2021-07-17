@@ -1,5 +1,5 @@
 ---
-title: further modifications, volume 2
+title: Blogdown - further modifications, volume 2
 author: KF
 date: '2021-04-26'
 slug: further-modifications-2
@@ -14,7 +14,7 @@ links:
   icon_pack: fas
   name: français
   url: fr/blog/autres-modifications-2/
-summary: 'Going deeper and deeper into the CSS Enterprise.'
+summary: 'Going deeper and deeper into the CSS Enterprise. Animations, custom widgets, slugs, and more.'
 featured: no
 image:
   caption: '[Photo by Greg Rakozy on Unsplash](https://unsplash.com/photos/vw3Ahg4x1tY)'

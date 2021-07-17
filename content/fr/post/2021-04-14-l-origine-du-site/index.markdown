@@ -1,5 +1,5 @@
 ---
-title: l'origine du site
+title: Blogdown - l'origine du site
 author: KF
 date: '2021-04-14'
 slug: l-origine-du-site
@@ -9,12 +9,12 @@ links:
 - icon: door-open
   icon_pack: fas
   name: projet
-  url: fr/my-projects/creer-contenu-r/
+  url: fr/my-projects/creating-beautiful-content/
 - icon: link
   icon_pack: fas
   name: english
   url: blog/l-origine-du-site/
-summary: 'Comment construire un site avec blogdown, un cours accéléré.'
+summary: 'Comment construire un site avec le package R `blogdown`, une introduction rapide.'
 featured: no
 image:
   caption: '[Photo by Danielle MacInnes on Unsplash](https://unsplash.com/photos/IuLgi9PWETU)'

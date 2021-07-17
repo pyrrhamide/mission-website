@@ -1,5 +1,5 @@
 ---
-title: l'origine du site
+title: Blogdown - l'origine du site
 author: [admin]
 #authors: # if I want to add author under title. might want to change to Kanto Fiaferana tho
 #  - admin
@@ -16,7 +16,7 @@ links:
   icon_pack: fas
   name: français
   url: fr/blog/l-origine-du-site/
-summary: 'How to build a website with blogdown, a crash course.'
+summary: 'I created my personal website using the blogdown package on R. This is a post explaining how I set it up. I''m not great at writing summaries am I.'
 image:
   caption: '[Photo by Danielle MacInnes on Unsplash](https://unsplash.com/photos/IuLgi9PWETU)'
   focal_point: ''

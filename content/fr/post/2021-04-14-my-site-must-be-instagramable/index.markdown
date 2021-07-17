@@ -1,5 +1,5 @@
 ---
-title: décorer le site
+title: Blogdown - décorer le site
 author: KF
 date: '2021-04-15'
 slug: decorer-le-site
@@ -9,12 +9,12 @@ links:
 - icon: door-open
   icon_pack: fas
   name: projet
-  url: fr/my-projects/creer-contenu-r/
+  url: fr/my-projects/creating-beautiful-content/
 - icon: link
   icon_pack: fas
   name: english
   url: blog/an-instagramable-site/
-summary: 'Comment rendre le site joli, un cours accéléré.'
+summary: 'Le modèle Academic inchangé est très moche. J''ai fait des changements simples et rapides sur le contenu affiché et quelques ajustements esthétiques.'
 featured: no
 image:
   caption: '[Photo by Joanna Kosinka on Unsplash](https://unsplash.com/photos/1_CMoFsPfso)'
@@ -28,7 +28,7 @@ image:
 
 {{%toc%}}
 
-[La dernière fois](/fr/blog/l-origine-du-site/), j'ai expliqué comment rapidement mettre un nouveau site en ligne à l'aide du package R `blogdown`. Cette fois-ci, je vais parler de mes modifications esthétiques personnelles. Je me suis de nouveau fortement inspirée de l'[article](https://alison.rbind.io/post/new-year-new-blogdown/) d'Alison Hill, ainsi que le [repo](https://github.com/rbind/apreshill) de son site. Je décerne également une mention honorable à la [documentation](https://wowchemy.com/docs/) de Wowchemy.
+[La dernière fois](/fr/post/l-origine-du-site/), j'ai expliqué comment rapidement mettre un nouveau site en ligne à l'aide du package R `blogdown`. Cette fois-ci, je vais parler de mes modifications esthétiques personnelles. Je me suis de nouveau fortement inspirée de l'[article](https://alison.rbind.io/post/new-year-new-blogdown/) d'Alison Hill, ainsi que le [repo](https://github.com/rbind/apreshill) de son site. Je décerne également une mention honorable à la [documentation](https://wowchemy.com/docs/) de Wowchemy.
 
 Le modèle Academic vient avec beaucoup d'exemples pour aider à se lancer dans la construction de son site. Toutefois, on peut avoir envie d'alléger le site et de le faire sur mesure. Dans mon cas, j'ai répondu à l'affirmative et suis partie dans une croisade tortueuse pour qu'Academic soit à mon goût. Après, je ne connais pas grand chose en HTML/CSS et je ne suis pas très créative, par conséquent je me suis _beaucoup_[^1] inspirée de l'esthétique (et donc du code) du site d'Alison. [Jetez y un coup d'oeil](https://alison.rbind.io), il est très joli.
 
@@ -115,3 +115,4 @@ http://kanto.rbind.io/*    https://kanto.rbind.io/:splat  301!
 ```
 
 C'est ce que j'ai fait, mais il arrive souvent que mon site soit inaccessible en raison d'un certificat SSL invalide. Ca m'irrite beaucoup, au point où je considère rester en HTTP, ce qui n'est pas un défaut en soi.
+

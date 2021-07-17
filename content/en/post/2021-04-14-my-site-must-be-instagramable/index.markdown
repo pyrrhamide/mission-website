@@ -1,5 +1,5 @@
 ---
-title: an instagramable site
+title: Blogdown - an instagramable site
 author: KF
 date: '2021-04-15'
 slug: an-instagramable-site
@@ -14,7 +14,7 @@ links:
   icon_pack: fas
   name: français
   url: fr/blog/decorer-le-site/
-summary: 'How to make your new website more to your taste, a crash course.'
+summary: 'The default setup of the Academic theme is...rough. In this article, I go over the first big aesthetic and content changes I''ve applied. It does not involve HTML and CSS stuff. Yet.'
 featured: no
 image:
   caption: '[Photo by Joanna Kosinka on Unsplash](https://unsplash.com/photos/1_CMoFsPfso)'
@@ -28,7 +28,7 @@ image:
 
 {{% toc %}}
 
-[Last time](/blog/l-origine-du-site/), I explained how to quickly set up a new website with `blogdown`. Now, I will talk about what **I** did in terms of customisation. Once again, I heavily relied on Alison Hill's [blogpost](https://alison.rbind.io/post/new-year-new-blogdown/) and [repo](https://github.com/rbind/apreshill), as well as Wowchemy's [documentation](https://wowchemy.com/docs/).
+[Last time](/post/l-origine-du-site/), I explained how to quickly set up a new website with `blogdown`. Now, I will talk about what **I** did in terms of customisation. Once again, I heavily relied on Alison Hill's [blogpost](https://alison.rbind.io/post/new-year-new-blogdown/) and [repo](https://github.com/rbind/apreshill), as well as Wowchemy's [documentation](https://wowchemy.com/docs/).
 
 Wowchemy's Academic template comes with a lot of example content to get inspired from. However, you might want to make it more personalised and streamlined. I know I did! I went ahead and tried to make it "my own", although I practically copied Alison's theme and fonts (they're so nice, I really like them).
 
@@ -47,9 +47,9 @@ Determine the ones you do not want. Once you are sure, go to the `content/home/`
 
 Up next, you want to customise everything by adding your own information details. First, let's modify the default author. Open the file `content/authors/admin/_index.md`, and edit the metadata. Under the YAML, you can write a snippet of your bio. You can also change the icon by uploading an image named `avatar.png` or `.jpg`.
 
-Now let's change the widgets' contents. In `content/home/`, edit `skills.md`.
+Now we'll change the widgets' contents. In `content/home/`, edit `skills.md`.
 
-This leaves us with `experience`, `posts` and `projects`. You can modify them now if you wish (which, to be fair, is what I did), especially if you are okay with keeping them on your homepage. I was not, and this is where landing pages come in.
+This leaves us (or me really) with `experience`, `posts` and `projects`. You can modify them now if you wish (which, to be fair, is what I did), especially if you are okay with keeping them on your homepage. I was not, and this is where landing pages come in.
 
 ## Landing pages
 

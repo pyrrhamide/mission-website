@@ -1,5 +1,5 @@
 ---
-title: further modifications
+title: Blogdown - further modifications
 author: [admin]
 date: '2021-04-21'
 slug: further-modifications
@@ -14,7 +14,7 @@ links:
   icon_pack: fas
   name: français
   url: fr/blog/autres-modifications/
-summary: 'Additional tweaks for when you cannot stop googling and dreaming of what your website could be.'
+summary: 'Additional tweaks for when you cannot stop googling and dreaming of what your website could be. Or how I finally stepped in the HTML/CSS abyss, discovered shortcodes and layouts as defined in the theme''s folder, and how this site became bilingual.'
 featured: no
 image:
   caption: '[Photo by Sigmund on Unsplash](https://unsplash.com/photos/4BSULrfDc7w)'

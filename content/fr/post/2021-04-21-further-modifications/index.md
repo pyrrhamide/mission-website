@@ -1,5 +1,5 @@
 ---
-title: d'autres modifications
+title: Blogdown - d'autres modifications
 author: [admin]
 date: '2021-04-21'
 slug: autres-modifications
@@ -14,7 +14,7 @@ links:
   icon_pack: fas
   name: english
   url: blog/further-modifications/
-summary: 'Des modifications supplémentaires, causées par un googlage incessant et par une vision idéale du site.'
+summary: 'Des modifications supplémentaires, causées par un googlage incessant et par une vision idéale du site. Le site est bilingue et a encore changé de tête.'
 featured: no
 image:
   caption: '[Photo by Sigmund on Unsplash](https://unsplash.com/photos/4BSULrfDc7w)'

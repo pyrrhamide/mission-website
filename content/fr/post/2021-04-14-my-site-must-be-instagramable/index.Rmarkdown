@@ -1,10 +1,10 @@
 ---
-title: décorer le site
+title: Blogdown - décorer le site
 author: KF
 date: '2021-04-15'
 slug: decorer-le-site
 categories: [R, tutoriel]
-tags: [R, blogdown]
+tags: [blogdown, créer le site]
 links:
 - icon: door-open
   icon_pack: fas
@@ -13,8 +13,8 @@ links:
 - icon: link
   icon_pack: fas
   name: english
-  url: post/an-instagramable-site/
-summary: 'Comment rendre le site joli, un cours accéléré.'
+  url: blog/an-instagramable-site/
+summary: 'Le modèle Academic inchangé est très moche. J''ai fait des changements simples et rapides sur le contenu affiché et quelques ajustements esthétiques.'
 featured: no
 image:
   caption: '[Photo by Joanna Kosinka on Unsplash](https://unsplash.com/photos/1_CMoFsPfso)'

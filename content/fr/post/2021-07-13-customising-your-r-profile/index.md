@@ -5,7 +5,7 @@ date: '2021-07-13'
 slug: changer-son-r-profile
 categories: [R, tutoriel]
 tags: [loisirs créatifs]
-summary: 'Changer la manière dont R dit bonjour. Plus sympa et met du baume au coeur.'
+summary: 'Changer la manière dont R dit bonjour, en utilisant le fichier `.Rprofile`. Plus sympa et met du baume au coeur.'
 featured: no
 image:
   caption: 'Coucou - généré par [carbon](https://carbon.now.sh/)'

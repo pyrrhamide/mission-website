@@ -1,12 +1,12 @@
 ---
-title: écrire son mémoire avec RMarkdown
+title: Écrire son mémoire avec RMarkdown
 draft: true
 author: KF
 date: '2021-07-20'
 slug: ecrire-son-memoire-rmarkdown
 categories: []
 tags: []
-summary: 'J''ai écrit mon mémoire de M2 avec RMarkdown. Je partage maintenant ce que j''ai fait, parce que c''est du travail qu''il ne faudrait pas oublier tellement il était intense.'
+summary: 'J''ai écrit mon mémoire de M2 avec RMarkdown. Je partage ici tout ce que j''ai fait.'
 featured: no
 image:
   caption: '[Photo by Ken Suarez on Unsplash](https://unsplash.com/photos/4IxPVkFGJGI)'
@@ -31,7 +31,7 @@ Mémoire de M2, analyse de données et de réseaux. J'avais écrit mon mémoire 
 
 Organisation de mon dossier contenant tous mes fichiers `.Rmd`, au sein d'un plus grand dossier/projet pour l'entièreté de mon mémoire (codes, données, bibliographie, graphiques, tableaux, etc.). 
 
-Cette idée de faire mon mémoire sur RMarkdown m'a honnêtement mordue dans le cul. J'ai appris (assez rapidement) que [le répertoire de travail d'un fichier rmd est le dossier dans lequel ce fichier est sauvegardé](https://bookdown.org/yihui/rmarkdown-cookbook/working-directory.html), et non pas le dossier de mon projet R. Pour moi, c'était donc `/text/` et non `Memoire_QESS/`. Je l'ai découvert quand j'essayais de compiler mes documents: pour appeler mes données/images et autre, je faisais `"sous-dossier/fichier.ext"` sauf que ça fonctionnait pô. Il fallait mettre le chemin entier, depuis le big dossier, soit `"~/Memoire_QESS/sous-dossier/fichier.ext"`.
+Cette idée de faire mon mémoire sur RMarkdown m'a honnêtement mordue dans le cul. J'ai appris (assez rapidement) que [le répertoire de travail d'un fichier rmd est le dossier dans lequel ce fichier est sauvegardé](https://bookdown.org/yihui/rmarkdown-cookbook/working-directory.html), et non pas le dossier de mon projet R. Pour moi, c'était donc `/text/` et non `Memoire_QESS/`. Je l'ai découvert quand j'essayais de compiler mes documents: pour appeler mes données/images et autre, je faisais `"sous-dossier/fichier.ext"` sauf que ça fonctionnait pô. Il fallait mettre le chemin entier, depuis le big dossier, soit `"~/Memoire_QESS/sous-dossier/fichier.ext"`, ou plus simplement `"../sous-dossier/fichier.ext"`.
 
 Du coup, ce fameux dossier `/text/` était organisé de cette manière:
 ```plaintext

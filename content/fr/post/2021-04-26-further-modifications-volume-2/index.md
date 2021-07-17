@@ -1,5 +1,5 @@
 ---
-title: encore des modifications
+title: Blogdown - encore des modifications
 author: [admin]
 date: '2021-04-26'
 slug: autres-modifications-2
@@ -14,7 +14,7 @@ links:
   icon_pack: fas
   name: english
   url: blog/further-modifications-2/
-summary: 'Mes objectifs de personnalisation sont de plus en plus poussés.'
+summary: 'Mes objectifs de personnalisation sont de plus en plus poussés. J''ai modifié quelques layouts de base du modèle pour créer une page d''accueil épurée, j''ai introduit des animations, et pleins d''autres choses encore...'
 featured: no
 image:
   caption: '[Photo by Greg Rakozy on Unsplash](https://unsplash.com/photos/vw3Ahg4x1tY)'

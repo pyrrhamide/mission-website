@@ -1,10 +1,10 @@
 ---
-title: an instagramable site
+title: Blogdown - an instagramable site
 author: KF
 date: '2021-04-15'
 slug: an-instagramable-site
 categories: [R, tutorials]
-tags: [R, blogdown, very informal]
+tags: [blogdown, story time]
 links:
 - icon: door-open
   icon_pack: fas
@@ -13,8 +13,8 @@ links:
 - icon: link
   icon_pack: fas
   name: français
-  url: fr/post/decorer-le-site/
-summary: 'How to make your new website more to your taste, a crash course.'
+  url: fr/blog/decorer-le-site/
+summary: 'The default setup of the Academic theme is...rough. In this article, I go over the first big aesthetic and content changes I''ve applied. It does not involve HTML and CSS stuff. Yet.'
 featured: no
 image:
   caption: '[Photo by Joanna Kosinka on Unsplash](https://unsplash.com/photos/1_CMoFsPfso)'
@@ -54,7 +54,7 @@ This leaves us (or me really) with `experience`, `posts` and `projects`. You can
 ## Landing pages
 
 {{% callout note %}}
-This is where my narration gets personal because I'm not sure it was the right way to do it, hence I don't feel like bossing you around.
+My narration gets quite personal here.
 {{% /callout %}}
 
 I wanted those widgets to have their own pages that I could access by clicking on the top bar. I take the `projects` example as a reference here, since it was the weirdest one to set up.
@@ -72,11 +72,17 @@ type: widget_page # important!!!
 
 3. In the same folder, I copied the `content/home/projects.md` widget file.
 4. There were two subfolders `external-project` and `internal-project` left, I moved them to the landing page folder `my-projects`.
-5. Almost done. I had to redirect the top bar to the landing page folder, rather than to the homepage widget (before I forget, now may be the time to deactivate the widget in `content/home/`). I went to `config/_default/menus.yaml` and changed the url to `'my-projects/'`. And then tada!
+5. Almost done. I had to redirect the top bar to the landing page folder, rather than to the homepage widget (before I forget, now may be the time to deactivate the widget in `content/home/`). I went to `config/_default/menus.yaml` and changed the url to `'my-projects/'`.
 
 You can change the setup of your widget page by editing the `content/home/projects.md` widget file.
 
 It was easier for `posts.md` and `experience.md`. I only needed to create a new subfolder for `experience`, copy the widget there, write an `index.md` (or `_index.md` for my posts), redirect the top bar, and that was it. I don't know what is special about the project page.
+
+{{% callout look %}}
+**Update**: as it turns out, there is a global issue with Hugo concerning the projects landing page. Hugo does not recognise a widget page in a `project` folder, but it does recognise it in `projects`. I honestly thought something was wrong with my website, because my project page looked...basic. However, once I renamed `project` to `projects`, the widget design worked.
+
+`_index.md` in `my-projects` is no longer necessary.
+{{% /callout %}}
 
 Anywho! I was done with the layout of my site[^3], and I jumped happily into my next mission: making things pretty.
 
