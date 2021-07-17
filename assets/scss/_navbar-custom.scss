@@ -23,6 +23,14 @@
   font-size: 1.5em
 }
 
+@media screen and (max-width: 900px) {
+  .navbar {
+    height: 50px;
+  }
+  .navbar-brand {
+    font-size: large;
+  }
+}
 /*----NAV LINK HOVER ANIMATION -----*/
 /* petite barre qui apparait quand on survole nav bar */
 

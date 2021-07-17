@@ -13,18 +13,18 @@
   }
 
   .avatar {
-    animation: fade-in 2.5s forwards;
+    animation: fade-in 1.3s forwards;
   }
 
   .portrait-title {
     opacity: 0;
-    animation: fade-in 2.5s forwards;
+    animation: fade-in 1s forwards;
     animation-delay: 0.8s;
   }
 
   .network-icon {
     opacity: 0;
-    animation: fade-in 2.5s forwards;
+    animation: fade-in 1s forwards;
     animation-delay: 1.3s;
   }
 }
@@ -33,7 +33,12 @@
   color: #333;
 }
 
-
+@media screen and (max-width: 900px) {
+  #about_custom .avatar {
+    width: 200px;
+    height: 200px;
+  }
+}
 /* a quel point paragraphe "about me" descend */
 #about .col-12.col-lg-8 {
   padding-top: 0px !important;
