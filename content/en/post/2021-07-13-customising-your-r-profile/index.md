@@ -18,6 +18,7 @@ links:
   icon_pack: fas
   name: français
   url: fr/blog/changer-son-r-profile/
+toc: false
 ---
 
 I was scrolling through Twitter and saw [this tweet](https://twitter.com/djnavarro/status/1407971934021713920?s=20) from Danielle Navarro.

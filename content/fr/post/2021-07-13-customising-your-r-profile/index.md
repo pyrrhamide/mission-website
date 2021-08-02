@@ -17,6 +17,7 @@ links:
   icon_pack: fas
   name: english
   url: blog/customising-your-r-profile/
+toc: false
 ---
 
 Je naviguais sur Twitter, puis je suis tombée sur [ce tweet](https://twitter.com/djnavarro/status/1407971934021713920?s=20) de Danielle Navarro.
