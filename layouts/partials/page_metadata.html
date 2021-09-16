@@ -16,10 +16,10 @@
   {{ if not (in (slice "event" "page") $page.Type) }}
   <span class="article-date">
     {{ $date := $page.Date.Format site.Params.date_format }}
-    {{ if eq $page.Type "publication" }}
-    {{ $date = $page.Date.Format (site.Params.publications.date_format | default "January, 2006") }}
-    {{ end }}
-    {{ $date }}
+    {{.page.Date.Day}} {{i18n .page.Date.Month}} {{.page.Date.Year}}
+
+    <!-- {{ $date }}
+    {{ .page.Date.Day }} {{ index site.Data.mois (printf "%d" .page.Date.Month) }} {{ .page.Date.Year }} -->
   </span>
   {{ end }}
 
