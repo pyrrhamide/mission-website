@@ -17,7 +17,7 @@ links:
 summary: 'Mes objectifs de personnalisation sont de plus en plus poussés. J''ai modifié quelques layouts de base du modèle pour créer une page d''accueil épurée, j''ai introduit des animations, et pleins d''autres choses encore...'
 featured: no
 image:
-  caption: '[Photo by Greg Rakozy on Unsplash](https://unsplash.com/photos/vw3Ahg4x1tY)'
+  caption: '[Photo de Greg Rakozy sur Unsplash](https://unsplash.com/photos/vw3Ahg4x1tY)'
   focal_point: ''
   preview_only: no
 projects: []
@@ -168,7 +168,7 @@ L'amélioration du dessus serait de déplacer tous les `_itemname-custom.scss` d
 ## Autres modifications "minimes"
 
 * [J'ai modifié le slug `post` en `blog`](https://wowchemy.com/docs/guide/extending-wowchemy/#permalinks) parce que j'avais du temps à perdre, quoique ça ne s'est pas diffusé au menu du blog. Ce changement présente un inconvénient: j'ai dû modifié individuellement tous les liens qui contenait le slug `post`[^2];
-* J'ai changé la date affichée: au lieu de la date de dernière mise-à-jour, le site affiche la date de création/publication de l'article;
+* J'ai changé la date affichée en modifiant la classe `article-date` du template `layouts/partials/page_metadata.html`: au lieu de la date de dernière mise-à-jour, le site affiche la date de création/publication de l'article;
 * J'ai enfin créé une belle page de menu des projets, en changeant le nom du dossier de `project` à `projects`. La mise en forme fonctionne !
 
 ![Ancien menu projet](project-former.png "Ancien menu projet avec la mise en forme qui ne fonctionne pas")

@@ -17,7 +17,7 @@ links:
 summary: 'Le modèle Academic inchangé est très moche. J''ai fait des changements simples et rapides sur le contenu affiché et quelques ajustements esthétiques.'
 featured: no
 image:
-  caption: '[Photo by Joanna Kosinka on Unsplash](https://unsplash.com/photos/1_CMoFsPfso)'
+  caption: '[Photo de Joanna Kosinka sur Unsplash](https://unsplash.com/photos/1_CMoFsPfso)'
   focal_point: ''
   preview_only: no
 ---

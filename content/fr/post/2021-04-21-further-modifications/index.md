@@ -17,7 +17,7 @@ links:
 summary: 'Des modifications supplémentaires, causées par un googlage incessant et par une vision idéale du site. Le site est bilingue et a encore changé de tête.'
 featured: no
 image:
-  caption: '[Photo by Sigmund on Unsplash](https://unsplash.com/photos/4BSULrfDc7w)'
+  caption: '[Photo de Sigmund sur Unsplash](https://unsplash.com/photos/4BSULrfDc7w)'
   focal_point: ''
   preview_only: no
 ---

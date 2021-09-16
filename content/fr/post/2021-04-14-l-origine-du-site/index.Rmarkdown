@@ -17,7 +17,7 @@ links:
 summary: 'Comment construire un site avec le package R `blogdown`, une introduction rapide.'
 featured: no
 image:
-  caption: '[Photo by Danielle MacInnes on Unsplash](https://unsplash.com/photos/IuLgi9PWETU)'
+  caption: '[Photo de Danielle MacInnes sur Unsplash](https://unsplash.com/photos/IuLgi9PWETU)'
   focal_point: ''
   preview_only: no
 ---

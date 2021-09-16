@@ -1,5 +1,5 @@
 ---
-title: changer son .Rprofile
+title: Changer son .Rprofile
 author: KF
 date: '2021-07-13'
 slug: changer-son-r-profile
