@@ -24,6 +24,11 @@ pre code {
   font-size: 0.8rem;
 }
 
+@media screen and (max-width: 900px) {
+  pre code {
+    font-size: 13px;
+  }
+}
 /* mode sombre*/
 .dark pre,
 .dark code {

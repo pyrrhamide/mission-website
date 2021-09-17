@@ -17,6 +17,7 @@ body {
 @media screen and (max-width: 900px) {
   body {
     margin-top: 50px !important;
+    font-size: 16px;
   }
 }
 // animations
@@ -168,6 +169,12 @@ iframe {
 /* https://github.com/gcushen/hugo-academic/issues/147 */
 .container {
   max-width: 80%;
+}
+
+@media screen and (max-width: 900px) {
+  .container {
+    max-width: 90%;
+  }
 }
 
 .article {
