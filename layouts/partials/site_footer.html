@@ -9,14 +9,15 @@
     {{ with site.Copyright }}{{ replace . "{year}" now.Year | markdownify}} &middot; {{ end }}
     
     {{ if eq "en" .Language.Lang }}
-    <a href="https://github.com/pyrrhamide/mission-website" target="_blank" rel="noopener"><i class="fas fa-code-branch"></i></a> &middot; Made with the <a href="https://cran.r-project.org/" target="_blank" rel="noopener"><i class="fab fa-r-project"></i> </a><a href="https://github.com/rstudio/blogdown" target="_blank" rel="noopener">blogdown</a> package, and the
-    <a href="https://academic-demo.netlify.app/" target="_blank" rel="noopener">Academic theme</a> for
-    <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+      <a href="https://github.com/pyrrhamide/mission-website" target="_blank" rel="noopener"><i class="fas fa-code-branch"></i></a> &middot; Made with the <a href="https://cran.r-project.org/" target="_blank" rel="noopener"><i class="fab fa-r-project"></i> </a><a href="https://github.com/rstudio/blogdown" target="_blank" rel="noopener">blogdown</a> package, and the
+      <a href="https://academic-demo.netlify.app/" target="_blank" rel="noopener">Academic theme</a> for
+      <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
     {{ else }}
-    <a href="https://github.com/pyrrhamide/mission-website" target="_blank" rel="noopener"><i class="fas fa-code-branch"></i></a> &middot; Site réalisé avec le package <a href="https://cran.r-project.org/" target="_blank" rel="noopener"><i class="fab fa-r-project"></i> </a><a href="https://github.com/rstudio/blogdown" target="_blank" rel="noopener">blogdown</a>, et le thème
-    <a href="https://academic-demo.netlify.app/" target="_blank" rel="noopener">Academic</a> pour
-    <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+      <a href="https://github.com/pyrrhamide/mission-website" target="_blank" rel="noopener"><i class="fas fa-code-branch"></i></a> &middot; Site réalisé avec le package <a href="https://cran.r-project.org/" target="_blank" rel="noopener"><i class="fab fa-r-project"></i> </a><a href="https://github.com/rstudio/blogdown" target="_blank" rel="noopener">blogdown</a>, et le thème
+      <a href="https://academic-demo.netlify.app/" target="_blank" rel="noopener">Academic</a> pour
+      <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
     {{ end }}
+
     {{ if ne .Type "docs" }}
     <span class="float-right" aria-hidden="true">
       <a href="#" id="back_to_top">
