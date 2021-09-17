@@ -44,7 +44,7 @@ Je suis étudiante en M2 de Sciences Sociales. J'aime apprendre à manipuler de 
 
 J'expérimente beaucoup avec R et RMarkdown, et je suis toujours à la recherche de nouveaux packages avec lesquels m'occuper. Ce site, construit avec `blogdown`, est ma création la plus récente, et j'espère:
 
-* Publier du contenu régulièrement, en rapport avec l'analyse de données ou bien avec les outils divers de création de contenu sur R, en Français et en [Anglais](/#about),
+* Publier du contenu en rapport avec l'analyse de données ou bien avec les outils divers de création de contenu sur R, en Français et en [Anglais](/#about),
 * Apprendre HTML et CSS au fur et à mesure que je modifie _**un toucan qui parle**_!
 
 Bienvenue sur mon projet de coeur, je vous souhaite une bonne navigation!
