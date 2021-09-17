@@ -67,6 +67,15 @@
       </div>
       {{ end }}
 
+    <!-- {{ if .IsTranslated}}
+    {{ range .Translations }}
+    <div class="traduction">
+      <a href="{{ .Permalink }}"><i class="fas fa-globe mr-1" aria-hidden="true"></i>
+        {{.Language.LanguageName}}</a>
+        {{ end }}
+    </div>
+    {{ end }} -->
+
       {{ if and $show_authors_only $item.Params.authors }}
       <div>
         {{ partial "page_metadata_authors" $item }}

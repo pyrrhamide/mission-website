@@ -55,12 +55,16 @@ a:hover {
   text-decoration: none; /*remove underline when hover*/
 }
 
-/* post summary links to article. redundant with title on top. fixing that!*/
+/* post summary links to article. redundant with title on top. fixing that!
+peut aussi modifier ça dans li_compact.html en supprimant la balise <a> */
 a.summary-link {
   pointer-events: none;
   cursor: default;
 }
 
+.article-metadata {
+  margin-bottom: 0px;
+}
 /* --- BOUTONS --- */
 .btn {
   font-family: Karla;

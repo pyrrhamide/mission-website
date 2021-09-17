@@ -12,11 +12,6 @@ image:
   focal_point: ''
   preview_only: no
 projects: []
-links:
-- icon: link
-  icon_pack: fas
-  name: english
-  url: blog/customising-your-r-profile/
 toc: false
 ---
 

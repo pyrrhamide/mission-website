@@ -41,6 +41,16 @@
   </span>
   {{ end }}
 
+  {{ if $page.IsTranslated }}
+    <span class="middot-divider"></span>
+    <span class="article-translation">
+    <i class="fas fa-globe mr-1" aria-hidden="true"></i>
+        {{ range $page.Translations }}
+      <a href="{{ .Permalink }}">{{ .Language.LanguageName }}</a>
+        {{ end }}
+    </span>
+  {{ end }}
+
   {{/* Show Disqus comment count if enabled. */}}
   {{ $comments_provider := trim (site.Params.comments.provider | lower) " " }}
   {{ $commentable_page_types := site.Params.comments.commentable | default dict }}
