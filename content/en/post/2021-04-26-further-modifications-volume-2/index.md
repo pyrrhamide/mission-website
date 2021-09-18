@@ -10,10 +10,6 @@ links:
   icon_pack: fas
   name: project
   url: my-projects/creating-beautiful-content/
-- icon: link
-  icon_pack: fas
-  name: français
-  url: fr/blog/autres-modifications-2/
 summary: 'Going deeper and deeper into the CSS Enterprise. Animations, custom widgets, slugs, and more.'
 featured: no
 image:
