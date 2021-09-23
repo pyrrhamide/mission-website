@@ -22,22 +22,22 @@ defaultContentLanguage = 'en'
         [[languages.fr.menu.header]]
           name = "À propos"
           title = "À propos"
-          url = "/fr/about/"
+          url = "/about/"
           weight = 1
         [[languages.fr.menu.header]]
           name = "Blog"
           title = "Blog"
-          url = "/fr/blog/"
+          url = "/blog/"
           weight = 2
         [[languages.fr.menu.header]]
           name = "Projets"
           title = "Projets"
-          url = "/fr/project/"
+          url = "/project/"
           weight = 3
         [[languages.fr.menu.header]]
           name = "CV"
           title = "CV"
-          url = "/fr/resume/"
+          url = "/resume/"
           weight = 4
 
 

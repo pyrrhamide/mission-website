@@ -13,14 +13,9 @@ layout: list-sidebar # list, list-sidebar, list-grid
 
 # for list-sidebar layout
 sidebar: 
-  title: A Sidebar for Your Thoughts
+  title: Can't take it back once it's been set in motion
   description: |
-    This is a fully featured blog that supports categories,
-    tags, series, and pagination. Even this sidebar offers 
-    a ton of customizations.
-    
-    Check out the _index.md file in the /blog folder 
-    to edit this content. 
+    You know I need you for the oxytocin. 
   author: "Kanto Fiaferana"
   text_link_label: ""
   text_link_url: ""

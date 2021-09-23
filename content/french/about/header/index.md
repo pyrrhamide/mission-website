@@ -3,10 +3,19 @@
 text_align_right: false
 show_title_as_headline: false
 headline: |
-  Hello, I'm happy you're here.
+  How does it keep getting better!
 ---
 
 <!-- this is a subheadline -->
+Everyday our love finds a new way to grow
+
+The time we spent together
+
+Fells good
+
+We got a good thing going.
+
+
 Thanks for stopping by!
 
 I am an overly curious postgraduate student in Quantified Social Sciences. I enjoy learning new tools and ways of sharing beautiful content, to help myself and others better understand things. With these traits in mind, I built a [website](https://pyrrhamide.github.io/regressions) with `bookdown`, reporting all the different data analysis methods I learned during my postgraduate degree.
