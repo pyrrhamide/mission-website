@@ -4,7 +4,7 @@
     {{- $has_headers := ge (len $headers) 1 -}}
     {{- if $has_headers -}}
     <div class="sticky pa4">
-        <p class="f6 measure-narrow lh-copy mv0 pt4"><span class="b ttu db">On this page</span><span>{{
+        <p class="f6 measure-narrow lh-copy mv0 pt4"><span class="b ttu db">{{i18n "on_this_page"}}</span><span>{{
                 $page.TableOfContents | markdownify | emojify }}</span></p>
     </div>
     {{ end }}
