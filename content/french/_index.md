@@ -1,9 +1,13 @@
 ---
 title: "Kanto Fiaferana"
 subtitle: "Je voue mes nuits à l'assasymphonie"
-description: "Aux requiems. Tuant par dépit, tout ceux qui s'aiment."
+description: "Aux requiems. Tuant par dépit, ce que je sème.
+
+Je voue mes nuits à l'assasymphonie, et aux blasphèmes.
+
+J'avoue je maudis tout ceux qui s'aiment."
 images:
-  - img/revoir.jpg
+  - /img/revoir.jpg
 image_left: true
 text_align_left: false
 show_social_links: true # specify social accounts in site config
