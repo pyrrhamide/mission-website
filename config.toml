@@ -1,7 +1,46 @@
 baseURL = "https://kanto.rbind.io/"
 theme = "hugo-apero"
-languageCode = "en"
-title = "a talking toucan"
+
+defaultContentLanguage = 'en'
+[languages]
+  [languages.en]
+    languageCode = "en"
+    languageName = 'English'
+    contentDir = 'content/english'
+    title = 'a talking toucan'
+    weight = 1
+
+
+  [languages.fr]
+    languageCode = "fr"
+    languageName = 'Français'
+    contentDir = 'content/french'
+    title = 'un toucan qui parle'
+    weight = 2
+    [languages.fr.menu]
+        # Configure header 
+        [[languages.fr.menu.header]]
+          name = "À propos"
+          title = "À propos"
+          url = "/fr/about/"
+          weight = 1
+        [[languages.fr.menu.header]]
+          name = "Blog"
+          title = "Blog"
+          url = "/fr/blog/"
+          weight = 2
+        [[languages.fr.menu.header]]
+          name = "Projets"
+          title = "Projets"
+          url = "/fr/project/"
+          weight = 3
+        [[languages.fr.menu.header]]
+          name = "CV"
+          title = "CV"
+          url = "/fr/resume/"
+          weight = 4
+
+
 author = "Kanto Fiaferana"
 copyright = "" # set to override the auto generated copyright using org info and now year
 googleAnalytics = ""
@@ -137,11 +176,6 @@ enableEmoji = true
     title = "Resume"
     url = "/resume/"
     weight = 4
-  [[menu.header]]
-    name = "French"
-    title = "Le French"
-    url = "/fr/"
-    weight = 5
   # [[menu.header]]
   #   name = "A collection"
   #   title = "A collection"
