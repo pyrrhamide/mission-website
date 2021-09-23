@@ -152,3 +152,37 @@
   translation: En savoir plus
 - id: published_with
   translation: Published with {wowchemy} — the free, {repo_link}open source{/repo_link} website builder that empowers creators.
+
+- id: January
+  translation: Janvier
+- id: February
+  translation: Février
+- id: March
+  translation: Mars
+- id: April
+  translation: Avril
+- id: May
+  translation: Mai
+- id: June
+  translation: Juin
+- id: July
+  translation: Juillet
+- id: August
+  translation: Août
+- id: September
+  translation: Septembre
+- id: October
+  translation: Octobre
+- id: November
+  translation: Novembre
+- id: December
+  translation: Décembre
+
+- id: posted_on
+  translation: Publié le
+- id: words
+  translation: mots
+- id: by
+  translation: par
+- id: length
+  translation: Longueur
