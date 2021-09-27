@@ -8,6 +8,7 @@ header:
   image: ""
 share: false
 title: Terms
+toc: false
 ---
 
 Wash your hands, wear a mask, avoid large crowds. Get vaccinated.

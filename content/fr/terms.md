@@ -8,6 +8,7 @@ header:
   image: ""
 share: false
 title: Conditions générales
+toc: false
 ---
 
 Lavez vos mains, portez un masque, évitez la foule. Faîtes vous vacciner.
