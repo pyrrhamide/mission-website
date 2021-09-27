@@ -1,6 +1,6 @@
 ---
 title: Blogdown - an instagramable site
-author: KF
+author: Kanto Fiaferana
 date: '2021-04-15'
 slug: an-instagramable-site
 categories: [R, tutorials]

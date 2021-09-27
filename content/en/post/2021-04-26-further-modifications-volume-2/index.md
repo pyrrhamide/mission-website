@@ -1,6 +1,6 @@
 ---
 title: Blogdown - further modifications, volume 2
-author: KF
+author: Kanto Fiaferana
 date: '2021-04-26'
 slug: further-modifications-2
 categories: [R, tutorials]

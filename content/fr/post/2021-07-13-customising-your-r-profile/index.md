@@ -1,6 +1,6 @@
 ---
 title: Changer son .Rprofile
-author: KF
+author: Kanto Fiaferana
 date: '2021-07-13'
 slug: changer-son-r-profile
 categories: [R, tutoriel]

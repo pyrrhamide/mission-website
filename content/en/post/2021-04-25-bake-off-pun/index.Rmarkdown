@@ -1,7 +1,7 @@
 ---
 title: bake-off pun
 draft: true
-author: KF
+author: Kanto Fiaferana
 date: '2021-04-25'
 slug: bake-off-pun
 categories: [R]

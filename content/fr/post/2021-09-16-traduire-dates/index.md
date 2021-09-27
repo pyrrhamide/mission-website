@@ -1,6 +1,6 @@
 ---
 title: Blogdown - traduire les dates pour un site multilingue
-author: KF
+author: Kanto Fiaferana
 date: '2021-09-16'
 slug: traduire-dates-site-multilingue
 categories: [R, tutoriel]

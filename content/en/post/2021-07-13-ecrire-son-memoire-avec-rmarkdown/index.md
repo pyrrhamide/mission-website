@@ -1,7 +1,7 @@
 ---
 title: écrire son memoire avec RMarkdown
 draft: true
-author: KF
+author: Kanto Fiaferana
 date: '2021-07-20'
 slug: ecrire-son-memoire-rmarkdown
 categories: []

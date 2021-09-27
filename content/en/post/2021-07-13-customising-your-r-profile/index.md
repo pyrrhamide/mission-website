@@ -1,7 +1,7 @@
 ---
 title: Customising your .Rprofile
 subtitle: everybody get up, it's time to slam now
-author: [admin]
+author: Kanto Fiaferana
 date: '2021-07-13'
 slug: customising-your-r-profile
 categories: [R, tutorials]

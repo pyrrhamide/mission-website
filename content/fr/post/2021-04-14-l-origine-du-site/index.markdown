@@ -1,6 +1,6 @@
 ---
 title: Blogdown - l'origine du site
-author: KF
+author: Kanto Fiaferana
 date: '2021-04-14'
 slug: l-origine-du-site
 categories: [R, tutoriel]

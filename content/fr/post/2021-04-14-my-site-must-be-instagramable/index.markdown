@@ -1,6 +1,6 @@
 ---
 title: Blogdown - décorer le site
-author: KF
+author: Kanto Fiaferana
 date: '2021-04-15'
 slug: decorer-le-site
 categories: [R, tutoriel]

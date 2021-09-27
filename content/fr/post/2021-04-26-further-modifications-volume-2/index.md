@@ -1,6 +1,6 @@
 ---
 title: Blogdown - encore des modifications
-author: [admin]
+author: Kanto Fiaferana
 date: '2021-04-26'
 slug: autres-modifications-2
 categories: [R, tutoriel]
