@@ -41,7 +41,7 @@
   </span>
   {{ end }}
 
-  {{ if $page.IsTranslated }}
+  {{ if and (eq $page.Type "post") (eq $page.IsTranslated true) }}
     <span class="middot-divider"></span>
     <span class="article-translation">
     <i class="fas fa-globe mr-1" aria-hidden="true"></i>

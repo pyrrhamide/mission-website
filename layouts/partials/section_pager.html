@@ -1,4 +1,6 @@
 {{ $str := "" }}
+
+{{ if eq .Type "post" }}
 <div class="post-nav">
   {{if .PrevInSection}}
   {{ if in (slice "docs" "book") .Type }}{{ $str = "next" }}{{else}}{{ $str = "previous" }}{{end}}
@@ -17,3 +19,4 @@
   {{end}}
   
 </div>
+{{ end }}
