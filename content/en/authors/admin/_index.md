@@ -20,7 +20,7 @@ interests:
 #organizations:
 #- name: Most definitely not Stanford
 #  url: https://www.stanford.edu/
-role: Postgraduate student
+role: Graduate in social sciences and quantitative methods
 social:
 #- display:
 #    header: false

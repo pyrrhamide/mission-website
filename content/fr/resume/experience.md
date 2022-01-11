@@ -30,6 +30,7 @@ experience:
     date_start: '2018-06-01'
     date_end: '2018-07-18'
     description: |2-
+      Blip bloup:
         * Co-auteure du rapport [Holiday Childcare Survey 2018](https://www.familyandchildcaretrust.org/sites/default/files/Holiday%20Childcare%20Survey%202018_Family%20and%20Childcare%20Trust.pdf).
         * Étude statistique de données transversales sur l'accès et le prix des garderies en Grande-Bretagne.
 
@@ -48,6 +49,7 @@ experience:
     date_start: '2019-10-01'
     date_end: '2019-10-01'
     description: |2-
+      Blip bloup:
         * Passation du questionnaire de l'enquête ENVIE.
         * Amélioration du questionnaire.
 ---
