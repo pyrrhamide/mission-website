@@ -1,12 +1,13 @@
 ---
 title: Écrire son mémoire avec RMarkdown
-draft: true
 author: Kanto Fiaferana
-date: '2021-10-01'
+date: '2022-01-11'
 slug: ecrire-son-memoire-rmarkdown
-categories: []
-tags: []
-summary: 'J''ai écrit mon mémoire de M2 avec RMarkdown, Word n''étant plus mon ami. Je partage ici tout ce que j''ai fait pour obtenir un beau (et long) fichier pdf.'
+categories: [R, long récit]
+tags: [travail perso]
+summary: 'J''ai écrit mon mémoire de M2 avec RMarkdown, Word n''étant plus mon ami. Je partage ici tout ce que j''ai fait pour obtenir un beau (et long) fichier pdf.
+
+L''article est long. Avoir une petite tasse de thé à côté ne serait pas de trop.'
 featured: no
 image:
   caption: '[Photo de Ken Suarez sur Unsplash](https://unsplash.com/photos/4IxPVkFGJGI)'
@@ -16,26 +17,46 @@ projects: []
 math: true
 ---
 
-{{% toc %}}
+{{% callout look %}}
+Coucou.
 
-Mémoire de M2, analyse de données et de réseaux. J'avais écrit mon mémoire de licence avec Word (aïe), ce qui n'était franchement pas facile au niveau des tableaux, du référencement, etc. Utiliser R et RMarkdown pour incorporer directement mes données/codes/graphiques/tableaux, mise en page pas complètement gérer par moi. Générer un beau fichier pdf avec $\LaTeX$.
+Tout d'abord, bonne année. J'espère qu'elle sera meilleure que la précédente.
+
+Alors, il faut savoir que cet article est resté un brouillon pendant plusieurs mois. J'étais déterminée à le publier après la soutenance de mon mémoire, mais _life happened_. J'ai repris la rédaction en 2022 parce que faut pas abuser non plus. Toutefois, ma narration est imparfaite. Il n'y a pas de concordance des temps, certaines phrases sont restées des notes (on dirait mon mémoire). Mes professeurs de français s'arracheraient les cheveux s'ils lisaient cet article. 
+
+Mais ils ne le verront jamais et j'ai eu 10 au bac de français, donc j'écris comme je veux ! C'est auprès de toi, chère lectrice, que je m'excuse.
+
+Sur ce, bonne lecture et bonne chance pour ton mémoire si ce cas s'applique à toi.
+{{% /callout %}}
+
+Il y a deux ans, j'ai écrit mon mémoire de licence avec Word, ne connaissant pas mieux et devant utiliser Stata qui ne génère pas de rapports. Ce n'était pas facile au niveau de la mise en forme des tableaux, du référencement, et c'était un long document. En gros, ce n'était pas une expérience agréable. 
+
+Pendant mon master, j'ai appris à utiliser R et RMarkdown qui est pratique pour incorporer directement mes données/codes/graphiques/tableaux. J'ai donc décidé d'écrire mon mémoire de M2 avec RMarkdown, pour finir avec un beau fichier pdf.
+
+C'était un grand projet. Je partage ici les grandes lignes de ce procédé.
 
 ## Les ingrédients
 
+Plusieurs éléments sont essentiels pour que tout fonctionne bien:
+
 * R et RStudio;
-* $\LaTeX$: MiKTeX, ou TinyTeX avec RStudio;
-* Visual Studio Code (facultatif mais j'aime bien);
-* de la patience et de la persévérance.
+* $\LaTeX$: MiKTeX, ou [TinyTeX](https://yihui.org/tinytex/) avec R;
+* Visual Studio Code (facultatif/préférence personnelle);
+* De la patience et de la persévérance.
 
 ## Le dossier
 
-Organisation de mon dossier contenant tous mes fichiers `.Rmd`, au sein d'un plus grand dossier/projet pour l'entièreté de mon mémoire (codes, données, bibliographie, graphiques, tableaux, etc.). 
+Au sein du grand dossier de mon mémoire (codes, données, bibliographie, graphiques, tableaux, etc.), je crée un dossier "texte" contenant tous mes fichiers `.Rmd`. 
 
-Cette idée de faire mon mémoire sur RMarkdown m'a honnêtement mordue dans le cul. J'ai appris (assez rapidement) que [le répertoire de travail d'un fichier rmd est le dossier dans lequel ce fichier est sauvegardé](https://bookdown.org/yihui/rmarkdown-cookbook/working-directory.html), et non pas le dossier de mon projet R. Pour moi, c'était donc `/text/` et non `Memoire_QESS/`. Je l'ai découvert quand j'essayais de compiler mes documents: pour appeler mes données/images et autre, je faisais `"sous-dossier/fichier.ext"` sauf que ça fonctionnait pô. Il fallait mettre le chemin entier, depuis le big dossier, soit `"~/Memoire_QESS/sous-dossier/fichier.ext"`, ou plus simplement `"../sous-dossier/fichier.ext"`.
+{{% callout warning %}}
+[Le répertoire de travail d'un fichier `.Rmd` est le dossier dans lequel ce fichier est sauvegardé](https://bookdown.org/yihui/rmarkdown-cookbook/working-directory.html), et non pas le dossier du projet R. Pour moi, c'était donc `/texte/` et non `Memoire/`. J'ai découvert ça quand j'ai essayé de compiler les `.Rmd` dans lesquels j'appelais mes données ou mes images: j'utilisais le chemin relatif `"sous-dossier/fichier.ext"`, sans succès. 
 
-Du coup, ce fameux dossier `/text/` était organisé de cette manière:
+Il fallait mettre le chemin entier depuis le dossier parent, soit `"~/Memoire/sous-dossier/fichier.ext"`, ou plus simplement `"../sous-dossier/fichier.ext"`.
+{{% /callout %}}
+
+Le dossier `/texte/` est organisé comme suit:
 ```plaintext
-text /
+texte /
 ├── biblio.bib
 ├── asrlf.csl
 ├── 00_page_de_garde.Rmd
@@ -46,16 +67,17 @@ text /
 ```
 Les pdf compilés, beaux et propres, sont immédiatement sauvegardés dans ce dossier.
 
-`main.Rmd` est le fichier qui regroupera tous les chapitres, je n'ai pas écrit de contenu d'analyse dedans. Comme ça on peut écrire les chapitres séparément au lieu de tout dans un long Rmd, c'est plus propre et, personnellement, ça m'aidait à séparer qu'est-ce qui allait dans quoi.
+`main.Rmd` est le fichier qui regroupe tous les chapitres, je n'écris pas de contenu d'analyse dedans. Comme ça, je peux écrire les chapitres séparément au lieu de tout faire d'un coup dans un long Rmd. C'est plus propre et, personnellement, ça m'aide pour clairement organiser mes arguments.
 
 ## Les packages LaTeX utilisés {#pkg-latex}
 
-Dans le fichier `preamble.tex`, mettre tous les packages LaTeX utilisés. Permet de tout concentrer ici, plus cool pour les yeux. On retrouvera ce fichier dans l'en-tête YAML de `main.Rmd`: pendant la compilation, les packages seront écrits dans le fichier .tex intermédiaire.
+Puisque le fichier final est un fichier pdf, je peux utiliser des packages $\LaTeX$ pour des modifications supplémentaires que RMarkdown seul ne peut pas apporter. Dans un fichier `preamble.tex`, j'écris tous les packages LaTeX utilisés. On retrouve ensuite ce fichier dans l'en-tête YAML de `main.Rmd`: pendant la compilation, les packages seront écrits dans le fichier `.tex` intermédiaire.
 
 {{% callout note %}}
 Ca n'empêche pas de mettre les packages dans les chapitres intermédiaires, pour avoir une idée de quel visage ça aura à la fin.
 {{% /callout %}}
 
+J'utilise les packages suivants:
 ```latex
 \usepackage{ragged2e} % alignement
 \usepackage{setspace} % espace entre les lignes
@@ -88,28 +110,33 @@ Ca n'empêche pas de mettre les packages dans les chapitres intermédiaires, pou
 % pour les annexes
 \usepackage[toc,title,page]{appendix}
 
-% pour je sais pas quoi
+% quelques métadonnées 
 \usepackage{hyperref}
 \hypersetup{
-    pdftitle = {Nom qui apparaîtra sur le lecteur pdf},
+    pdftitle = {Nom du fichier qui apparaîtra sur le lecteur pdf},
     pdfauthor = {Mon Nom}
 }
 ```
 
+J'ai tout ce qu'il faut pour commencer la rédaction du mémoire.
+
 ## Assembler le document
 
-Voir le résultat de ses efforts!
+Il s'agit maintenant d'écrire mes chapitres individuellement pour ensuite les rassembler dans un document final qui montrera les résultats de mes efforts!
 
-### L'en-tête YAML
+### L'en-tête YAML {#en-tete-yaml}
 
 Dans l'en-tête du fichier `main.Rmd` qui regroupera tous les chapitres rédigés séparément, j'ai précisé:
 
-* le type de document (pdf), les packages $\LaTeX$ à charger, et l'application de la numérotation des sections;
-* la taille des marges, la police et sa taille, l'interligne;
-* la taille de la feuille (j'ai remarqué assez tard que la taille par défaut est celle du format lettre);
-* le fichier `.bib` avec mes références et le fichier `.csl` du langage de référencement.
+* Le type de document (pdf), les packages $\LaTeX$ à charger, et l'application de la numérotation des sections;
+* La taille des marges, la police et sa taille, l'interligne[^1];
+* La taille de la feuille[^2];
+* Le fichier `.bib` avec mes références et le fichier `.csl` du langage de référencement.
 
-Voilà à quoi ça ressemble:
+[^1]: L'interligne est utile pour la lisibilité, et pour que les profs puissent écrire leurs notes confortablement entre les lignes. C'est pas juste pour augmenter artificiellement le nombre de pages :)
+[^2]: J'ai remarqué assez tard que la taille par défaut est celle du format lettre 216 x 279mm.
+
+Voilà à quoi le début de `main.Rmd` ressemble:
 
 ```yaml
 ---
@@ -129,35 +156,23 @@ csl: asrlf.csl
 ---
 ```
 
-Dans les fichiers des chapitres (quoiqu'on peut aussi répliquer celui du fichier principal, notamment pour les packages latex):
-
-```yaml
----
-title: "Revue de la littérature"
-output: pdf_document
-geometry: margin=2.5cm
-fontsize: 12pt
-fontfamily: fourier
-linestretch: 1.5
-indent: true
-papersize: a4
-header-includes:
-  - \usepackage{tikz}
-  - \usetikzlibrary{positioning}
----
-```
+J'ai l'option de recopier la même en-tête dans les fichiers des chapitres, mais ce n'est pas obligatoire. J'ai choisi de faire ainsi parce que je voulais visualiser chaque chapitre individuellement en pdf.
 
 {{% callout warning %}}
-Ceux-ci ne seront pas pris en compte dans la compilation finale de `main.Rmd`.
+Les en-têtes des chapitres ne seront pas pris en compte dans la compilation finale de `main.Rmd`.
 {{% /callout %}}
 
 ### La page de garde
 
-Propre à mon université.
+J'ai construit la page de garde propre à mon université. J'en ai profité pour aller à fond dans du $\LaTeX$ pour expérimenter.
 
-Page de garde sauvegardée dans un fichier Rmd, `00_page_de_garde.Rmd` mais pas écrite avec langage R/Markdown. Format Rmd supporte les commandes LaTeX si le fichier généré est un fichier pdf, et c'est ce que j'ai fait parce que c'était plus "facile" (gros guillemets bien épais, c'est dur LaTeX) de construire ma page comme je le souhaitais. Ces commandes fonctionnent que si doc final est un pdf, ne fonctionnent pas si `output: html_document` par exemple.
+La page de garde est sauvegardée dans un fichier Rmd, `00_page_de_garde.Rmd` mais elle n'est pas construite avec le langage R/RMarkdown. Instead[^3], j'ai utilisé LaTeX. Le format Rmd supporte les commandes LaTeX si le fichier généré est un fichier pdf (donc ça ne fonctionne pas si `output: html_document` pour être limpide), et c'est ce que j'ai fait parce que c'était plus "facile" (gros guillemets bien épais, c'est dur LaTeX) de construire ma page comme je le souhaitais. 
 
-Alternativement, faire un document pur latex et ajouter dans l'en-tête `before_body: "page_de_garde.tex"` après `in_header: "preamble.tex"`.
+[^3]: Cet article est coincé dans les limbes depuis septembre 2021, j'ai décidé que mettre un peu d'anglais me motiverait. Sorry.
+
+Alternativement, j'aurais pu faire un document pur LaTeX pour la page de garde. Je l'aurais déclarée dans [l'en-tête de `main.Rmd`](#en-tete-yaml), avec `before_body: "page_de_garde.tex"` après `in_header: "preamble.tex"`.
+
+Voici le code de ma page de garde:
 
 ```latex
 \begin{titlepage}
@@ -217,7 +232,7 @@ La rapporteure
 \section*{Remerciements}
 ```
 
-J'ai tout de suite ajouté une page de remerciements et une page de dédication (pas montrée ici), numérotées avec des chiffres romains pour les distinguer du corps du mémoire.
+J'ai tout de suite ajouté une page de remerciements et une page de dédication (pas montrée ici, très personnelle, quelques larmes ont été versées), numérotées avec des chiffres romains pour les distinguer du corps du mémoire.
 
 Problème avec les sections non-numérotées: n'apparaît pas dans la table des matières + mauvaise section liée [mieux expliquer]. "Régler" par:
 
@@ -229,26 +244,41 @@ Problème avec les sections non-numérotées: n'apparaît pas dans la table des 
 
 ### Le corps du texte
 
-Un fichier `.Rmd` par chapitre (ne pas oublier de mettre titre de niveau 1 au début!). Ajout des packages LaTeX utilisés pour chaque chapitre dans l'en-tête YAML sous `header-includes:` ou bien directement `preamble.tex` comme vu plus haut + options de marge, de police, etc. J'écris et je construis le fichier pdf pour m'assurer que ça fonctionne bien.
+On en vient enfin au contenu sur lequel j'étais notée. J'ai créé un fichier `.Rmd` par chapitre, j'ai bien mis un titre de niveau 1 au début. J'ai ajouté la liste des packages LaTeX utilisés pour chaque chapitre dans l'en-tête YAML sous `header-includes:` (les déclarer directement `preamble.tex` comme vu plus haut fonctionne aussi), les options de marge, de police, etc. 
+
+J'ai préféré répéter l'en-tête dans chaque chapitre parce que je les générais en pdf individuellement pour m'assurer que tout fonctionnait bien. C'était aussi utile si je voulais faire des changements esthétiques et que je voulais les visualiser directement sur un morceau du mémoire. J'avais juste à changer l'en-tête d'un chapitre sans que ça impacte le reste, au lieu de modifier `preamble.tex` à chaque fois que je voulais changer de police.
+
+De toute façon, l'en-tête de `main.Rmd` est le seul pris en compte à la fin. 
 
 ### Bibliographie
 
-[Voir ici](https://stateofther.github.io/finistR2020/r_citr.html) pour meilleure explication.
+Il faut [voir ici](https://stateofther.github.io/finistR2020/r_citr.html) pour obtenir une meilleure explication. Je raconte quand même grossièrement ce que j'ai fait.
 
-Ingrédients: Zotero, Better BibTeX, package `citr`.
+J'ai eu besoin des ingrédients suivants: Zotero, l'extension Better BibTeX pour Zotero, et le package `citr` pour R.
 
-Better BibTeX: sélectionner l'option "garder à jour" quand j'exporte mes références pour que ces dernières soient automatiquement mises à jour si je change quelque chose.
+Pour Better BibTeX, j'ai sélectionné l'option "garder à jour" quand j'ai exporté mes références pour qu'elles soient automatiquement mises à jour si je change quelque chose dans Zotero.
 
-Langage de référencement par défaut Chicago, ne me convenait pas car était en anglais, ne montrait pas certains éléments ou en montrait trop, et parce que j'ai l'habitude du système Harvard. Du coup, j'ai choisi le modèle de [l'Association de Science Régionale de Langue Française](https://editor.citationstyles.org/styleInfo/?styleId=http%3A%2F%2Fwww.zotero.org%2Fstyles%2Fassociation-de-science-regionale-de-langue-francaise) parce qu'il me plaisait. Personnaliser légèrement pour que "et" apparaisse au lieu de "&" si deux auteurs en modifiant le fichier CSL (pour _Citation Style Language_) avec [ce site](https://editor.citationstyles.org/about/). Voir [ce site](https://www.zotero.org/styles) pour d'autres styles.
+Le langage de référencement par défaut pour les `.Rmd` est Chicago, il ne me convenait pas car il était en anglais, il ne montrait pas certains éléments ou en montrait trop, et parce que j'ai l'habitude du système Harvard. Du coup, j'ai [surfé sur le web](https://www.zotero.org/styles) et j'ai choisi le modèle de [l'Association de Science Régionale de Langue Française](https://editor.citationstyles.org/styleInfo/?styleId=http%3A%2F%2Fwww.zotero.org%2Fstyles%2Fassociation-de-science-regionale-de-langue-francaise) parce qu'il me plaisait et correspondait le plus au système avec lequel j'étais à l'aise. Je l'ai légèrement personnalisé pour que "et" apparaisse au lieu de "&" si il y avait deux auteurs, en modifiant le fichier CSL (pour _Citation Style Language_) avec [ce site](https://editor.citationstyles.org/about/).
+
+J'ai dit à R que tout ça existait, dans l'en-tête, avec les lignes suivantes:
 
 ```yaml
 bibliography: biblio.bib
 csl: asrlf.csl
 ```
 
-Dans le texte, `@ref` pour Auteur (an) ou `[@ref]` pour (Auteur, an), `[@ref1; @ref2]` pour plusieurs références à la fois entre parenthèses, ou `[-@ref]` pour avoir que l'année si auteur mentionné au préalable. Dans RStudio, j'utilise l'addin de `citr` pour ajouter les citations, à partir d'une interface interactive. Besoin de préciser le fichier `.bib` dans l'en-tête pour que le package trouve les références. 
+Encore une fois, j'avais le choix entre les écrire dans chaque chapitre ou directement dans `main.Rmd`. J'ai fait dans les deux parce que YOLO.
 
-Tricoter le fichier, références se trouvent automatiquement à la fin du document. Pas un problème si pas d'annexes ajoutées, problème dans le cas contraire. Pour imprimer les références à l'endroit qu'on veut, ajouter `<div id="refs"></div>` dans `main.Rmd`.
+Dans le texte:
+
+* `@ref` génère Auteur (an), 
+* `[@ref]` génère (Auteur, an), 
+* `[@ref1; @ref2]` pour plusieurs références à la fois entre parenthèses, 
+* ou `[-@ref]` pour n'avoir que l'année si l'auteur est mentionné au préalable. 
+
+Dans RStudio, j'utilise l'addin de `citr` pour ajouter les citations, à partir d'une interface interactive. J'ai besoin de préciser le fichier `.bib` dans l'en-tête pour que le package trouve les références. 
+
+Je tricote le fichier, et les références se trouvent automatiquement à la fin du document. Ce n'est pas problématique s'il n'y a pas d'annexe, c'est un problème dans le cas contraire. Pour imprimer les références à l'endroit qu'on veut, il suffit d'écrire `<div id="refs"></div>` dans `main.Rmd`.
 
 ```latex
 \newpage
@@ -261,9 +291,9 @@ Tricoter le fichier, références se trouvent automatiquement à la fin du docum
 
 ### Appendices
 
-Ca m'a cassé la tête. Besoin du package `appendix` de $\LaTeX$ et de l'environnement `appendices` pour signaler le début des annexes. 
+Ca m'a cassé la tête. J'ai eu besoin du package `appendix` de $\LaTeX$ et de l'environnement `appendices` pour signaler le début des annexes. 
 
-Dans le preamble, `\usepackage[toc,title,page]{appendix}` dit qu'on génère un titre "Appendices" au début de l'environnement, que ce titre apparaisse dans la table des matières et que x [page?]. J'ai dû redéfinir le mot qui apparaît au début de chaque section car clash avec ce que j'avais défini [dans le preamble](#pkg-latex).
+Dans `preamble.tex`, `\usepackage[toc,title,page]{appendix}` dit qu'on génère un titre "Appendices" au début de l'environnement. Ce titre apparaît dans la table des matières et au début de mes annexes. Cependant, j'ai dû explicitement définir le mot qui apparaissait au début de chaque section ("Chapitre") car il y avait un clash entre les deux.
 
 ```latex
 % dans le preamble
@@ -274,18 +304,21 @@ Dans le preamble, `\usepackage[toc,title,page]{appendix}` dit qu'on génère un 
 
 \titleformat{\section}{\Large\bfseries}{Annexe \thesection.}{1em}{}
 
-\section{Chapitre}
+\section{Annexe A: chapitre A dont l'annexe dépend}
 \subsection{Annexe A1}
 \subsection{Annexe A2}
+
+\section{Annexe B: chapitre B dont l'annexe dépend}
+\subsection{Annexe B1}
 
 \end{appendices}
 ```
 
 ## Tout compiler
 
-Sous [l'en-tête](#len-tête-yaml) de `main.Rmd`, tout ça. 
+C'est la dernière ligne droite. Sous [l'en-tête](#len-tête-yaml) de `main.Rmd`, on pointe du doigt tous les fichiers `.Rmd` pour tous les chapitres dans des chunks `child`. 
 
-**Important**: les en-têtes YAML propres à chaque fichier `.Rmd` ne sont pas pris en compte dans la construction du document final. Seul celui du fichier principal compte.
+**Important, je l'ai déjà dit et je le redis**: les en-têtes YAML propres à chaque fichier `.Rmd` ne sont pas prises en compte dans la construction du document final. Seul celui du fichier principal compte.
 
 ````r
 ```{r child="00_page_de_garde.Rmd"}
@@ -330,11 +363,15 @@ Sous [l'en-tête](#len-tête-yaml) de `main.Rmd`, tout ça.
 
 Pour tricoter le fichier sans utiliser la souris, `Ctrl + Maj + K` !
 
+Et voilà! Le mémoire est tout beau tout propre. Il ne manque plus qu'à relire, réviser, et préparer sa soutenance :smile:
+
 ## Pour résumer
 
-Le fichier `main.Rmd`:
+L'article est long, j'ai un peu la flemme de résumer. Je laisse le gist qui suit faire le boulot. On y retrouve `main.Rmd` et `preamble.tex`
 
 {{< gist pyrrhamide c716d95b34ce9871678d35801fd6b16e  >}}
+
+Si jamais, j'ai créé un dépôt où j'ai mis [le code et le texte de mon mémoire](https://github.com/pyrrhamide/memoire-ambassades). Il manque les données que j'ai utilisé (donc ce n'est pas reproductible, pas très _open data_ de ma part), mais il permet de comprendre ce que ça donne en vrai.
 
 ## Mes notes
 
