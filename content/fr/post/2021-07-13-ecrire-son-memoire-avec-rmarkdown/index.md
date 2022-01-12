@@ -31,7 +31,7 @@ Sur ce, bonne lecture et bonne chance pour ton mémoire si ce cas s'applique à 
 
 Il y a deux ans, j'ai écrit mon mémoire de licence avec Word, ne connaissant pas mieux et devant utiliser Stata qui ne génère pas de rapports. Ce n'était pas facile au niveau de la mise en forme des tableaux, du référencement, et c'était un long document. En gros, ce n'était pas une expérience agréable. 
 
-Pendant mon master, j'ai appris à utiliser R et RMarkdown qui est pratique pour incorporer directement mes données/codes/graphiques/tableaux. J'ai donc décidé d'écrire mon mémoire de M2 avec RMarkdown, pour finir avec un beau fichier pdf.
+Pendant mon master, j'ai appris à utiliser R et RMarkdown qui est pratique pour incorporer directement mes données/codes/graphiques/tableaux dans du texte. J'ai donc décidé d'écrire mon mémoire de M2 avec RMarkdown, pour finir avec un beau fichier pdf.
 
 C'était un grand projet. Je partage ici les grandes lignes de ce procédé.
 
@@ -46,10 +46,10 @@ Plusieurs éléments sont essentiels pour que tout fonctionne bien:
 
 ## Le dossier
 
-Au sein du grand dossier de mon mémoire (codes, données, bibliographie, graphiques, tableaux, etc.), je crée un dossier "texte" contenant tous mes fichiers `.Rmd`. 
+Au sein du grand dossier de mon mémoire (codes, données, bibliographie, graphiques, tableaux, etc.) qui est aussi un projet R, je crée un dossier "texte" contenant tous mes fichiers `.Rmd`. Ces fichiers sont mes chapitres.
 
 {{% callout warning %}}
-[Le répertoire de travail d'un fichier `.Rmd` est le dossier dans lequel ce fichier est sauvegardé](https://bookdown.org/yihui/rmarkdown-cookbook/working-directory.html), et non pas le dossier du projet R. Pour moi, c'était donc `/texte/` et non `Memoire/`. J'ai découvert ça quand j'ai essayé de compiler les `.Rmd` dans lesquels j'appelais mes données ou mes images: j'utilisais le chemin relatif `"sous-dossier/fichier.ext"`, sans succès. 
+[Le répertoire de travail d'un fichier `.Rmd` est le dossier dans lequel ce fichier est sauvegardé](https://bookdown.org/yihui/rmarkdown-cookbook/working-directory.html), et non pas le dossier du projet R. Pour moi, c'était donc `/texte/` et non `Memoire/`. J'ai découvert ça quand j'ai essayé de compiler les chapitres `.Rmd` dans lesquels j'appelais mes données ou mes images: j'utilisais le chemin relatif `"sous-dossier/fichier.ext"`, par exemple `"code/fonctions.R"`, sans succès. 
 
 Il fallait mettre le chemin entier depuis le dossier parent, soit `"~/Memoire/sous-dossier/fichier.ext"`, ou plus simplement `"../sous-dossier/fichier.ext"`.
 {{% /callout %}}
@@ -126,7 +126,7 @@ Il s'agit maintenant d'écrire mes chapitres individuellement pour ensuite les r
 
 ### L'en-tête YAML {#en-tete-yaml}
 
-Dans l'en-tête du fichier `main.Rmd` qui regroupera tous les chapitres rédigés séparément, j'ai précisé:
+Dans l'en-tête du fichier `main.Rmd` qui regroupera tous les chapitres rédigés séparément, je précise:
 
 * Le type de document (pdf), les packages $\LaTeX$ à charger, et l'application de la numérotation des sections;
 * La taille des marges, la police et sa taille, l'interligne[^1];
@@ -134,7 +134,7 @@ Dans l'en-tête du fichier `main.Rmd` qui regroupera tous les chapitres rédigé
 * Le fichier `.bib` avec mes références et le fichier `.csl` du langage de référencement.
 
 [^1]: L'interligne est utile pour la lisibilité, et pour que les profs puissent écrire leurs notes confortablement entre les lignes. C'est pas juste pour augmenter artificiellement le nombre de pages :)
-[^2]: J'ai remarqué assez tard que la taille par défaut est celle du format lettre 216 x 279mm.
+[^2]: J'ai remarqué assez tard que la taille par défaut est celle du format lettre US 216 x 279mm.
 
 Voilà à quoi le début de `main.Rmd` ressemble:
 
@@ -166,9 +166,9 @@ Les en-têtes des chapitres ne seront pas pris en compte dans la compilation fin
 
 J'ai construit la page de garde propre à mon université. J'en ai profité pour aller à fond dans du $\LaTeX$ pour expérimenter.
 
-La page de garde est sauvegardée dans un fichier Rmd, `00_page_de_garde.Rmd` mais elle n'est pas construite avec le langage R/RMarkdown. Instead[^3], j'ai utilisé LaTeX. Le format Rmd supporte les commandes LaTeX si le fichier généré est un fichier pdf (donc ça ne fonctionne pas si `output: html_document` pour être limpide), et c'est ce que j'ai fait parce que c'était plus "facile" (gros guillemets bien épais, c'est dur LaTeX) de construire ma page comme je le souhaitais. 
+La page de garde est sauvegardée dans un fichier Rmd, `00_page_de_garde.Rmd` mais elle n'est pas construite avec le langage R/RMarkdown. _Instead_[^3], j'ai utilisé LaTeX. Le format Rmd supporte les commandes LaTeX si le fichier généré est un fichier pdf (donc ça ne fonctionne pas si `output: html_document` pour être limpide), et c'est ce que j'ai fait parce que c'était plus "facile" (gros guillemets bien épais, c'est dur LaTeX) pour construire ma page comme je le souhaitais. 
 
-[^3]: Cet article est coincé dans les limbes depuis septembre 2021, j'ai décidé que mettre un peu d'anglais me motiverait. Sorry.
+[^3]: Cet article est coincé dans les limbes depuis septembre 2021, j'ai décidé que mettre un peu d'anglais me motiverait. _Sorry_.
 
 Alternativement, j'aurais pu faire un document pur LaTeX pour la page de garde. Je l'aurais déclarée dans [l'en-tête de `main.Rmd`](#en-tete-yaml), avec `before_body: "page_de_garde.tex"` après `in_header: "preamble.tex"`.
 
@@ -196,7 +196,7 @@ Voici le code de ma page de garde:
 
 \vfill 
 
-{\LARGE\bfseries Pigeons love doves\par}
+{\LARGE\bfseries Titre du mémoire\par}
 
 {\Large\bfseries Sous-titre\par}
 
@@ -234,12 +234,14 @@ La rapporteure
 
 J'ai tout de suite ajouté une page de remerciements et une page de dédication (pas montrée ici, très personnelle, quelques larmes ont été versées), numérotées avec des chiffres romains pour les distinguer du corps du mémoire.
 
-Problème avec les sections non-numérotées: n'apparaît pas dans la table des matières + mauvaise section liée [mieux expliquer]. "Régler" par:
+Problème avec les sections non-numérotées: n'apparaît pas dans la table des matières + mauvaise section liée (i.e. une section non-numérotée était liée à la section numérotée précédente). "Régler" en ajoutant `\phantomsection` pour dire que c'est bien un chapitre, `addcontentsline{toc}{section}{Titre}` pour donner le titre qui apparaîtra dans la table des matières. Manip nécessaire si on déclare une section avec `\section*{Titre}`, plus courte si le titre est sous forme markdown.
 
-```latex
+Après l'en-tête et avant le titre de niveau 1 du chapitre:
+
+```md
 \phantomsection
-\addcontentsline{toc}{section}{La section}
-\section*{La section}
+
+# Titre du chapitre non-numéroté {-}
 ```
 
 ### Le corps du texte
@@ -258,7 +260,7 @@ J'ai eu besoin des ingrédients suivants: Zotero, l'extension Better BibTeX pour
 
 Pour Better BibTeX, j'ai sélectionné l'option "garder à jour" quand j'ai exporté mes références pour qu'elles soient automatiquement mises à jour si je change quelque chose dans Zotero.
 
-Le langage de référencement par défaut pour les `.Rmd` est Chicago, il ne me convenait pas car il était en anglais, il ne montrait pas certains éléments ou en montrait trop, et parce que j'ai l'habitude du système Harvard. Du coup, j'ai [surfé sur le web](https://www.zotero.org/styles) et j'ai choisi le modèle de [l'Association de Science Régionale de Langue Française](https://editor.citationstyles.org/styleInfo/?styleId=http%3A%2F%2Fwww.zotero.org%2Fstyles%2Fassociation-de-science-regionale-de-langue-francaise) parce qu'il me plaisait et correspondait le plus au système avec lequel j'étais à l'aise. Je l'ai légèrement personnalisé pour que "et" apparaisse au lieu de "&" si il y avait deux auteurs, en modifiant le fichier CSL (pour _Citation Style Language_) avec [ce site](https://editor.citationstyles.org/about/).
+Le langage de référencement par défaut pour les `.Rmd` est Chicago, il ne me convenait pas car il était en anglais, il ne montrait pas certains éléments ou en montrait trop, et parce que j'ai l'habitude de travailler avec le système Harvard (rpz Warwick). Du coup, j'ai [surfé sur le web](https://www.zotero.org/styles) et j'ai choisi le modèle de [l'Association de Science Régionale de Langue Française](https://editor.citationstyles.org/styleInfo/?styleId=http%3A%2F%2Fwww.zotero.org%2Fstyles%2Fassociation-de-science-regionale-de-langue-francaise) parce qu'il me plaisait et correspondait le plus au système avec lequel j'étais à l'aise. Je l'ai légèrement personnalisé pour que "et" apparaisse au lieu de "&" s'il y avait deux auteurs, en modifiant le fichier CSL (pour _Citation Style Language_) avec [ce site](https://editor.citationstyles.org/about/).
 
 J'ai dit à R que tout ça existait, dans l'en-tête, avec les lignes suivantes:
 
@@ -293,7 +295,7 @@ Je tricote le fichier, et les références se trouvent automatiquement à la fin
 
 Ca m'a cassé la tête. J'ai eu besoin du package `appendix` de $\LaTeX$ et de l'environnement `appendices` pour signaler le début des annexes. 
 
-Dans `preamble.tex`, `\usepackage[toc,title,page]{appendix}` dit qu'on génère un titre "Appendices" au début de l'environnement. Ce titre apparaît dans la table des matières et au début de mes annexes. Cependant, j'ai dû explicitement définir le mot qui apparaissait au début de chaque section ("Chapitre") car il y avait un clash entre les deux.
+Dans `preamble.tex`, `\usepackage[toc,title,page]{appendix}` dit qu'on génère un titre "Appendices" au début de l'environnement. Ce titre apparaît dans la table des matières et au début de mes annexes. Cependant, j'ai dû explicitement définir le mot qui apparaissait au début de chaque section de ces appendices ("Annexe ") car le mot "Chapitre" était généré à la place.
 
 ```latex
 % dans le preamble
@@ -304,11 +306,11 @@ Dans `preamble.tex`, `\usepackage[toc,title,page]{appendix}` dit qu'on génère 
 
 \titleformat{\section}{\Large\bfseries}{Annexe \thesection.}{1em}{}
 
-\section{Annexe A: chapitre A dont l'annexe dépend}
+\section{Chapitre A dont l'annexe dépend}
 \subsection{Annexe A1}
 \subsection{Annexe A2}
 
-\section{Annexe B: chapitre B dont l'annexe dépend}
+\section{Chapitre B dont l'annexe dépend}
 \subsection{Annexe B1}
 
 \end{appendices}
@@ -336,8 +338,8 @@ C'est la dernière ligne droite. Sous [l'en-tête](#len-tête-yaml) de `main.Rmd
 \end{spacing}
 
 \newpage
-
 \pagenumbering{arabic}
+\setlength{\parskip}{1em}
 
 ```{r child="01_intro.Rmd"}
 ```
@@ -346,9 +348,18 @@ C'est la dernière ligne droite. Sous [l'en-tête](#len-tête-yaml) de `main.Rmd
 ```{r child="02_lit_review.Rmd"}
 ```
 
+\newpage
+```{r child="03_data_methodo.Rmd"}
+```
+
 # tous les autres chapitres
 
+
 \newpage
+\singlespacing
+\setlength{\parskip}{0.5em}
+
+
 \phantomsection
 \addcontentsline{toc}{section}{Références}
 \section*{Références}
@@ -356,7 +367,6 @@ C'est la dernière ligne droite. Sous [l'en-tête](#len-tête-yaml) de `main.Rmd
 <div id="refs"></div>
 
 \newpage
-\singlespacing
 ```{r child="99_annexe.Rmd"}
 ```
 ````
@@ -365,13 +375,18 @@ Pour tricoter le fichier sans utiliser la souris, `Ctrl + Maj + K` !
 
 Et voilà! Le mémoire est tout beau tout propre. Il ne manque plus qu'à relire, réviser, et préparer sa soutenance :smile:
 
-## Pour résumer
+## Pour résumer - TL;DR {#tldr}
 
-L'article est long, j'ai un peu la flemme de résumer. Je laisse le gist qui suit faire le boulot. On y retrouve `main.Rmd` et `preamble.tex`
+L'article est long, un résumé s'impose si tu n'as pas tout lu. Le gist qui suit montre un squelette de `main.Rmd` et de `preamble.tex`.
+
+Les points principaux:
+* `main.Rmd` est le fichier "parent" dans lequel on déclare tous les chapitres. 
+* Ces chapitres sont rédigés individuellement dans des fichiers "enfants" `chapitre.Rmd`. Si un chapitre n'est pas numéroté, il faut ajouter la commande `\phantomsection` avant le titre du chapitre. 
+* On déclare les packages LaTeX dont on a besoin dans `preamble.tex`.
 
 {{< gist pyrrhamide c716d95b34ce9871678d35801fd6b16e  >}}
 
-Si jamais, j'ai créé un dépôt où j'ai mis [le code et le texte de mon mémoire](https://github.com/pyrrhamide/memoire-ambassades). Il manque les données que j'ai utilisé (donc ce n'est pas reproductible, pas très _open data_ de ma part), mais il permet de comprendre ce que ça donne en vrai.
+J'ai créé un dépôt où j'ai mis [le code et le texte de mon mémoire](https://github.com/pyrrhamide/memoire-ambassades), pour que tu puisses comprendre ce que toutes ces étapes donnent en pratique. Il manque les données dans leurs formes nettoyées parce qu'elles étaient trop larges pour GitHub (donc ce n'est pas directement reproductible, pas très _open data_ de ma part), mais le fichier Excel original est bien présent.
 
 ## Mes notes
 
