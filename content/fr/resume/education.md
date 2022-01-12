@@ -31,7 +31,7 @@ experience:
     description: |2-
       Mémoire: _Multiplier ses liens sans multiplier ses accès - étude du réseau diplomatique des ambassades multiples_
 
-      Méthodes utilisées/employées: xxx.
+      Méthodes utilisées: statistiques descriptives, visualisation graphique, analyse des réseaux, cartographie.
 
   - title: B.A. (Hons) Politics, International Studies and Quantitative Methods (2:1)
     company: University of Warwick
@@ -39,9 +39,9 @@ experience:
     date_start: '2016-10-01'
     date_end: '2019-07-01'
     description: |2-
-      Mémoire: _Social Media and Voter Turnout among Young People_
+      Mémoire: _Social Media and Voter Turnout among Young People - a study of the 2017 French Presidential Elections_
 
-      Méthodes utilisées/employées: xxx.
+      Méthodes utilisées: statistiques descriptives, visualisation graphique, régressions logistiques binomiales et multinomiales.
 
   - title: Baccalauréat scientifique (mention bien)
     company: Lycée International de Ferney-Voltaire

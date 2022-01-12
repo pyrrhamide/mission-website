@@ -20,7 +20,7 @@ interests:
 #organizations:
 #- name: Most definitely not Stanford
 #  url: https://www.stanford.edu/
-role: Étudiante en master
+role: Diplômée du master Quantifier en Sciences Sociales
 social:
 #- display:
 #    header: false
@@ -40,13 +40,13 @@ superuser: true
 title: Kanto Fiaferana
 ---
 
-Je suis étudiante en M2 de Sciences Sociales. J'aime apprendre à manipuler de nouveaux outils et à partager du contenu simple et agréable au plan esthétique, pour aider moi-même et les autres à mieux comprendre. Ces intérêts personnels m'ont motivé à publier un autre [site](https://pyrrhamide.github.io/regressions), recensant toutes les méthodes d'analyses de données que j'ai apprises pendant mon master.
+Je suis diplômée du master Quantifier en Sciences Sociales. J'aime apprendre à manipuler de nouveaux outils et à partager du contenu simple et agréable au plan esthétique, pour aider moi-même et les autres à mieux comprendre. Ces intérêts personnels m'ont motivé à publier un autre [site](https://pyrrhamide.github.io/regressions), recensant toutes les méthodes d'analyses de données que j'ai apprises pendant mon master.
 
 J'expérimente beaucoup avec R et RMarkdown, et je suis toujours à la recherche de nouveaux packages avec lesquels m'occuper. Ce site, construit avec `blogdown`, est ma création la plus récente, et j'espère:
 
 * Publier du contenu en rapport avec l'analyse de données ou bien avec les outils divers de création de contenu sur R, en Français et en [Anglais](/#about),
 * Apprendre HTML et CSS au fur et à mesure que je modifie _**un toucan qui parle**_!
 
-Bienvenue sur mon projet de coeur, je vous souhaite une bonne navigation!
+Bienvenue sur mon projet de coeur, et bonne navigation!
 
 <!--- {{< icon name="download" pack="fas" >}} Download my {{< staticref "media/demo_resume.pdf" "newtab" >}}resumé{{< /staticref >}}. --->
