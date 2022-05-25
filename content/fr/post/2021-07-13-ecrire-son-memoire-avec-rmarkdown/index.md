@@ -297,11 +297,13 @@ Ca m'a cassé la tête. J'ai eu besoin du package `appendix` de $\LaTeX$ et de l
 
 Dans `preamble.tex`, `\usepackage[toc,title,page]{appendix}` dit qu'on génère un titre "Appendices" au début de l'environnement. Ce titre apparaît dans la table des matières et au début de mes annexes. Cependant, j'ai dû explicitement définir le mot qui apparaissait au début de chaque section de ces appendices ("Annexe ") car le mot "Chapitre" était généré à la place.
 
+Dans preamble, il s'agit de cette ligne:
 ```latex
-% dans le preamble
 \usepackage[toc,title,page]{appendix}
+```
 
-% dans le fichier main.Rmd (ou 99_annexe.Rmd)
+Dans le fichier Rmd de mes annexes, ces lignes sont nécessaires:
+```latex
 \begin{appendices}
 
 \titleformat{\section}{\Large\bfseries}{Annexe \thesection.}{1em}{}
@@ -392,8 +394,8 @@ J'ai créé un dépôt où j'ai mis [le code et le texte de mon mémoire](https:
 
 * Packages R qui n'ont pas fonctionné, par exemple `DiagrammeR` qui fonctionne qu'avec des fichiers HTML. M'a poussée à faire mes diagrammes en LaTeX pur, dans le corps de texte Rmd. Une aventure.
 * Ce qui m'emmène au référencement des éléments du document: 
-  * quand il s'agit de qqch que j'ai écrit en LaTeX, important de mettre `\label{lab}` après le titre. Référencement dans le doc se fait `\ref{lab}`. Easy peasy lemon squeezy.
-  * quand il s'agit de qqch généré par RMarkdown (du style kable, ggplot, etc.), important de nommer les code chunks. Référencement dans le doc se fait `\ref{type:label-code-chunk}`, avec type `tab`, `fig` ou `eqn`.
+  * quand il s'agit de qqch que j'ai écrit en LaTeX (les diagrammes), important de mettre `\label{lab}` après le titre. Référencement dans le doc se fait `\ref{lab}`. Easy peasy lemon squeezy.
+  * quand il s'agit de qqch généré par RMarkdown (du style kable, ggplot, etc.), important de nommer les code chunks. Référencement dans le doc se fait `\ref{type:label-code-chunk}`, en remplaçant `type` par le nom raccourci du type d'objet, `tab`, `fig` ou `eqn`.
 * Mélange des langages dans les documents: franchement sympa, simplifie la vie quand on connaît la commande dans un langage mais pas dans l'autre. Cependant, devient rapidement très brouillon. 
 * C'est du bricolage pur et dur.
 

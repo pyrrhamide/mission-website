@@ -1,0 +1,138 @@
+---
+title: Analyse du premier tour de l'élection présidentielle
+author: Kanto Fiaferana
+date: '2022-04-12'
+slug: premier-tour-presidentielle
+categories: []
+tags: []
+subtitle: 'Je suis fatiguée.'
+summary: 'Analyse simple et rapide du premier tour de l''éléction présidentielle française.'
+featured: no
+image:
+  caption: '[Photo de Glen Carrie sur Unsplash](https://unsplash.com/photos/ApHrNurIYpk)'
+  focal_point: ''
+  preview_only: no
+projects: []
+draft: yes
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo=FALSE,message=FALSE,warning=FALSE,fig.align = "center")
+```
+
+## Données
+
+[données](https://www.data.gouv.fr/fr/datasets/resultats-du-premier-tour-de-lelection-presidentielle-2022-par-commune-et-par-departement/)
+
+```{r pkg, include=TRUE}
+library(tidyverse)
+library(magrittr)
+library(kableExtra)
+library(hrbrthemes)
+```
+
+### Nettoyage
+
+```{r import}
+r_dept <- read_csv('03-resultats-par-departement.csv')
+r_dept %<>% select(-url)
+```
+
+```{r nettoyage}
+r_dept %<>% mutate(across(reg_code:num_tour, factor),
+                   across(cand_num_panneau:cand_civil, factor))
+```
+
+## Petites statistiques
+
+```{r}
+
+```
+
+## Gagnant par département
+
+```{r dept-candidat}
+dept_win <- r_dept %>% 
+  group_by(dep_name) %>% 
+  filter(cand_nb_voix == max(cand_nb_voix)) %>% 
+  ungroup()
+
+dept_win %>% 
+  count(cand_nom) %>% 
+  kbl(caption = "xxx",
+      col.names = c("Candidat gagnant","Effectif")) 
+```
+
+```{r}
+dept_importance <- dept_win %>% 
+  select(dep_name,cand_nom,inscrits_nb,exprimes_nb) %>% 
+  mutate(part_dep_inscrits = round(inscrits_nb/sum(inscrits_nb)*100,2),
+         part_dep_exprimes = round(exprimes_nb/sum(exprimes_nb)*100,2))
+
+dept_importance %>% 
+  slice_max(inscrits_nb,n=10) %>% 
+  select(-c(exprimes_nb,part_dep_exprimes)) %>% 
+  kbl("html") %>% 
+  kable_styling(position = "center") # le département du Nord comprend 3.87% de tous les électeurs de France métropolitaine et des DROM
+dept_importance %>% slice_min(inscrits_nb,n=10) %>% select(-c(exprimes_nb,part_dep_exprimes)) %>% kbl()
+
+dept_importance %>% slice_max(exprimes_nb,n=10) %>% select(-c(inscrits_nb,part_dep_inscrits)) %>% kbl() # dep Nord 3.83% des votes exprimés au premier tour
+dept_importance %>% slice_min(exprimes_nb,n=10) %>% select(-c(inscrits_nb,part_dep_inscrits)) %>% kbl()
+```
+
+## Top 2 par département 
+
+```{r}
+dept_top2 <- r_dept %>% 
+  group_by(dep_name) %>% 
+  slice_max(order_by = cand_nb_voix, n = 2) %>% 
+  mutate(rang = dense_rank(desc(cand_nb_voix))) %>% 
+  ungroup()
+
+top2_wide <- dept_top2 %>% 
+  select(dep_name,inscrits_nb,votants_nb,exprimes_nb,
+         exprimes_pourc_inscrits,exprimes_pourc_votants,
+         cand_nom,cand_nb_voix,cand_rapport_exprim,rang) %>% 
+  pivot_wider(names_from = rang,
+              values_from = c(cand_nom,cand_nb_voix,cand_rapport_exprim)) %>% 
+  mutate(ecart_voix = cand_nb_voix_1 - cand_nb_voix_2,
+         ecart_prct = cand_rapport_exprim_1 - cand_rapport_exprim_2)
+```
+
+```{r}
+ggplot(top2_wide) +
+  geom_density(aes(ecart_voix), bw=1)
+```
+
+```{r}
+top2_wide %>% 
+  slice_max(ecart_voix, n=10) %>% 
+  select(dep_name,cand_nom_1,cand_nom_2,cand_nb_voix_1,cand_nb_voix_2,ecart_voix) %>% 
+  kbl()
+```
+
+```{r}
+ggplot(top2_wide,aes(x=ecart_prct,y=cand_nom_1)) +
+  geom_boxplot(fill=c("#cbdaf2","#f7e5cb","#edbec3"),
+               color=c("navy","orange","red4")) +
+  labs(title = "Distribution des écarts de pourcentages de votes exprimés,\nentre premier et deuxième",
+       subtitle = "Election présidentielle française 2022, premier tour",
+       x = "Ecart pourcentage votes exprimés",
+       y = "Vainqueur département",
+       caption = "Source: données élection présidentielle française\nChamp: France métropolitaine, DROM et COM.\nLecture:") +
+  theme_ipsum() +
+  theme(plot.title = element_text(size=15))
+```
+
+```{r}
+top2_wide %>% count(cand_nom_1,cand_nom_2) %>% arrange(desc(n)) %>% kbl()
+  # dans 39 départements, MACRON est arrivé en tête devant LE PEN. dans 37 départements, LE PEN est arrivée en tête devant MACRON.
+top2_wide %>% 
+  group_by(cand_nom_1,cand_nom_2) %>% 
+  summarise(n=n(),
+            mean_ecart_v = mean(ecart_voix),
+            mean_ecart_p = mean(ecart_prct)) %>% 
+  arrange(desc(n)) %>% kbl()
+```
+
+## Conclusion
